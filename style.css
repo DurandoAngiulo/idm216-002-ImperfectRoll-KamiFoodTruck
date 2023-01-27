@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "DePixel";
+  src: url("fonts/depixelbreit.woff2") format("woff2"),
+    url("fonts/depixelbriet.woff") format("woff");
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: var(--backgroundColor);
+}
+:root {
+  --backgroundColor: #0d1325;
+  --textColor: #fff;
+  --logoWidth: 91%;
+  --linkWidth: 91%;
+  --profileWidth: 100%;
+  --dividerWidth: 90%;
+  --paulBottom: 3rem;
+  --jillBottom: 3rem;
+  --durandoBottom: 3rem;
+  --tonyBottom: 3rem;
+  --emailHover: #61d0c9;
+}
+
+h1 {
+  font-family: "DePixel", Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--textColor);
+  text-align: center;
+}
+h2,
+h3,
+li {
+  font-family: "DePixel", Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--textColor);
+  text-align: center;
+  font-size: 16px;
+}
+
+.logoImage {
+  animation: fadeIn 0.3s 0.1s linear forwards;
+  opacity: 0;
+  width: var(--logoWidth);
+  transition: all 0.2s;
+}
+
+.profileImage {
+  animation: fadeIn 0.3s 0.1s linear forwards;
+  opacity: 0;
+  width: var(--profileWidth);
+  transition: all 0.2s;
+}
+
+.link {
+  width: var(--linkWidth);
+}
+.divider {
+  animation: fadeIn 0.3s 0.1s linear forwards;
+  opacity: 0;
+  width: var(--dividerWidth);
+}
+
+.glow {
+  -webkit-filter: drop-shadow(0px 0px 12px rgba(97, 209, 202, 1.4));
+  filter: drop-shadow(0px 0px 12px rgba(97, 209, 202, 0.4));
+}
+
+/* .wrapper {
+  max-width: 1300px;
+} */
+.headerText {
+  animation: fadeIn 0.3s linear forwards;
+}
+.spacingPaul {
+  animation: fadeIn 0.3s 0.5s linear forwards;
+  opacity: 0;
+  margin-bottom: var(--paulBottom);
+  margin-top: var(--paulTop);
+}
+.spacingJill {
+  animation: fadeIn 0.3s 0.75s linear forwards;
+  opacity: 0;
+  margin-bottom: var(--jillBottom);
+  margin-top: var(--jillTop);
+}
+.spacingDurando {
+  animation: fadeIn 0.3s 1s linear forwards;
+  opacity: 0;
+  margin-bottom: var(--durandoBottom);
+  margin-top: var(--durandoTop);
+}
+.spacingTony {
+  animation: fadeIn 0.3s 1.25s linear forwards;
+  opacity: 0;
+  margin-bottom: var(--tonyBottom);
+  margin-top: var(--tonyTop);
+}
+.bottomText {
+  animation: fadeIn 0.3s 1.5s linear forwards;
+  opacity: 0;
+  max-width: 1100px;
+}
+.contacts {
+  animation: fadeIn 0.3s 1.5s linear forwards;
+  opacity: 0;
+}
+.email {
+  list-style-type: square;
+  transition: all 0.1s linear;
+}
+
+/* Animations */
+.glow:hover {
+  -webkit-filter: drop-shadow(0px 0px 12px rgba(97, 209, 202, 1.4));
+  filter: drop-shadow(0px 0px 12px rgba(97, 209, 202, 0.9));
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.email:hover {
+  color: var(--emailHover);
+  transition: all 0.1s linear;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --logoWidth: 40%;
+    --profileWidth: 100%;
+    --linkWidth: 40%;
+    --dividerWidth: 50%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  :root {
+    --logoWidth: 23%;
+    --linkWidth: 23%;
+    --profileWidth: 100%;
+  }
+}
