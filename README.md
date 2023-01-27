@@ -1,8 +1,8 @@
 # idm216-002-ImperfectRoll-KamiFoodTruck
 
--DEV: https://durandoangiulo.com/idm216/
+-DEV: https://durandoangiulo.com/idm216/final
 
--LIve: https://durandoangiulo.com/idm216/ 
+-Live: https://durandoangiulo.com/idm216/final 
 
 ### Gitignore
 ```
