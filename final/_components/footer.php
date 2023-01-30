@@ -1,5 +1,5 @@
 <div class="mt-5 ">
-    <p class="text-center mb-2 text-light">
+    <p class="text-center mb-2 text-secondary">
       &copy;<?php echo date('Y'); ?> Imperfect Roll, IDM 216. All
       rights reserved.
     </p>
