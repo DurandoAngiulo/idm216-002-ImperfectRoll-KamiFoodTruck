@@ -1,2 +1,7 @@
 *.DS_Store
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.tiff
 /vars
