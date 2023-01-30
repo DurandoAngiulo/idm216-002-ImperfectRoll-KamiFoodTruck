@@ -10,14 +10,19 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: var(--siteBg);
 }
-body {
-  background-color: var(--backgroundColor);
+.pixelBg {
+  background-color: var(--pixelBg);
 }
 :root {
-  --backgroundColor: #0d1325;
+  /* pixel look*/
+  --pixelBg: #0d1325;
   --textColor: #fff;
   --logoWidth: 91%;
+
+  /*main site look*/
+  --siteBg: #fffaed;
 }
 
 h3 {

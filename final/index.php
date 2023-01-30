@@ -3,6 +3,7 @@ include_once __DIR__ . '/app.php';
 $page_title = 'Home';
 include_once __DIR__ . '/_components/header.php';
 ?>
+<body class="pixelBg">
     <div class="px-2 px-md-2 py-5">
       <div class="d-flex justify-content-center">
         <img class="logoImage" src="dist/images/imperfect-roll.png" />
