@@ -131,6 +131,7 @@ body {
   width: 35px;
   height: 100%;
 }
+
 .buttonGroup {
   align-items: center;
   display: flex;
@@ -224,7 +225,7 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 57rem;
+    height: 46rem;
     padding-top: 56.25%;
     display: var(--mobileView);
   }
@@ -255,5 +256,22 @@ body {
   }
   .kamiLogoImage {
     width: 15%;
+  }
+  .figmaContainerMobile {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 55rem;
+    padding-top: 56.25%;
+    display: var(--mobileView);
+  }
+  .responsive-iframeMobile {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
   }
 }
