@@ -4,6 +4,33 @@
     url("../fonts/depixelbreit.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Poppins-reg";
+  src: url("../fonts/poppins-regular-webfont.woff2") format("woff2"),
+    url("../fonts/poppins-regular-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins-bold";
+  src: url("../fonts/poppins-bold-webfont.woff2") format("woff2"),
+    url("../fonts/poppins-bold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins-semi";
+  src: url("../fonts/poppins-semibold-webfont.woff2") format("woff2"),
+    url("../fonts/poppins-semibold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins-light";
+  src: url("../fonts/poppins-light-webfont.woff2") format("woff2"),
+    url("../fonts/poppins-light-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Moneygame";
+  src: url("../fonts/moneygameregular-yza9o-webfont.woff2") format("woff2"),
+    url("../fonts/moneygameregular-yza9o-webfont.woff") format("woff");
+}
+
 /* root variables */
 :root {
   /* pixel look*/
@@ -16,7 +43,7 @@
   --moodboardWidth: 100%;
   --personaWidth: 100%;
   --colorsWidth: 25%;
-  --contentWidth: 100%;
+  --contentWidth: 95%;
   --mobileView: block;
 }
 
@@ -54,6 +81,36 @@ body {
 .content {
   width: var(--contentWidth);
 }
+.teamLogo {
+  display: flex;
+  justify-content: center;
+}
+.blackPixelFont {
+  color: black;
+  font-family: "DePixel", Helvetica, sans-serif;
+}
+.moneyText {
+  font-family: "Moneygame", "Times New Roman", Times, serif;
+}
+.poppinsReg {
+  font-family: "Poppins-reg", Helvetica, sans-serif;
+}
+.poppinsBold {
+  font-family: "Poppins-bold", Helvetica, sans-serif;
+}
+.poppinsSemi {
+  font-family: "Poppins-semi", Helvetica, sans-serif;
+}
+.poppinsLight {
+  font-family: "Poppins-light", Helvetica, sans-serif;
+}
+
+.kamiLogoImage {
+  animation: fadeIn 0.3s 0.1s linear forwards;
+  opacity: 0;
+  width: 30%;
+  transition: all 0.2s;
+}
 .moodboard {
   width: var(--moodboardWidth);
 }
@@ -74,13 +131,44 @@ body {
   width: 35px;
   height: 100%;
 }
-
-.button {
-  width: 90px;
-  height: 30px;
-  background-color: rgb(239, 1, 1);
+.buttonGroup {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
+.button {
+  display: flex;
+  border-radius: 3rem;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 30px;
+  margin: 0.5rem;
+  padding: 1.5rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+.bInactive {
+  background-color: rgb(170, 170, 170);
+}
+.bPrice {
+  justify-content: space-between;
+}
+.bIcon {
+  justify-content: space-between;
+}
+.bSecondary {
+  background-color: rgb(255, 255, 255);
+  border: solid black 2px;
+  color: black;
+}
+.buttonIcon {
+  height: 1.5rem;
+  width: 1.5rem;
+  filter: brightness(100%);
+}
 .figmaContainerMobile {
   position: relative;
   overflow: hidden;
@@ -98,6 +186,9 @@ body {
   right: 0;
   width: 100%;
   height: 100%;
+}
+.footerText {
+  padding: 0 0 2rem 0;
 }
 
 /* Animations */
@@ -137,7 +228,13 @@ body {
     padding-top: 56.25%;
     display: var(--mobileView);
   }
-
+  .kamiLogoImage {
+    width: 25%;
+  }
+  .teamLogo {
+    justify-content: flex-start;
+    margin: 0rem 2rem;
+  }
   .responsive-iframeMobile {
     position: absolute;
     top: 0;
@@ -155,5 +252,8 @@ body {
     --personaWidth: 100%;
     --colorsWidth: 10%;
     --contentWidth: 60%;
+  }
+  .kamiLogoImage {
+    width: 15%;
   }
 }
