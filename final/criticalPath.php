@@ -29,7 +29,7 @@ include_once __DIR__ . '/_components/header-kami.php';
         />
         <source
           media="(min-width: 0px)"
-          srcset="dist/images/User-Persona1-mobile.png"
+          srcset="dist/images/thetryguy.png"
         />
         <img
           class="persona mb-5 border border-dark border-top-0"
@@ -44,7 +44,7 @@ include_once __DIR__ . '/_components/header-kami.php';
         />
         <source
           media="(min-width: 0px)"
-          srcset="dist/images/User-Persona2-mobile.png"
+          srcset="dist/images/theselfstarter.png"
         />
         <img
           class="persona mb-5 border border-dark border-top-0"
@@ -59,7 +59,7 @@ include_once __DIR__ . '/_components/header-kami.php';
         />
         <source
           media="(min-width: 0px)"
-          srcset="dist/images/User-Persona3-mobile.png"
+          srcset="dist/images/theupennstudent.png"
         />
         <img
           class="persona mb-5 border border-dark border-top-0"
@@ -137,7 +137,84 @@ include_once __DIR__ . '/_components/header-kami.php';
       width="300" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FszdkkiGFyHA5rFjUwOPCa4%2FTeam-Project-Site%3Fpage-id%3D0%253A1%26node-id%3D10%253A1174%26viewport%3D2249%252C376%252C0.37%26scaling%3Dscale-down%26starting-point-node-id%3D10%253A1174" 
       allowfullscreen></iframe>
       </div>
+      <div class="d-flex flex-wrap justify-content-center mb-5 criticalPath" >
+        <img
+          class="pathImage mb-3"
+          src="dist/images/flow/screen-2.png"
+          alt="flow step"
+        />
+        <img
+          class="pathImage mb-3"
+          src="dist/images/flow/home.png"
+          alt="flow step"
+        />
+        <img
+          class="pathImage mb-3"
+          src="dist/images/flow/Details.png"
+          alt="flow step"
+        />
+        <img
+          class="pathImage mb-3"
+          src="dist/images/flow/home-1.png"
+          alt="flow step"
+        />
+        <img
+          class="pathImage mb-3"
+          src="dist/images/flow/home-2.png"
+          alt="flow step"
+        />
+        <img
+          class="pathImage mb-3"
+          src="dist/images/flow/Details-1.png"
+          alt="flow step"
+        />
+        <img
+          class="pathImage mb-3"
+          src="dist/images/flow/Cart.png"
+          alt="flow step"
+        />
+        <img
+          class="pathImage mb-3"
+          src="dist/images/flow/regsitering.png"
+          alt="flow step"
+        />
+        <img
+          class="pathImage mb-3"
+          src="dist/images/flow/Checkout.png"
+          alt="flow step"
+        />
+        <img
+          class="pathImage mb-3"
+          src="dist/images/flow/Checkout-1.png"
+          alt="flow step"
+        />
+        <img
+          class="pathImage mb-3"
+          src="dist/images/flow/Checkout-2.png"
+          alt="flow step"
+        />
+        <img
+          class="pathImage mb-3"
+          src="dist/images/flow/loading-screen.png"
+          alt="flow step"
+        />
+        <img
+          class="pathImage mb-3"
+          src="dist/images/flow/order-confirmation.png"
+          alt="flow step"
+        />
+        <img
+          class="pathImage mb-3"
+          src="dist/images/flow/home-4.png"
+          alt="flow step"
+        />
+        <img
+          class="pathImage mb-3"
+          src="dist/images/flow/order-confirmation-1.png"
+          alt="flow step"
+        />
       </div>
+    </div>
     </div>
     </div>
 

@@ -44,7 +44,7 @@
   --personaWidth: 100%;
   --colorsWidth: 25%;
   --contentWidth: 95%;
-  --mobileView: block;
+  --mobileView: none;
 }
 
 * {
@@ -171,6 +171,7 @@ body {
   filter: brightness(100%);
 }
 .figmaContainerMobile {
+  display: none;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -188,6 +189,15 @@ body {
   width: 100%;
   height: 100%;
 }
+
+.pathImage {
+  width: 80%;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: black;
+}
+
 .footerText {
   padding: 0 0 2rem 0;
 }
@@ -220,8 +230,10 @@ body {
     --personaWidth: 100%;
     --colorsWidth: 10%;
     --contentWidth: 75%;
+    --mobileView: block;
   }
   .figmaContainerMobile {
+    display: block;
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -245,6 +257,9 @@ body {
     width: 50%;
     height: 100%;
   }
+  .criticalPath {
+    display: none !important;
+  }
 }
 @media screen and (min-width: 1300px) {
   :root {
@@ -253,6 +268,7 @@ body {
     --personaWidth: 100%;
     --colorsWidth: 10%;
     --contentWidth: 60%;
+    --mobileView: block;
   }
   .kamiLogoImage {
     width: 15%;
