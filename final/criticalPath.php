@@ -175,7 +175,7 @@ include_once __DIR__ . '/_components/header-kami.php';
         />
         <img
           class="pathImage mb-3"
-          src="dist/images/flow/regsitering.png"
+          src="dist/images/flow/registering.png"
           alt="flow step"
         />
         <img
