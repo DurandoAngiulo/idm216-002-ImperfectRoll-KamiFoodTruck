@@ -140,7 +140,7 @@ include_once __DIR__ . '/_components/header-kami.php';
       <div class="d-flex flex-wrap justify-content-center mb-5 criticalPath" >
         <img
           class="pathImage mb-3"
-          src="dist/images/flow/screen-2.png"
+          src="dist/images/flow/kami_logo_first.png"
           alt="flow step"
         />
         <img
@@ -150,7 +150,7 @@ include_once __DIR__ . '/_components/header-kami.php';
         />
         <img
           class="pathImage mb-3"
-          src="dist/images/flow/Details.png"
+          src="dist/images/flow/details.png"
           alt="flow step"
         />
         <img
@@ -165,42 +165,42 @@ include_once __DIR__ . '/_components/header-kami.php';
         />
         <img
           class="pathImage mb-3"
-          src="dist/images/flow/Details-1.png"
+          src="dist/images/flow/details-1.png"
           alt="flow step"
         />
         <img
           class="pathImage mb-3"
-          src="dist/images/flow/Cart.png"
+          src="dist/images/flow/cart.png"
           alt="flow step"
         />
         <img
           class="pathImage mb-3"
-          src="dist/images/flow/registering.png"
+          src="dist/images/flow/registering_2.png"
           alt="flow step"
         />
         <img
           class="pathImage mb-3"
-          src="dist/images/flow/Checkout.png"
+          src="dist/images/flow/checkout.png"
           alt="flow step"
         />
         <img
           class="pathImage mb-3"
-          src="dist/images/flow/Checkout-1.png"
+          src="dist/images/flow/checkout1.png"
           alt="flow step"
         />
         <img
           class="pathImage mb-3"
-          src="dist/images/flow/Checkout-2.png"
+          src="dist/images/flow/checkout2.png"
           alt="flow step"
         />
         <img
           class="pathImage mb-3"
-          src="dist/images/flow/loading-screen.png"
+          src="dist/images/flow/loading_screen.png"
           alt="flow step"
         />
         <img
           class="pathImage mb-3"
-          src="dist/images/flow/order-confirmation.png"
+          src="dist/images/flow/order_confirmation.png"
           alt="flow step"
         />
         <img
@@ -210,7 +210,7 @@ include_once __DIR__ . '/_components/header-kami.php';
         />
         <img
           class="pathImage mb-3"
-          src="dist/images/flow/order-confirmation-1.png"
+          src="dist/images/flow/order_confirmation-1.png"
           alt="flow step"
         />
       </div>
