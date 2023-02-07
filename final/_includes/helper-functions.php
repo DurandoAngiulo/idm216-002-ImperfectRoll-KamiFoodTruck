@@ -17,4 +17,17 @@ function project_root()
 {
     return dirname(__FILE__);
 }
+
+function getFormattedDateTime()
+{
+    return  date('Y-m-d H:i:s');
+}
+
+function get_recipes()
+{
+    global $db_connection;
+    $query = 'SELECT * FROM meals';
+    $result = mysqli_query($db_connection, $query);
+    return $result;
+}
 ?>
