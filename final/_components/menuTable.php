@@ -3,16 +3,15 @@ if (!isset($result)) {
     echo '$meals variable is not defined. Please check the code.';
 }
 ?>    
-          <div class="table-responsive-xl">
-            <table class="table">
+          <div class="">
+            <table class="table table-bordered table-striped">
               <thead class="">
                 <tr>
-                  <th scope="col" class="grey">ID</th>
-                  <th scope="col" class="grey">Name</th>
-                  <th scope="col" style="width: 500px;" class="grey">Description</th>
-                  <th scope="col"style="width: 800px;" class="grey">Ingredients</th>
-                  <th scope="col" style="width: 500px;" class="grey">Image Url</th>
-                  <th scope="col" class="">
+                  <th scope="col" class="">ID</th>
+                  <th scope="col" class="">Name</th>
+                  <th scope="col" style="width: 500px;" class="">Description</th>
+                  <th scope="col"style="width: 800px;" class="">Ingredients</th>
+                  <th scope="col" style="width: 500px;" class="">Image Url</th>
                     <!-- <span class="">Edit</span> -->
                   </th>
                 </tr>
@@ -29,7 +28,9 @@ if (!isset($result)) {
                 <td class=''>{$meal['description']}</td>
                 <td class=''>{$meal['ingredients']}</td>
                 <td class='text-break'>
+                <div class='d-flex justify-content-center'>
                 <img  class= 'w-50' src='{$meal['imageUrl']}'>
+                </div>
                 </td>
               </tr>";
     }
