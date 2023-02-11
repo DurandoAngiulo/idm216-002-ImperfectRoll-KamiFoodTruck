@@ -56,6 +56,7 @@ body {
   width: 100%;
   background-color: var(--siteBg);
 }
+
 /* pixel stuff///////////////// */
 .pixelBg {
   background-color: var(--pixelBg);
@@ -204,6 +205,8 @@ body {
 .footerText {
   padding: 0 0 2rem 0;
 }
+/* ///////////////////////////////////// */
+/* Home pages styling */
 
 /* Animations */
 .glow:hover {
