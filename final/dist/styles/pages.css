@@ -1,5 +1,26 @@
 :root {
-  --test: 1;
+  --textColor: #171616;
+  --navTextSelected: #439980;
+  --mobileNavBorderColor: #aaaaaa;
+}
+
+p {
+  font-family: "Poppins-reg", Helvetica, sans-serif;
+  color: var(--textColor);
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.mobile-navbar {
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid var(--mobileNavBorderColor);
+}
+.mobile-nav-image {
+  width: 40px;
 }
 
 @media screen and (min-width: 768px) {
