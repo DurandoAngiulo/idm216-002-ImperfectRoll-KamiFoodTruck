@@ -77,7 +77,7 @@ body {
 }
 /* //////////////// */
 
-/* critical path styling////////// */
+/* General styling////////// */
 .content {
   width: var(--contentWidth);
 }
@@ -105,6 +105,39 @@ body {
   font-family: "Poppins-light", Helvetica, sans-serif;
 }
 
+.button {
+  display: flex;
+  border-radius: 3rem;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 30px;
+  margin: 0.5rem;
+  padding: 1.5rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+.bInactive {
+  background-color: rgb(170, 170, 170);
+}
+.bPrice {
+  justify-content: space-between;
+}
+.bIcon {
+  justify-content: space-between;
+}
+.bSecondary {
+  background-color: rgb(255, 255, 255);
+  border: solid black 2px;
+  color: black;
+}
+.buttonIcon {
+  height: 1.5rem;
+  width: 1.5rem;
+  filter: brightness(100%);
+}
+
+/* critical path styling////////// */
 .kamiLogoImage {
   animation: fadeIn 0.3s 0.1s linear forwards;
   opacity: 0;
@@ -139,37 +172,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
-.button {
-  display: flex;
-  border-radius: 3rem;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 30px;
-  margin: 0.5rem;
-  padding: 1.5rem;
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
-}
-.bInactive {
-  background-color: rgb(170, 170, 170);
-}
-.bPrice {
-  justify-content: space-between;
-}
-.bIcon {
-  justify-content: space-between;
-}
-.bSecondary {
-  background-color: rgb(255, 255, 255);
-  border: solid black 2px;
-  color: black;
-}
-.buttonIcon {
-  height: 1.5rem;
-  width: 1.5rem;
-  filter: brightness(100%);
-}
+
 .figmaContainerMobile {
   display: none;
   position: relative;
