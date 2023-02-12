@@ -1,7 +1,7 @@
 <?php
 include_once __DIR__ . '/app.php';
 $page_title = 'Home';
-include_once __DIR__ . '/_components/header.php';
+include_once __DIR__ . '/_components/header-kami.php';
 ?>
 <body class="pixelBg">
     <div class="px-2 px-md-2 py-5">
