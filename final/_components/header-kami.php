@@ -25,5 +25,6 @@ $document_title = $page_title . ' | ' . $site_title; // Home | J
       crossorigin="anonymous"
     />
   <link rel="stylesheet" href="<?php echo site_url(); ?>/dist/styles/main.css">
+  <link rel="stylesheet" href="<?php echo site_url(); ?>/dist/styles/criticalPath.css">
   <title><?php echo $document_title ; ?></title>
 </head>
