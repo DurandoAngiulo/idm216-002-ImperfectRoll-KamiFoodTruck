@@ -78,7 +78,7 @@ body {
 }
 /* //////////////// */
 
-/* General styling////////// */
+/* critical path styling////////// */
 .content {
   width: var(--contentWidth);
 }
@@ -206,7 +206,6 @@ body {
   padding: 0 0 2rem 0;
 }
 /* ///////////////////////////////////// */
-/* Home pages styling */
 
 /* Animations */
 .glow:hover {

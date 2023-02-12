@@ -1,0 +1,67 @@
+:root {
+  --textColor: #171616;
+  --pTextSize: 14px;
+  --logoTextSize: 32px;
+  --h1TextSize: 24px;
+  --h2TextSize: 18px;
+  --h3TextSize: 16px;
+  --navTextSelected: #439980;
+  --mobileNavBorderColor: #aaaaaa;
+}
+
+h1 {
+  font-family: "Poppins-bold", Helvetica, sans-serif;
+  font-size: var(--h1TextSize);
+}
+
+h2 {
+  font-family: "Poppins-bold", Helvetica, sans-serif;
+  font-size: var(--h2TextSize);
+}
+
+h3 {
+  font-family: "Poppins-semi", Helvetica, sans-serif;
+  font-size: var(--h3TextSize);
+}
+
+p {
+  font-family: "Poppins-reg", Helvetica, sans-serif;
+  color: var(--textColor);
+  font-size: var(--pTextSize);
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.logoFont {
+  font-family: "Moneygame", "Times New Roman", Times, serif;
+  font-size: var(--logoTextSize);
+}
+
+.pageHeading {
+  font-family: "Poppins-semi", Helvetica, sans-serif;
+  font-size: var(--h2TextSize);
+}
+
+.mobile-navbar {
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid var(--mobileNavBorderColor);
+}
+.mobile-nav-image {
+  width: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --test: 1;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  :root {
+    --test: 1;
+  }
+}
