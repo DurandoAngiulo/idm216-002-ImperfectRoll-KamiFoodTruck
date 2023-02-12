@@ -1,3 +1,40 @@
-.red {
-  color: red;
+/* ///////////////////speech bubble */
+
+.box1 {
+  width: 300px;
+  margin: 0 auto;
+  border: 4px solid var(--accentGreen);
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  font-family: arial;
+  position: relative;
 }
+
+.sb8:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid var(--accentGreen);
+  border-top: 10px solid var(--accentGreen);
+  border-bottom: 10px solid transparent;
+  right: 20px;
+  bottom: -23px;
+}
+
+.sb8:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid var(--backgroundColor);
+  border-top: 10px solid var(--backgroundColor);
+  border-bottom: 10px solid transparent;
+  right: 24px;
+  bottom: -13px;
+}
+
+/* ////////////////////////*/
