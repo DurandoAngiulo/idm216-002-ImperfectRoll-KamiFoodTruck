@@ -3,7 +3,7 @@ include_once __DIR__ . '/../app.php';
 $page_title = 'Home | KAMI Food Truck';
 include_once __DIR__ . '/../_components/header-kami.php';
 ?>
-<body class="sitebg">
+<body class="backgroundColor">
 <?php 
 include_once __DIR__ . '/../_components/navbar-mobile.php';
 ?>

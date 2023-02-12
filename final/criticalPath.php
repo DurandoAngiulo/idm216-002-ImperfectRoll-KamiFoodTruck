@@ -3,6 +3,9 @@ include_once __DIR__ . '/app.php';
 $page_title = 'Critical Path | KAMI Food Truck';
 include_once __DIR__ . '/_components/header-kami.php';
 ?>
+<style><?php 
+include_once __DIR__ . '/../dist/styles/criticalPath.css';
+?></style>
 <body class="sitebg">
     <!-- wrapper -->
     <div class="px-2 px-md-2 py-5">
