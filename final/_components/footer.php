@@ -1,5 +1,5 @@
-<div class="mt-5 ">
-    <p class="text-center mb-2 text-secondary pixelFont">
+<div class="mb-5 footer ">
+    <p class="text-center mb-5 text-secondary pixelFont">
       &copy;<?php echo date('Y'); ?> Imperfect Roll, IDM 216. All
       rights reserved.
     </p>

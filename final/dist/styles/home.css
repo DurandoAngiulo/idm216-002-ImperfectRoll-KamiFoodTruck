@@ -1,24 +1,25 @@
 /* ///////////////////speech bubble */
 
 .box1 {
-  width: 300px;
+  width: 250px;
   margin: 0 auto;
-  border: 4px solid var(--accentGreen);
-  padding: 20px;
+  border: 1px solid var(--textColor);
+  border-radius: 5px;
+  padding: 12px;
   text-align: center;
   font-weight: 900;
   font-family: arial;
   position: relative;
 }
 
-.sb8:before {
+/* .sb8:before {
   content: "";
   width: 0px;
   height: 0px;
   position: absolute;
   border-left: 10px solid transparent;
-  border-right: 10px solid var(--accentGreen);
-  border-top: 10px solid var(--accentGreen);
+  border-right: 10px solid var(--textColor);
+  border-top: 10px solid var(--textColor);
   border-bottom: 10px solid transparent;
   right: 20px;
   bottom: -23px;
@@ -35,6 +36,112 @@
   border-bottom: 10px solid transparent;
   right: 24px;
   bottom: -13px;
+} */
+
+/* heading////////////////////////*/
+.kami-duck {
+  width: 60px;
 }
 
-/* ////////////////////////*/
+.heading-border {
+  border-bottom: 1px solid var(--textColor);
+}
+
+/* //////header image */
+
+.tpIcon {
+  width: 30px;
+}
+.todays-pick {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  width: 40%;
+}
+.menu-header-image {
+  /* width: 100%; */
+  position: relative;
+  height: 150px;
+  background-image: url(https://res.cloudinary.com/dsysuymw2/image/upload/v1676062781/idm216/tteok_bwa8ey.jpg);
+  background-size: cover;
+  background-position: center center;
+  border-radius: 15px;
+  border: 1px solid var(--textColor);
+}
+
+.tp-name {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0 0 16px 16px;
+  width: 100%;
+}
+
+/* ///////slider */
+.foodType {
+  width: 15rem;
+}
+.foodCategories {
+  display: flex;
+  justify-content: space-between;
+}
+.foodTypeOption {
+  cursor: pointer;
+  text-align: center;
+  width: 15rem;
+}
+.foodTypeSlider {
+  position: relative;
+  left: 0rem;
+  background-color: black;
+  height: 2px;
+  width: 5rem;
+  animation: slide 1s ease-in-out infinite;
+}
+.foodTypeUnderbar {
+  display: flex;
+  background-color: rgb(167, 167, 167);
+  height: 2px;
+  transition: all 0.2s ease-out;
+}
+
+/* menu item button////// */
+
+.addButton {
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: black;
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 40px;
+  width: 40px;
+  transition: all 0.2s ease-out;
+}
+
+.clicked {
+  filter: opacity(0.5);
+  transform: scale(0.9);
+  transition: all 0.2s ease-out;
+}
+
+/* ////menu item */
+.menu-item-container {
+  border-radius: 15px;
+  border: 1px solid var(--textColor);
+  height: 150px;
+}
+
+.menu-item-image {
+  border: 1px solid var(--textColor);
+  border-radius: 15px 0 0 15px;
+  width: 40%;
+  height: 150px;
+}
+
+.menu-item-content-container {
+  height: 150px;
+  width: 60%;
+}

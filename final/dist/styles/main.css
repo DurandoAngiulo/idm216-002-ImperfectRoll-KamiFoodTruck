@@ -104,6 +104,7 @@ a {
 
 .mobile-navbar {
   position: fixed;
+  background-color: var(--backgroundColor);
   bottom: 0;
   border-top: 1px solid var(--mobileNavBorderColor);
 }
@@ -111,6 +112,9 @@ a {
   width: 40px;
 }
 
+.footer {
+  height: 120px;
+}
 @media screen and (min-width: 768px) {
   :root {
     --test: 1;
