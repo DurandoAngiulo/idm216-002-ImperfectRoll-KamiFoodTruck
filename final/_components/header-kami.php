@@ -4,9 +4,15 @@ if (!isset($page_title)) {
     $page_title = '🚨 Missing Title 🚨';
 }
 $site_title = 'Imperfect Roll Final';
-$document_title = $page_title . ' | ' . $site_title; // Home | J
+$document_title = $page_title . ' | ' . $site_title; // Home | 
 
+// if($page_title ='Home'){
+//   $favicon = '/dist/images/dice.png';
+// }else{
+//   $favicon = '/dist/images/kami-fav-icon.png';
+// }
 ?>
+<!-- /dist/images/kami-fav-icon.png -->
 <!DOCTYPE html>
 <html lang="en">
 
