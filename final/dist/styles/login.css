@@ -1,0 +1,43 @@
+.input{
+    width: 90vw;
+    background-color: var(--backgroundColor);
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #171616;
+    border-width: 1px;
+}
+
+.btn{
+    font-family: "Poppins-reg", Helvetica, sans-serif;
+    border-radius: 20rem;
+}
+
+.btn-link{
+    color: var(--accentGreen);
+    --bs-btn-hover-color: #24775e;
+    --bs-btn-active-color: #24775e;
+}
+
+.btn-primary{
+    --bs-btn-bg: var(--textColor);
+    --bs-btn-active-bg: #2d2b2b;
+    --bs-btn-hover-bg: #2d2b2b;
+    --bs-btn-color: #FFFFFF;
+    border-style: none;
+}
+
+.btn-outline-primary{
+
+    --bs-btn-border-color: var(--textColor);
+    --bs-btn-hover-color: var(--textColor);
+    --bs-btn-color: var(--textColor);
+    --bs-btn-hover-border-color: #2d2b2b;
+    --bs-btn-active-border-color: #2d2b2b;
+    --bs-btn-active-color: #2d2b2b;
+    --bs-btn-active-bg: var(--backgroundColor);
+    --bs-btn-hover-bg:var(--backgroundColor);
+}
+
+.kami-duck {
+    width: 130px;
+  }
