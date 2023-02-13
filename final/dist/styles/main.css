@@ -103,6 +103,14 @@ a {
   color: var(--accentGreen);
 }
 
+.modalAccent {
+  background-color: var(--modalPink);
+}
+
+.modalBackground {
+  background-color: var(--backgroundColor);
+}
+
 .mobile-navbar {
   position: fixed;
   background-color: var(--backgroundColor);

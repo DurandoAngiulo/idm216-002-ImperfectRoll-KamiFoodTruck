@@ -95,7 +95,9 @@ include_once __DIR__ . '/../dist/styles/home.css';
     </div>
    </div>
 
-   <!-- modal -->
+   <!-- MODAL -->
+
+
     <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Launch demo modal
@@ -103,14 +105,34 @@ include_once __DIR__ . '/../dist/styles/home.css';
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable ">
-    <div class="modal-content">
-      <div class="modal-header border-bottom-0">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <div class="modal-dialog modal-dialog-scrollable mx-0 mt-4 ">
+    <div class="modal-content modalBackground">
+      <div class=" modal-header-details border-bottom-0 modalAccent p-0">
+        <div class="w-100 d-flex justify-content-end pe-2 pt-2">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="image-cropper-container ">
+                <img class="cropped-image" src="https://res.cloudinary.com/dsysuymw2/image/upload/v1676062783/idm216/bibimbap_z5qfu8.jpg">  
+            </div>
+        </div>
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            
       </div>
-      <div class="modal-body">
-        ...
+      <div class="modal-body px-3 ">
+        <div class="d-flex justify-content-between">
+            <h2> Kimchi</h2>
+            <h2> 1$</h2>
+        </div>
+        <p class="mb-4">Fermented cabbage with ginger and garlic.</p>
+        <h3 class="">Ingredients</h3>
+        <p class="mb-4">
+            Napa Cabbage, Natural rock salt, Gochugaru 
+            (Korean chili flakes), Daikon radish, Korean 
+            fish sauce, Carrots, Ginger, Garlic, Sugar, 
+            Onion
+        </p>
+        <h3 class="">Customize spice level</h3>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

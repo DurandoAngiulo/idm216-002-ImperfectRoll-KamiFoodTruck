@@ -139,9 +139,37 @@
   border-radius: 15px 0 0 15px;
   width: 40%;
   height: 150px;
+  object-fit: cover;
 }
 
 .menu-item-content-container {
   height: 150px;
   width: 60%;
+}
+
+/* //////modal */
+
+.modal-header-details {
+  height: 330px;
+  background-image: url(../dist/images/modal-details.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.image-cropper-container {
+  width: 310px;
+  height: 310px;
+  /* position: relative; */
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid var(--textColor);
+}
+
+.cropped-image {
+  /* display: inline; */
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  /* position: absolute; */
 }
