@@ -1,0 +1,28 @@
+.input{
+    width: 90vw;
+    background-color: #FFFAED;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #171616;
+    border-width: 1px;
+}
+
+.btn{
+    font-family: "Poppins-reg", Helvetica, sans-serif;
+    border-radius: 20rem;
+}
+
+.btn-link{
+    color: var(--accentGreen);
+}
+
+.btn-primary{
+    --bs-btn-bg: var(--textColor);
+    --bs-btn-color: #FFFFFF;
+    border-style: none;
+}
+
+.btn-outline-primary{
+    --bs-btn-border-color: var(--textColor);
+    --bs-btn-color: var(--textColor);
+}
