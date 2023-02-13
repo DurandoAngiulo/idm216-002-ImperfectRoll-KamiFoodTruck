@@ -158,8 +158,8 @@
 }
 
 .image-cropper-container {
-  width: 310px;
-  height: 310px;
+  width: 300px;
+  height: 300px;
   /* position: relative; */
   overflow: hidden;
   border-radius: 50%;

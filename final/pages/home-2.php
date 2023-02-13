@@ -103,7 +103,7 @@ include_once __DIR__ . '/../dist/styles/home.css';
   Launch demo modal
 </button>
 
-<!-- Modal -->
+<!-- Modal meal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable mx-0 mt-4 ">
     <div class="modal-content modalBackground">
@@ -133,6 +133,10 @@ include_once __DIR__ . '/../dist/styles/home.css';
             Onion
         </p>
         <h3 class="">Customize spice level</h3>
+        <div class="d-flex justify-content-center mb-4">
+            <img src="<?php echo site_url(); ?>/dist/images/thermo.png">
+        </div>
+        <h3 class="">Add Protein (+ 1$)</h3>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
