@@ -8,8 +8,10 @@ include_once __DIR__ . '/../_components/header-kami.php';
 include_once __DIR__ . '/../dist/styles/login.css';
 ?></style>
 
-   
-   <h1 class="logoFont text-center mt-5 mb-3">KAMI</h1>
+<div class="mt-4">
+   <img class="kami-duck mx-auto d-block" src="<?php echo site_url(); ?>/dist/images/kami-duck.png">
+   <h1 class="logoFont text-center mb-3">KAMI</h1>
+</div>
 
    <div class="d-flex justify-content-center">
         <form>
@@ -36,7 +38,7 @@ include_once __DIR__ . '/../dist/styles/login.css';
 
         <div class="d-grid gap-2 px-3">
             <button type="button" class="btn btn-primary p-2">Create Account</button>
-            <button type="button" class="btn btn-outline-primary p-2">Sign In</button>
+            <button type="button" class="btn btn-outline-primary p-2 mb-4">Sign In</button>
         </div>
 
     <?php include_once __DIR__ . '/../_components/footer.php';?>
