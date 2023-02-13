@@ -49,13 +49,13 @@ include_once __DIR__ . '/../dist/styles/home.css';
     </div>
     <!-- menu items -->
     <div class="menu-item-container mb-3 d-flex">
-        <img class="menu-item-image" src="https://res.cloudinary.com/dsysuymw2/image/upload/v1676062783/idm216/bibimbap_z5qfu8.jpg">
+        <img class="menu-item-image" src="https://res.cloudinary.com/dsysuymw2/image/upload/v1676320861/idm216/kimchi_n1vhcy.jpg">
         <div class="menu-item-content-container pt-3 px-2">
             <div class="d-flex justify-content-between mb-2">
-                <h3>Bibimbap</h3>
-                <h3>$10</h3>
+                <h3>Kimchi</h3>
+                <h3>$1</h3>
             </div>
-            <p>Rice with various vegetables and protein.</p>
+            <p>Fermented cabbage with ginger and garlic.</p>
             <div class="d-flex justify-content-end mt-2">
                 <div class="addButton">
                     <p class="text-light display-6 align-self-center d-inline-block pt-1">+</p>
@@ -94,7 +94,31 @@ include_once __DIR__ . '/../dist/styles/home.css';
         </div>
     </div>
    </div>
-    
+
+   <!-- modal -->
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable ">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
     <?php include_once __DIR__ . '/../_components/footer.php';
 ?>
