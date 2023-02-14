@@ -34,6 +34,7 @@
   /* ///font sizes */
   --pTextSize: 14px;
   --logoTextSize: 32px;
+  --logoTextSizeSm: 24px;
   --h1TextSize: 24px;
   --h2TextSize: 18px;
   --h3TextSize: 16px;
@@ -80,9 +81,18 @@ a {
   text-decoration: none !important;
 }
 
+strong{
+  font-family: "Poppins-bold", Helvetica, sans-serif;
+}
+
 .logoFont {
   font-family: "Moneygame", "Times New Roman", Times, serif;
   font-size: var(--logoTextSize);
+}
+
+.logoFontSm {
+  font-family: "Moneygame", "Times New Roman", Times, serif;
+  font-size: var(--logoTextSizeSm);
 }
 
 .pageHeading {
