@@ -38,7 +38,5 @@ include_once __DIR__ . '/../dist/styles/login.css';
 
         <div class="d-grid gap-2 px-3">
             <button type="button" class="btn btn-primary p-2">Create Account</button>
-            <button type="button" class="btn btn-outline-primary p-2 mb-4">Sign In</button>
+            <button type="button" class="input btn btn-outline-primary p-2 mb-4">Sign In</button>
         </div>
-
-    <?php include_once __DIR__ . '/../_components/footer.php';?>

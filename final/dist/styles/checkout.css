@@ -1,0 +1,108 @@
+.container-b{
+    border-radius: 15px;
+    border: 1px solid var(--mobileNavBorderColor);
+    z-index: 14;
+}
+
+.btn{
+    font-family: "Poppins-reg", Helvetica, sans-serif;
+    border-radius: 20rem;
+}
+
+.btn-primary{
+    --bs-btn-bg: var(--textColor);
+    --bs-btn-active-bg: #2d2b2b;
+    --bs-btn-hover-bg: #2d2b2b;
+    --bs-btn-color: #FFFFFF;
+    border-style: none;
+}
+
+.btn-outline-primary{
+
+    --bs-btn-border-color: var(--textColor);
+    --bs-btn-hover-color: var(--textColor);
+    --bs-btn-color: var(--textColor);
+    --bs-btn-hover-border-color: #2d2b2b;
+    --bs-btn-active-border-color: #2d2b2b;
+    --bs-btn-active-color: #2d2b2b;
+    --bs-btn-active-bg: var(--backgroundColor);
+    --bs-btn-hover-bg:var(--backgroundColor);
+}
+
+.btn-link{
+    color: var(--accentGreen);
+    --bs-btn-hover-color: #24775e;
+    --bs-btn-active-color: #24775e;
+}
+
+.btn-secondary{
+    --bs-btn-bg: var(--accentGreen);
+    --bs-btn-active-bg: #24775e;
+    --bs-btn-hover-bg: #24775e;
+    --bs-btn-color: #FFFFFF;
+    border-style: none;
+}
+
+.btn-secondary{
+    --bs-btn-bg: var(--accentGreen);
+    --bs-btn-border-color:  var(--accentGreen);
+    --bs-btn-active-bg: var(--accentGreen);
+    --bs-btn-active-border-color: var(--textColor);
+    --bs-btn-hover-border-color: var(--textColor);
+    border-width: 2px;
+    --bs-btn-hover-bg: var(--accentGreen);
+
+}
+
+.btn-outline-secondary{
+
+    --bs-btn-border-color: var(--accentGreen);
+    --bs-btn-hover-color: var(--accentGreen);
+    --bs-btn-color: var(--accentGreen);
+    --bs-btn-hover-border-color: #24775e;
+    --bs-btn-active-border-color: #24775e;
+    --bs-btn-active-color: #24775e;
+    --bs-btn-active-bg: var(--backgroundColor);
+    --bs-btn-hover-bg:var(--backgroundColor);
+}
+
+.input{
+
+    background-color: var(--backgroundColor);
+    border-radius: 6px;
+    border-style: solid;
+    border-color: var(--mobileNavBorderColor);
+    border-width: 1px;
+}
+
+.form-check-input:checked {
+    background-color: var(--accentGreen);
+    border-color: var(--accentGreen);
+}
+
+.sticky{
+    background-color: var(--backgroundColor);
+    border-top: 1px solid var(--mobileNavBorderColor);
+}
+
+.empty{
+    height: 100px;
+}
+
+.abs-position{
+    position: absolute;
+    top: 5px;
+    right: -50px;
+    /* overflow-x: hidden; */
+    z-index: 10;
+}
+.kami-duck{
+    height: 6.25rem;
+    max-width: 100%;
+    transform: rotate(-0.1turn);
+}
+
+.page{
+    max-width: 100%;
+    overflow: hidden;
+}
