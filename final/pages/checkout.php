@@ -109,7 +109,7 @@ include_once __DIR__ . '/../dist/styles/checkout.css';
         <button type="button" class="col btn btn-outline-primary p-2">Back</button>
 
         <button type="button" class="btn btn-primary p-2 px-4 mx-1 col-8">
-            <div class="d-flex flex-row justify-content-between mb-2">
+            <div class="d-flex flex-row justify-content-between">
                 <div>Checkout</div>
                 <div>$14.16</div>
             </div>
