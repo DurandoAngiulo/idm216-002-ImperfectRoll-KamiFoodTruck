@@ -37,6 +37,6 @@ include_once __DIR__ . '/../dist/styles/login.css';
     <button type="button" class="btn btn-link ms-2 pb-4" >Forgot Password?</button>
 
         <div class="d-grid gap-2 px-3">
-            <button type="button" class="btn btn-primary p-2">Create Account</button>
+            <button onclick="window.location.href = '<?php echo site_url(); ?>/pages/checkout.php';" type="button" class="btn btn-primary p-2">Create Account</button>
             <button type="button" class="input btn btn-outline-primary p-2 mb-4">Sign In</button>
         </div>
