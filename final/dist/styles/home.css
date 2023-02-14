@@ -173,3 +173,30 @@
   width: 100%;
   /* position: absolute; */
 }
+
+.protein-container {
+  background-color: var(--backgroundDarker);
+  border-radius: 10px;
+  height: 120px;
+}
+
+.button {
+  display: flex;
+  border-radius: 3rem;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  color: var(--backgroundColor);
+  background-color: var(--textColor);
+}
+
+.bIncrement {
+  background-color: var(--backgroundColor);
+  border: solid black 2px;
+  color: var(--textColor);
+  width: 120px;
+}
+
+.addToCart {
+  width: 180px;
+}

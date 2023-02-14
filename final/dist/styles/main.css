@@ -46,6 +46,7 @@
   --inactive: #a6a6a6;
   --mobileNavBorderColor: #aaaaaa;
   --modalPink: #f9c6b6;
+  --backgroundDarker: #fff3d1;
 }
 
 body {
@@ -74,7 +75,7 @@ p {
   font-family: "Poppins-reg", Helvetica, sans-serif;
   color: var(--textColor);
   font-size: var(--pTextSize);
-  margin-bottom: 0;
+  margin: 0;
 }
 
 a {
