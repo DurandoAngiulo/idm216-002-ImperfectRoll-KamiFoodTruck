@@ -12,7 +12,6 @@ $document_title = $page_title . ' | ' . $site_title; // Home |
 //   $favicon = '/dist/images/kami-fav-icon.png';
 // }
 ?>
-<!-- /dist/images/kami-fav-icon.png -->
 <!DOCTYPE html>
 <html lang="en">
 
