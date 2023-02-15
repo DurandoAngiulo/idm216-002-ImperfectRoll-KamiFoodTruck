@@ -80,7 +80,12 @@ p {
 }
 
 a {
+  font-family: "Poppins-reg", Helvetica, sans-serif;
+  color: var(--textColor);
+  font-size: var(--pTextSize);
+  margin: 0;
   text-decoration: none !important;
+  color: var(--textColor);
 }
 
 strong {

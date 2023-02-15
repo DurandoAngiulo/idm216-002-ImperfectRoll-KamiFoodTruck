@@ -38,7 +38,7 @@ include_once __DIR__ . '/../dist/styles/home.css';
     <div class="d-flex justify-content-center mb-3">
         <div class="foodType">
             <div class="foodCategories">
-                <p class="foodTypeOption meals">Meals</p>
+            <a href="<?php echo site_url(); ?>/pages/home.php" class="foodTypeOption sides">Meals</a>
                 <p class="foodTypeOption sides">Sides</p>
                 <p class="foodTypeOption drinks">Drinks</p>
             </div>

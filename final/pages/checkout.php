@@ -109,10 +109,12 @@ include_once __DIR__ . '/../dist/styles/checkout.css';
         <button type="button" class="col btn btn-outline-primary p-2">Back</button>
 
         <button onclick="window.location.href = '<?php echo site_url(); ?>/pages/order-confirmation.php';"type="button" class="btn btn-primary p-2 px-4 mx-1 col-8">
-            <div class="d-flex flex-row justify-content-between mb-2">
-                <div>Checkout</div>
-                <div>$14.16</div>
-            </div>
+            
+                <div class="d-flex justify-content-between">
+                    <p class="text-light"> Checkout</p>
+                    <p class="text-light">$14.16</p>
+                </div>
+    
         </button>
     </div>
 </div>

@@ -87,10 +87,10 @@ include_once __DIR__ . '/../dist/styles/cart.css';
                 </div>
             </div>
             <div class="heading-border d-flex justify-content-between mb-4"></div>
-            <div class="checkoutBtn  px-3 mb-5">
+            <a  href="<?php echo site_url(); ?>/pages/login.php" class="checkoutBtn  px-3 mb-5">
             <p  class=" mt-1 text-light">Login to checkout</p>
             <p  class=" mt-1 text-light">$12</p>
-        </div>
+        </a>
         
    </div>
 
