@@ -38,7 +38,7 @@ include_once __DIR__ . '/../dist/styles/home.css';
     <div class="d-flex justify-content-center mb-3">
         <div class="foodType">
             <div class="foodCategories">
-                <p class="foodTypeOption meals">Meals</p>
+            <a href="<?php echo site_url(); ?>/pages/home.php" class="foodTypeOption sides">Meals</a>
                 <p class="foodTypeOption sides">Sides</p>
                 <p class="foodTypeOption drinks">Drinks</p>
             </div>
@@ -99,9 +99,9 @@ include_once __DIR__ . '/../dist/styles/home.css';
 
 
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Launch demo modal
-</button>
+</button> -->
 
 <!-- Modal meal -->
 <div class="modal fade" id="sideDishModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -114,7 +114,7 @@ include_once __DIR__ . '/../dist/styles/home.css';
             </div>
             <div class="d-flex justify-content-center">
                 <div class="image-cropper-container ">
-                    <img class="cropped-image" src="https://res.cloudinary.com/dsysuymw2/image/upload/v1676062783/idm216/bibimbap_z5qfu8.jpg">  
+                    <img class="cropped-image" src="https://res.cloudinary.com/dsysuymw2/image/upload/v1676320861/idm216/kimchi_n1vhcy.jpg">  
                 </div>
             </div>
         </div>

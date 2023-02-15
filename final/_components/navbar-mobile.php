@@ -11,7 +11,7 @@
         </div>
         <p class="text-center">Orders</p>
     </a>
-    <a class="pt-1 d-inline-block" href="<?php echo site_url(); ?>/pages/home.php">
+    <a class="pt-1 d-inline-block" href="<?php echo site_url(); ?>/pages/cart.php">
         <div class="d-flex flex-wrap justify-content-center"> 
             <img class="mobile-nav-image" src="<?php echo site_url(); ?>/dist/images/icons/Cart.png">
         </div>

@@ -80,10 +80,15 @@ p {
 }
 
 a {
+  font-family: "Poppins-reg", Helvetica, sans-serif;
+  color: var(--textColor);
+  font-size: var(--pTextSize);
+  margin: 0;
   text-decoration: none !important;
+  color: var(--textColor);
 }
 
-strong{
+strong {
   font-family: "Poppins-bold", Helvetica, sans-serif;
 }
 
@@ -133,7 +138,7 @@ strong{
 }
 
 .footer {
-  height: 120px;
+  height: 60px;
 }
 @media screen and (min-width: 768px) {
   :root {

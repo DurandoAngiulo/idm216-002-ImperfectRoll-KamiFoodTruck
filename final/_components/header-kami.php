@@ -30,6 +30,7 @@ $document_title = $page_title . ' | ' . $site_title; // Home |
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="<?php echo site_url(); ?>/dist/styles/normalize.css">  
   <link rel="stylesheet" href="<?php echo site_url(); ?>/dist/styles/main.css">
   <!-- <link rel="stylesheet" href="<?php echo site_url(); ?>/dist/styles/criticalPath.css"> -->
   <title><?php echo $document_title ; ?></title>
