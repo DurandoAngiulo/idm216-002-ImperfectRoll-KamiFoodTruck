@@ -83,7 +83,7 @@ a {
   text-decoration: none !important;
 }
 
-strong{
+strong {
   font-family: "Poppins-bold", Helvetica, sans-serif;
 }
 
@@ -133,7 +133,7 @@ strong{
 }
 
 .footer {
-  height: 120px;
+  height: 60px;
 }
 @media screen and (min-width: 768px) {
   :root {
