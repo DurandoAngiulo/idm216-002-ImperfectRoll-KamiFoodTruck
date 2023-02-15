@@ -1,0 +1,20 @@
+.animation-content{
+    height: 100vh;
+    align-items: center;
+}
+.start-link{
+    color: black;
+}
+
+@keyframes kamiSpin{
+    0%{
+        transform: scale(.01);
+    }100%{
+        transform: scale(1)
+        rotate(360deg);
+    }
+}
+.kami-spin{
+    transform: scale(.01);
+    animation: kamiSpin 1s cubic-bezier(0,0,.28,1.02) .5s forwards;
+}
