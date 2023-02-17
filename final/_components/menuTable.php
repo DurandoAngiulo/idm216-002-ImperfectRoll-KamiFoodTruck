@@ -9,6 +9,7 @@ if (!isset($result)) {
                 <tr>
                   <th scope="col" class="">ID</th>
                   <th scope="col" class="">Name</th>
+                  <th scope="col" class="">Price</th>
                   <th scope="col" style="width: 500px;" class="">Description</th>
                   <th scope="col"style="width: 800px;" class="">Ingredients</th>
                   <th scope="col" style="width: 500px;" class="">Image Url</th>
@@ -25,6 +26,7 @@ if (!isset($result)) {
            
                 <th scope='row' class=''>{$meal['id']}</th>
                 <td class=''>{$meal['name']}</td>
+                <td class=''>{$meal['price']}</td>
                 <td class=''>{$meal['description']}</td>
                 <td class=''>{$meal['ingredients']}</td>
                 <td class='text-break'>
