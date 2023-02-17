@@ -10,7 +10,12 @@ include_once __DIR__ . '/../_components/navbar-mobile.php';
 <style><?php 
 include_once __DIR__ . '/../dist/styles/home.css';
 ?></style>
+<?php 
+$query ='SELECT * FROM menu ORDER BY name';
+$result = mysqli_query($db_connection, $query);
 
+
+?>
    
    <h1 class="logoFont text-center mt-5 mb-3">KAMI</h1>
    <div class=" box1 sb8 mb-2">
@@ -48,51 +53,7 @@ include_once __DIR__ . '/../dist/styles/home.css';
         </div>
     </div>
     <!-- menu items -->
-    <div class="menu-item-container mb-3 d-flex">
-        <img class="menu-item-image" src="https://res.cloudinary.com/dsysuymw2/image/upload/v1676320861/idm216/kimchi_n1vhcy.jpg">
-        <div class="menu-item-content-container pt-3 px-2">
-            <div class="d-flex justify-content-between mb-2">
-                <h3>Kimchi</h3>
-                <h3>$1</h3>
-            </div>
-            <p>Fermented cabbage with ginger and garlic.</p>
-            <div class="d-flex justify-content-end mt-2">
-                <div  data-bs-toggle="modal" data-bs-target="#sideDishModal" class="addButton">
-                    <p class="text-light display-6 align-self-center d-inline-block pt-1">+</p>
-                </div>
-            </div> 
-        </div>
-    </div>
-    <div class="menu-item-container mb-3 d-flex">
-        <img class="menu-item-image" src="https://res.cloudinary.com/dsysuymw2/image/upload/v1676062781/idm216/jae-yook_qfxmdv.jpg">
-        <div class="menu-item-content-container pt-3 px-2">
-            <div class="d-flex justify-content-between mb-2">
-                <h3>Jae Yook Bok Um</h3>
-                <h3>$10</h3>
-            </div>
-            <p>Stir-fried marinated pork with kimchi.</p>
-            <div class="d-flex justify-content-end mt-2">
-                <div class="addButton">
-                    <p class="text-light display-6 align-self-center d-inline-block pt-1">+</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="menu-item-container mb-3 d-flex">
-        <img class="menu-item-image" src="https://res.cloudinary.com/dsysuymw2/image/upload/v1676062783/idm216/bulgogi_srhtfb.jpg">
-        <div class="menu-item-content-container pt-3 px-2">
-            <div class="d-flex justify-content-between mb-2">
-                <h3>Bulgogi</h3>
-                <h3>$10</h3>
-            </div>
-            <p>Marinated beef with rice and vegetables.</p>
-            <div class="d-flex justify-content-end mt-2">
-                <div class="addButton">
-                    <p class="text-light display-6 align-self-center d-inline-block pt-1">+</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php include __DIR__ . '/../_components/sideItem.php'; ?>
    </div>
 
    <!-- MODAL -->
@@ -104,7 +65,7 @@ include_once __DIR__ . '/../dist/styles/home.css';
 </button> -->
 
 <!-- Modal meal -->
-<div class="modal fade" id="sideDishModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="sideDishModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable mx-0 mt-5 ">
     <div class="modal-content modalBackground">
       <div class="modal-body p-0">
@@ -147,7 +108,7 @@ include_once __DIR__ . '/../dist/styles/home.css';
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
     <?php include_once __DIR__ . '/../_components/footer.php';
 ?>

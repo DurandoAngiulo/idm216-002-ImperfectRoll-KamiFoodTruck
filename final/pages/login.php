@@ -27,10 +27,6 @@ include_once __DIR__ . '/../dist/styles/login.css';
             <p>
             <label for="password" class="mb-1">Password</label></br>
             <input type="text" id="password" name="password" class="mb-2 p-2 input"></p>
-
-            <p>
-            <label for="password2" class="mb-1">Repeat Password</label></br>
-            <input type="text" id="password2" name="password2" class=" p-2 input"></p>
         </form>
     </div>
 
