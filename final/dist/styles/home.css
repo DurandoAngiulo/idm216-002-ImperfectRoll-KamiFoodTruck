@@ -105,22 +105,26 @@
 .menu-item-container {
   border-radius: 15px;
   border: 1px solid var(--textColor);
-  height: 150px;
+  height: 180px;
 }
 
 .menu-item-image {
   border: 1px solid var(--textColor);
   border-radius: 15px 0 0 15px;
   width: 40%;
-  height: 150px;
+  height: 180px;
   object-fit: cover;
 }
 
 .menu-item-content-container {
-  height: 150px;
+  height: 180px;
   width: 60%;
 }
 
+.button-container {
+  width: 100%;
+  align-self: flex-end;
+}
 /* //////modal */
 
 .modal-header-details {
