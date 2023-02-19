@@ -159,6 +159,17 @@
   height: 120px;
 }
 
+/* ///radio button stuff   */
+[type="radio"]:checked + label > div {
+  border: 1px solid var(--textColor);
+  box-shadow: 0 0 2px 2px var(--textColor);
+}
+
+.input-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
 .button {
   display: flex;
   border-radius: 3rem;
