@@ -27,11 +27,14 @@ function getOrderByUserId($userId){
     global $db_connection;
     $query= "SELECT * FROM orders WHERE user_id = {$userId} AND status = 'active' LIMIT 1";
     $result = mysqli_query($db_connection, $query);
-    var_dump($result);
+    // var_dump($result);
     if($result->num_rows === 1){
-    return mysqli_fetch_assoc($result);
+    return $result;
     } else{ 
-        return createNewOrderByUserId($userId);
+        createNewOrderByUserId($userId);
+        $query= "SELECT * FROM orders WHERE user_id = {$userId} AND status = 'active' LIMIT 1";
+        $result = mysqli_query($db_connection, $query);
+        return $result;
         
 
     }

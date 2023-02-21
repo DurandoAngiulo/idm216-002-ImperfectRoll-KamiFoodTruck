@@ -32,3 +32,8 @@ include_once __DIR__ . '/_includes/users.php';
 
 $currentUser= '1';
 $currentUserOrder = getOrderByUserId($currentUser);
+$order = [];
+while ($result = mysqli_fetch_array($currentUserOrder)) {
+$order = $result;
+}
+var_dump($order);
