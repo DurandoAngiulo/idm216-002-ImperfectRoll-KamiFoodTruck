@@ -12,13 +12,20 @@ include_once __DIR__ . '/../dist/styles/intro.css';
         <div class="left-squiggle align-self-start">
             <img src="../dist/images/red-squiggle.png" alt="Decorative squiggle">
         </div>
-        <div>
             <div class="h-20 kami-spin">
                 <img src="../dist/images/kami-logo.png" alt="Kami logo">
             </div>
-                <h1 class="text-center m-3"><a class="start-link" href="<?php echo site_url(); ?>/pages/home.php">Start Demo</a></h1>
-        </div>
         <div class="left-squiggle align-self-end">
             <img src="../dist/images/yellow-squiggle.png" alt="Decorative squiggle">
         </div>
     </div>
+<script>
+
+const object = document.querySelector('.kami-spin');
+
+setTimeout(function(){
+    console.log("function ran");
+    window.location = "<?php echo site_url(); ?>/pages/home.php"
+}, 2000);
+
+</script>

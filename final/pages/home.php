@@ -17,7 +17,6 @@ $result = mysqli_query($db_connection, $query);
 
 
 ?>
-   
    <h1 class="logoFont text-center mt-5 mb-3">KAMI</h1>
    <div class=" box1 sb8 mb-2">
     <h3>The wait time is <span class="accent">13 Minutes</span></h3>
