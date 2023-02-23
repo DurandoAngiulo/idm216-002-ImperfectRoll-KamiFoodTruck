@@ -27,19 +27,19 @@
             <h3 class="mb-4">Add Protein (+ 1$)</h3>
             <div class="d-flex justify-content-between mb-4">
                 <!-- protein inputs -->
-                <input  id="chicken<?php echo $meal['id']; ?>" type="radio" name="protein" class=" input-hidden">
+                <input  id="chicken<?php echo $meal['id']; ?>" value="chicken" type="radio" name="protein" class=" input-hidden">
                 <label  class="" for="chicken<?php echo $meal['id']; ?>">
                     <div class="protein-container d-flex justify-content-center align-items-center">
                         <img class="" src="<?php echo site_url(); ?>/dist/images/chicken.png">
                     </div>
                 </label>
-                <input  id="beef<?php echo $meal['id']; ?>" type="radio" name="protein" class=" input-hidden">
+                <input  id="beef<?php echo $meal['id']; ?>" type="radio" value="beef" name="protein" class=" input-hidden">
                 <label  class="" for="beef<?php echo $meal['id']; ?>">
                     <div class="protein-container d-flex justify-content-center align-items-center">
                         <img class="" src="<?php echo site_url(); ?>/dist/images/beef.png">
                     </div>
                 </label>
-                <input  id="tofu<?php echo $meal['id']; ?>" type="radio" name="protein" class=" input-hidden">
+                <input  id="tofu<?php echo $meal['id']; ?>" type="radio"  value="tofu" name="protein" class=" input-hidden">
                 <label  class="" for="tofu<?php echo $meal['id']; ?>">
                     <div class="protein-container d-flex justify-content-center align-items-center">
                         <img class="" src="<?php echo site_url(); ?>/dist/images/tofu.png">
@@ -51,6 +51,9 @@
             <div class="input-group">
                 <textarea class="form-control modalBackground border-dark" placeholder="Add note..." type="text" name="note"></textarea>
             </div>
+            <input name="menu_id" value="<?php echo $meal['id']; ?>" type="hidden"/>
+            <input name="order_id" value="1" type="hidden"/>
+            <input name="spice_level" value="mild" type="hidden"/>
         </div>
       </div>
       <div class="modal-footer justify-content-between flex-wrap">
@@ -58,7 +61,7 @@
             <p class="text-center align-self-center mt-1"><span class="me-4">-</span>1<span class="ms-4">+</span></p>
         </div>
         <div class="button addToCart" type="submit">
-            <p  data-bs-dismiss="modal" class="text-center align-self-center mt-1 text-light">Add to Cart</p>
+            <button  data-bs-dismiss="modal" class="text-center align-self-center mt-1 text-light">Add to Cart</button>
         </div>
       </div>
     </form>

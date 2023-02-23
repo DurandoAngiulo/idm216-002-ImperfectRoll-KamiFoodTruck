@@ -28,3 +28,12 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist_host)) {
 // Include the database connection. Order matters and should always be first
 include_once __DIR__ . '/_includes/database.php';
 include_once __DIR__ . '/_includes/helper-functions.php';
+include_once __DIR__ . '/_includes/users.php';
+
+$currentUser= '1';
+$currentUserOrder = getOrderByUserId($currentUser);
+$order = [];
+while ($result = mysqli_fetch_array($currentUserOrder)) {
+$order = $result;
+}
+var_dump($order);
