@@ -25,3 +25,12 @@ include_once __DIR__ . '/../_components/header-kami.php';
 <style><?php 
 include_once __DIR__ . '/../dist/styles/confirm-animation.css';
 ?></style>
+<script>
+const object = document.querySelector('.kami-spin');
+
+setTimeout(function(){
+    console.log("function ran");
+    window.location = "<?php echo site_url(); ?>/pages/order-confirmation.php"
+}, 3000);
+
+</script>
