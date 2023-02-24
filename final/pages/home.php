@@ -7,9 +7,9 @@ include_once __DIR__ . '/../_components/header-kami.php';
 <?php 
 include_once __DIR__ . '/../_components/navbar-mobile.php';
 ?>
-<style><?php 
+<!-- <style><?php 
 include_once __DIR__ . '/../dist/styles/home.css';
-?></style>
+?></style> -->
 
 <?php 
 $query ='SELECT * FROM menu ORDER BY name';

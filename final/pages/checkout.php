@@ -4,9 +4,9 @@ $page_title = 'Checkout | KAMI Food Truck';
 include_once __DIR__ . '/../_components/header-kami.php';
 ?>
 <body class="backgroundColor">
-<style><?php 
+<!-- <style><?php 
 include_once __DIR__ . '/../dist/styles/checkout.css';
-?></style>
+?></style> -->
 
 <h2 class="logoFontSm text-center mt-5">KAMI</h2>
 <div class="page mx-3">

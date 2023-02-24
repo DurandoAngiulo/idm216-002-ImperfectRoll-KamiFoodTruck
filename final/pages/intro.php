@@ -3,9 +3,9 @@ include_once __DIR__ . '/../app.php';
 $page_title = 'Intro | KAMI Food Truck';
 include_once __DIR__ . '/../_components/header-kami.php';
 ?>
-<style><?php 
+<!-- <style><?php 
 include_once __DIR__ . '/../dist/styles/intro.css';
-?></style>
+?></style> -->
 
 <body class="backgroundColor">
     <div class="animation-content d-flex flex-column justify-content-around">

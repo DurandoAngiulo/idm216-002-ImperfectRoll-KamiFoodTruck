@@ -22,9 +22,9 @@ include_once __DIR__ . '/../_components/header-kami.php';
             <img src="../dist/images/yellow-squiggle.png" alt="Decorative squiggle">
         </div>
     </div>
-<style><?php 
+<!-- <style><?php 
 include_once __DIR__ . '/../dist/styles/confirm-animation.css';
-?></style>
+?></style> -->
 <script>
 const object = document.querySelector('.kami-spin');
 

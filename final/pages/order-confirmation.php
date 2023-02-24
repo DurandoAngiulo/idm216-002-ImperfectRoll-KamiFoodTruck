@@ -4,9 +4,9 @@ $page_title = 'Order Confirmation | KAMI Food Truck';
 include_once __DIR__ . '/../_components/header-kami.php';
 ?>
 <body class="backgroundColor">
-<style><?php 
+<!-- <style><?php 
 include_once __DIR__ . '/../dist/styles/order-confirmation.css';
-?></style>
+?></style> -->
 
 <button onclick="window.location.href = '<?php echo site_url(); ?>/pages/home.php';"type="button" 
 class="btn-close m-3 position-absolute top-0 end-0" aria-label="Close"></button>
@@ -20,8 +20,8 @@ class="btn-close m-3 position-absolute top-0 end-0" aria-label="Close"></button>
    <p class="text-center">ORDER NUMBER</p>
    <h1 class="text-center big-text mt-1">123456</h1>
 
-   <img class="image mx-auto d-block" src="<?php echo site_url(); ?>/dist/images/ProgressTracker.png">
-   <img class="image mx-auto d-block" src="<?php echo site_url(); ?>/dist/images/QR-code.png">
+   <img class="image w-100 mx-auto d-block" src="<?php echo site_url(); ?>/dist/images/ProgressTracker.png">
+   <img class="image w-100 mx-auto d-block" src="<?php echo site_url(); ?>/dist/images/QR-code.png">
    <p class="text-center mx-4 mb-2">Present the QR code at KAMI to recieve your food!</p>
 
     <h3 class="align-self-end">Jervo's Order</h3>

@@ -7,9 +7,9 @@ include_once __DIR__ . '/../_components/header-kami.php';
 <?php 
 include_once __DIR__ . '/../_components/navbar-mobile.php';
 ?>
-<style><?php 
+<!-- <style><?php 
 include_once __DIR__ . '/../dist/styles/cart.css';
-?></style>
+?></style> -->
 <h1 class="text-center mt-5 mb-3">Cart</h1>
 <div class=" box1 sb8 mb-2">
     <h3>The wait time is <span class="accent">13 Minutes</span></h3>
