@@ -36,4 +36,4 @@ $order = [];
 while ($result = mysqli_fetch_array($currentUserOrder)) {
 $order = $result;
 }
-var_dump($order);
+// var_dump($order);

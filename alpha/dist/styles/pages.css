@@ -155,7 +155,7 @@
 
 .modal-header-details {
   height: 330px;
-  background-image: url(../dist/images/modal-details.png);
+  background-image: url(../images/modal-details.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top center;
