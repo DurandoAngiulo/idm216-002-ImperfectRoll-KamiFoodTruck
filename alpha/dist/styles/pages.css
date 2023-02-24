@@ -458,11 +458,11 @@
   /* overflow-x: hidden; */
   z-index: 10;
 }
-.kami-duck {
+/* .kami-duck {
   height: 6.25rem;
   max-width: 100%;
   transform: rotate(-0.1turn);
-}
+} */
 
 .page {
   max-width: 100%;
