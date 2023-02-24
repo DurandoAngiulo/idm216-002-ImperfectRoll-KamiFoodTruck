@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "DePixel";
+  src: url("../fonts/depixelbreit.woff2") format("woff2"),
+    url("../fonts/depixelbreit.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins-reg";
+  src: url("../fonts/poppins-regular-webfont.woff2") format("woff2"),
+    url("../fonts/poppins-regular-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins-bold";
+  src: url("../fonts/poppins-bold-webfont.woff2") format("woff2"),
+    url("../fonts/poppins-bold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins-semi";
+  src: url("../fonts/poppins-semibold-webfont.woff2") format("woff2"),
+    url("../fonts/poppins-semibold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins-light";
+  src: url("../fonts/poppins-light-webfont.woff2") format("woff2"),
+    url("../fonts/poppins-light-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Moneygame";
+  src: url("../fonts/moneygameregular-yza9o-webfont.woff2") format("woff2"),
+    url("../fonts/moneygameregular-yza9o-webfont.woff") format("woff");
+}
+:root {
+  /* ///font sizes */
+  --pTextSize: 14px;
+  --logoTextSize: 32px;
+  --logoTextSizeSm: 24px;
+  --h1TextSize: 24px;
+  --h2TextSize: 18px;
+  --h3TextSize: 16px;
+  /* colors */
+  --textColor: #171616;
+  --accentGreen: #439980;
+  --accentYellow: #f6bf42;
+  --backgroundColor: #fffaed;
+  --kamiRed: #eb4e37;
+  --inactive: #a6a6a6;
+  --mobileNavBorderColor: #aaaaaa;
+  --modalPink: #f9c6b6;
+  --backgroundDarker: #fff3d1;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--backgroundColor);
+}
+
+h1 {
+  font-family: "Poppins-bold", Helvetica, sans-serif;
+  font-size: var(--h1TextSize);
+}
+
+h2 {
+  font-family: "Poppins-bold", Helvetica, sans-serif;
+  font-size: var(--h2TextSize);
+}
+
+h3 {
+  font-family: "Poppins-semi", Helvetica, sans-serif;
+  font-size: var(--h3TextSize);
+  margin-bottom: 0;
+}
+
+p {
+  font-family: "Poppins-reg", Helvetica, sans-serif;
+  color: var(--textColor);
+  font-size: var(--pTextSize);
+  margin: 0;
+}
+
+a {
+  font-family: "Poppins-reg", Helvetica, sans-serif;
+  color: var(--textColor);
+  font-size: var(--pTextSize);
+  margin: 0;
+  text-decoration: none !important;
+  color: var(--textColor);
+}
+
+strong {
+  font-family: "Poppins-bold", Helvetica, sans-serif;
+}
+
+.logoFont {
+  font-family: "Moneygame", "Times New Roman", Times, serif;
+  font-size: var(--logoTextSize);
+}
+
+.logoFontSm {
+  font-family: "Moneygame", "Times New Roman", Times, serif;
+  font-size: var(--logoTextSizeSm);
+}
+
+.pageHeading {
+  font-family: "Poppins-semi", Helvetica, sans-serif;
+  font-size: var(--h2TextSize);
+}
+
+.pixelFont {
+  font-family: "DePixel", Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--textColor);
+  text-align: center;
+}
+
+.accent {
+  color: var(--accentGreen);
+}
+
+.modalAccent {
+  background-color: var(--modalPink);
+}
+
+.modalBackground {
+  background-color: var(--backgroundColor);
+}
+
+.mobile-navbar {
+  position: fixed;
+  background-color: var(--backgroundColor);
+  bottom: 0;
+  border-top: 1px solid var(--mobileNavBorderColor);
+}
+.mobile-nav-image {
+  width: 40px;
+}
+
+.footer {
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  :root {
+    --test: 1;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  :root {
+    --test: 1;
+  }
+}
