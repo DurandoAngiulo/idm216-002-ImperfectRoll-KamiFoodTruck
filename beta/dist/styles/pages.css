@@ -1,0 +1,514 @@
+/* INTRO STYLING */
+.animation-content {
+  height: 100vh;
+  align-items: center;
+}
+.start-link {
+  color: black;
+}
+
+@keyframes kamiSpin {
+  0% {
+    transform: scale(0.01);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+.kami-spin {
+  transform: scale(0.01);
+  animation: kamiSpin 1s cubic-bezier(0, 0, 0.28, 1.02) 0.5s forwards;
+}
+
+/* //////////////////////////////////////// */
+
+/* HOME PAGE STYLING */
+
+/* ///////////////////speech bubble */
+
+.box1 {
+  width: 250px;
+  margin: 0 auto;
+  border: 1px solid var(--textColor);
+  border-radius: 5px;
+  padding: 12px;
+  text-align: center;
+  font-weight: 900;
+  font-family: arial;
+  position: relative;
+}
+
+/* heading////////////////////////*/
+.kami-duck {
+  width: 60px;
+}
+
+.heading-border {
+  border-bottom: 1px solid var(--textColor);
+}
+
+/* //////header image */
+
+.tpIcon {
+  width: 30px;
+}
+.todays-pick {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  width: 40%;
+}
+.menu-header-image {
+  /* width: 100%; */
+  position: relative;
+  height: 150px;
+  background-image: url(https://res.cloudinary.com/dsysuymw2/image/upload/v1676062781/idm216/tteok_bwa8ey.jpg);
+  background-size: cover;
+  background-position: center center;
+  border-radius: 15px;
+  border: 1px solid var(--textColor);
+}
+
+.tp-name {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0 0 16px 16px;
+  width: 100%;
+}
+
+/* ///////slider */
+.foodType {
+  width: 15rem;
+}
+.foodCategories {
+  display: flex;
+  justify-content: space-between;
+}
+.foodTypeOption {
+  cursor: pointer;
+  text-align: center;
+  width: 15rem;
+}
+.foodTypeSlider {
+  position: relative;
+  left: 0rem;
+  background-color: black;
+  height: 2px;
+  width: 5rem;
+  animation: slide 1s ease-in-out infinite;
+}
+.foodTypeUnderbar {
+  display: flex;
+  background-color: rgb(167, 167, 167);
+  height: 2px;
+  transition: all 0.2s ease-out;
+}
+
+/* menu item button////// */
+
+.addButton {
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: black;
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 40px;
+  width: 40px;
+  transition: all 0.2s ease-out;
+}
+
+.clicked {
+  filter: opacity(0.5);
+  transform: scale(0.9);
+  transition: all 0.2s ease-out;
+}
+
+/* ////menu item */
+.menu-item-container {
+  border-radius: 15px;
+  border: 1px solid var(--textColor);
+  height: 180px;
+}
+
+.menu-item-image {
+  border: 1px solid var(--textColor);
+  border-radius: 15px 0 0 15px;
+  width: 40%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.menu-item-content-container {
+  height: 180px;
+  width: 60%;
+}
+
+.button-container {
+  width: 100%;
+  align-self: flex-end;
+}
+/* //////modal */
+
+.modal-header-details {
+  height: 330px;
+  background-image: url(../dist/images/modal-details.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.image-cropper-container {
+  width: 300px;
+  height: 300px;
+  /* position: relative; */
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid var(--textColor);
+}
+
+.cropped-image {
+  /* display: inline; */
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* position: absolute; */
+}
+
+.protein-container {
+  background-color: var(--backgroundDarker);
+  border-radius: 10px;
+  height: 120px;
+}
+
+/* ///radio button stuff   */
+[type="radio"]:checked + label > div {
+  border: 1px solid var(--textColor);
+  box-shadow: 0 0 2px 2px var(--textColor);
+}
+
+.input-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+.button {
+  display: flex;
+  border-radius: 3rem;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  color: var(--backgroundColor);
+  background-color: var(--textColor);
+}
+
+.bIncrement {
+  background-color: var(--backgroundColor);
+  border: solid black 2px;
+  color: var(--textColor);
+  width: 120px;
+}
+
+.addToCart {
+  width: 180px;
+}
+
+/* //////////////////////////////////////// */
+
+/* CART PAGE STYLING */
+
+/* //////////////////////////////////////// */
+
+.box1 {
+  width: 250px;
+  margin: 0 auto;
+  border: 1px solid var(--textColor);
+  border-radius: 5px;
+  padding: 12px;
+  text-align: center;
+  font-weight: 900;
+  font-family: arial;
+  position: relative;
+}
+
+.cart-item-container {
+  width: 70px;
+  height: 70px;
+}
+.cart-image-cropper-container {
+  width: 70px;
+  height: 70px;
+  /* position: relative; */
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid var(--textColor);
+}
+
+.cart-cropped-image {
+  /* display: inline; */
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* position: absolute; */
+}
+
+.order-amount {
+  z-index: 1000;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  background-color: var(--backgroundColor);
+  border: 2px solid var(--accentGreen);
+  border-radius: 50%;
+  padding: 0;
+}
+
+/* .kami-duck {
+    width: 60px;
+  } DUPLIC*/
+
+/* .heading-border {
+    border-bottom: 1px solid var(--textColor);
+  } DUPLI*/
+
+.order-amount-number {
+  align-self: center;
+}
+
+.protein-container {
+  background-color: var(--backgroundDarker);
+  border-radius: 10px;
+  height: 120px;
+}
+
+.checkoutBtn {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 3rem;
+  align-items: center;
+  height: 40px;
+  color: var(--backgroundColor);
+  background-color: var(--textColor);
+}
+
+/* //////////////////////////////////////// */
+
+/* LOGIN PAGE STYLING */
+
+/* //////////////////////////////////////// */
+
+.input-login {
+  width: 90vw;
+  background-color: var(--backgroundColor);
+  border-radius: 6px;
+  border-style: solid;
+  border-color: #171616;
+  border-width: 1px;
+}
+
+.btn {
+  font-family: "Poppins-reg", Helvetica, sans-serif;
+  border-radius: 20rem;
+}
+
+.btn-link {
+  color: var(--accentGreen);
+  --bs-btn-hover-color: #24775e;
+  --bs-btn-active-color: #24775e;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--textColor);
+  --bs-btn-active-bg: #2d2b2b;
+  --bs-btn-hover-bg: #2d2b2b;
+  --bs-btn-color: #ffffff;
+  border-style: none;
+}
+
+.btn-outline-primary {
+  --bs-btn-border-color: var(--textColor);
+  --bs-btn-hover-color: var(--textColor);
+  --bs-btn-color: var(--textColor);
+  --bs-btn-hover-border-color: #2d2b2b;
+  --bs-btn-active-border-color: #2d2b2b;
+  --bs-btn-active-color: #2d2b2b;
+  --bs-btn-active-bg: var(--backgroundColor);
+  --bs-btn-hover-bg: var(--backgroundColor);
+}
+
+.kami-duck-large {
+  width: 130px;
+}
+
+/* //////////////////////////////////////// */
+
+/* CHECKOUT PAGE STYLING */
+.container-b {
+  border-radius: 15px;
+  border: 1px solid var(--mobileNavBorderColor);
+  z-index: 14;
+}
+
+/* .btn{
+    font-family: "Poppins-reg", Helvetica, sans-serif;
+    border-radius: 20rem;
+}
+
+.btn-primary{
+    --bs-btn-bg: var(--textColor);
+    --bs-btn-active-bg: #2d2b2b;
+    --bs-btn-hover-bg: #2d2b2b;
+    --bs-btn-color: #FFFFFF;
+    border-style: none;
+}
+
+.btn-outline-primary{
+
+    --bs-btn-border-color: var(--textColor);
+    --bs-btn-hover-color: var(--textColor);
+    --bs-btn-color: var(--textColor);
+    --bs-btn-hover-border-color: #2d2b2b;
+    --bs-btn-active-border-color: #2d2b2b;
+    --bs-btn-active-color: #2d2b2b;
+    --bs-btn-active-bg: var(--backgroundColor);
+    --bs-btn-hover-bg:var(--backgroundColor);
+}
+
+.btn-link{
+    color: var(--accentGreen);
+    --bs-btn-hover-color: #24775e;
+    --bs-btn-active-color: #24775e;
+} */
+
+.btn-secondary {
+  --bs-btn-bg: var(--accentGreen);
+  --bs-btn-active-bg: #24775e;
+  --bs-btn-hover-bg: #24775e;
+  --bs-btn-color: #ffffff;
+  border-style: none;
+}
+
+.btn-secondary {
+  --bs-btn-bg: var(--accentGreen);
+  --bs-btn-border-color: var(--accentGreen);
+  --bs-btn-active-bg: var(--accentGreen);
+  --bs-btn-active-border-color: var(--textColor);
+  --bs-btn-hover-border-color: var(--textColor);
+  border-width: 2px;
+  --bs-btn-hover-bg: var(--accentGreen);
+}
+
+.btn-outline-secondary {
+  --bs-btn-border-color: var(--accentGreen);
+  --bs-btn-hover-color: var(--accentGreen);
+  --bs-btn-color: var(--accentGreen);
+  --bs-btn-hover-border-color: #24775e;
+  --bs-btn-active-border-color: #24775e;
+  --bs-btn-active-color: #24775e;
+  --bs-btn-active-bg: var(--backgroundColor);
+  --bs-btn-hover-bg: var(--backgroundColor);
+}
+
+.input {
+  background-color: var(--backgroundColor);
+  border-radius: 6px;
+  border-style: solid;
+  border-color: var(--mobileNavBorderColor);
+  border-width: 1px;
+}
+/* .input{
+    width: 90vw;
+    background-color: var(--backgroundColor);
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #171616;
+    border-width: 1px;
+} */
+
+.form-check-input:checked {
+  background-color: var(--accentGreen);
+  border-color: var(--accentGreen);
+}
+
+.sticky {
+  background-color: var(--backgroundColor);
+  border-top: 1px solid var(--mobileNavBorderColor);
+}
+
+.empty {
+  height: 100px;
+}
+
+.abs-position {
+  position: absolute;
+  top: 5px;
+  right: -50px;
+  /* overflow-x: hidden; */
+  z-index: 10;
+}
+.kami-duck {
+  height: 6.25rem;
+  max-width: 100%;
+  transform: rotate(-0.1turn);
+}
+
+.page {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* //////////////////////////////////////// */
+
+/* //////////////////////////////////////// */
+
+/* CONFIRM PAGE STYLING */
+.confirm-content {
+  height: 90vh;
+  align-items: center;
+}
+/* .start-link{
+    color: black;
+} */
+
+/* //////////////////////////////////////// */
+
+/* //////////////////////////////////////// */
+
+/* ORDER CONFIRMATION PAGE STYLING */
+.big-text {
+  font-size: 2.5rem;
+}
+
+/* .heading-border {
+    border-bottom: 1px solid var(--mobileNavBorderColor);
+} DUPLIC*/
+
+/* img{
+    width: 100%;
+} */
+
+.image {
+  max-width: 90%;
+}
+
+.image-sm {
+  width: 4.2rem;
+}
+
+.btn-close {
+  --bs-btn-close-opacity: 1;
+}
+
+/* //////////////////////////////////////// */
