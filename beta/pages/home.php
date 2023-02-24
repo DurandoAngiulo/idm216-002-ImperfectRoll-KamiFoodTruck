@@ -31,10 +31,10 @@ $result = mysqli_query($db_connection, $query);
     <!-- header image -->
     <div class="menu-header-image mb-3">
         <div class="todays-pick d-flex mt-1 ms-1 p-1">
-            <img class="tpIcon me-1" src="<?php echo site_url(); ?>/dist/images/icons/stars.png">
-            <p class="align-self-center">Today's Pick</p>
+            <img class="tpIcon me-2" src="<?php echo site_url(); ?>/dist/images/icons/stars.png">
+            <p class="align-self-center pt-1 pe-2">Today's Pick</p>
         </div>
-        <div class="tp-name d-flex justify-content-between pt-2">
+        <div class="tp-name d-flex justify-content-between p-2 pb-1">
             <p class="ms-2">Tteok Bok Ki</p>
             <p class="me-2">$8</p>
         </div>
@@ -56,6 +56,7 @@ $result = mysqli_query($db_connection, $query);
     <?php include __DIR__ . '/../_components/foodItem.php'; ?>
    </div>
 
+   <div class="py-3"></div>
 
     <?php include_once __DIR__ . '/../_components/footer.php';
 ?>

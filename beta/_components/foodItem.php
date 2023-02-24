@@ -11,6 +11,8 @@ while ($meal = mysqli_fetch_array($result)) {
     if($meal['category'] === "meal"){
     echo " 
 
+    <div  data-bs-toggle='modal' data-bs-target='#selectionModal-{$meal['id']}' >
+    
 <div class='menu-item-container mb-3 d-flex'>
         <img class='menu-item-image' src='{$meal['imageUrl']}'>
         <div class='menu-item-content-container pt-3 px-2 pb-2 d-flex flex-wrap justify-content-end'>

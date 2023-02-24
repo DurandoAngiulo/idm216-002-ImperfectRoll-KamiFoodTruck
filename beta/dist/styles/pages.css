@@ -44,7 +44,7 @@
 }
 
 .heading-border {
-  border-bottom: 1px solid var(--textColor);
+  border-bottom: 1px solid var(--mobileNavBorderColor);
 }
 
 /* //////header image */
@@ -53,10 +53,15 @@
   width: 30px;
 }
 .todays-pick {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
-  width: 40%;
+  width: fit-content;
 }
+
+.todays-pick p, .tp-name p{
+  font-family: "Poppins-semi", 'Helvetica', sans-serif;
+}
+
 .menu-header-image {
   /* width: 100%; */
   position: relative;
@@ -72,7 +77,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 0 0 16px 16px;
   width: 100%;
 }
@@ -132,10 +137,11 @@
   border-radius: 15px;
   border: 1px solid var(--textColor);
   height: 180px;
+  overflow: hidden;
 }
 
 .menu-item-image {
-  border: 1px solid var(--textColor);
+  border-right: 1px solid var(--textColor);
   border-radius: 15px 0 0 15px;
   width: 40%;
   height: 180px;
@@ -215,6 +221,11 @@
 
 .addToCart {
   width: 180px;
+  border: none;
+}
+
+.addToCart p{
+  color: var(--backgroundColor);
 }
 
 /* //////////////////////////////////////// */
@@ -488,7 +499,11 @@
 
 /* ORDER CONFIRMATION PAGE STYLING */
 .big-text {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
+}
+
+.green{
+  color: var(--accentGreen);
 }
 
 /* .heading-border {

@@ -20,6 +20,12 @@ include_once __DIR__ . '/../dist/styles/cart.css';
         <h3 class="align-self-end">Your Order</h3>
         <img class="kami-duck" src="<?php echo site_url(); ?>/dist/images/kami-duck.png">
     </div>
+
+    <div class="d-flex justify-content-between mb-3">
+        <h2>Total</h2>
+        <h2>$12</h2>
+    </div>
+
         <div class="d-flex justify-content-between mb-4">
             <!-- cart item image and number -->
             <div class="image-and-text d-flex justify-content-between">
@@ -38,10 +44,7 @@ include_once __DIR__ . '/../dist/styles/cart.css';
             </div>
             <h3 class="pt-2">$10</h3>
         </div>
-        <h3 class="mb-4">Add a Note</h3>
-        <div class="input-group mb-3">
-            <textarea class="form-control modalBackground border-dark" placeholder="Add note..."></textarea>
-        </div>
+        
         <div class="d-flex justify-content-between mb-4">
             <p class="text-decoration-underline">Delete</p>
             <p class="text-decoration-underline">Edit Item</p>
@@ -56,7 +59,7 @@ include_once __DIR__ . '/../dist/styles/cart.css';
                         <img class="cart-cropped-image" src="https://res.cloudinary.com/dsysuymw2/image/upload/v1676320861/idm216/kimchi_n1vhcy.jpg"> 
                     </div>
                     <div class="order-amount">
-                        <p class="accent order-amount-number pt-1">1</p>
+                        <p class="accent order-amount-number pt-1">2</p>
                     </div> 
                 </div>
                 <div class="ms-3 pt-2">
@@ -65,10 +68,7 @@ include_once __DIR__ . '/../dist/styles/cart.css';
             </div>
             <h3 class="pt-2">$2</h3>
         </div>
-        <h3 class="mb-4">Add a Note</h3>
-        <div class="input-group mb-3">
-            <textarea class="form-control modalBackground border-dark" placeholder="Add note..."></textarea>
-        </div>
+        
         <div class="d-flex justify-content-between mb-4">
             <p class="text-decoration-underline">Delete</p>
             <p class="text-decoration-underline">Edit Item</p>

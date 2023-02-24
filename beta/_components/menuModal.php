@@ -15,7 +15,7 @@
         <div class="p-3">
             <div class="d-flex justify-content-between">
                 <h2><?php echo $meal['name']; ?></h2>
-                <h2><?php echo $meal['price']; ?></h2>
+                <h2>$ <?php echo $meal['price']; ?></h2>
             </div>
             <p class="mb-4"><?php echo $meal['description']; ?></p>
             <h3 class="">Ingredients</h3>
@@ -60,9 +60,9 @@
         <div class="button bIncrement">
             <p class="text-center align-self-center mt-1"><span class="me-4">-</span>1<span class="ms-4">+</span></p>
         </div>
-        <div class="button addToCart" type="submit">
-            <button  data-bs-dismiss="modal" class="text-center align-self-center mt-1 text-light">Add to Cart</button>
-        </div>
+        
+            <button  data-bs-dismiss="modal" class="button addToCart text-center align-self-center mt-1 text-light" type="submit" ><p class="mt-1">Add to Cart</p></button>
+  
       </div>
     </form>
   </div>

@@ -15,38 +15,91 @@ class="btn-close m-3 position-absolute top-0 end-0" aria-label="Close"></button>
 <div class="page mx-3">
    <h2 class="text-center mt-3 mb-3">Thank you!</h2>
    
-   <p class="text-center">PICKUP TIME</p>
-   <h1 class="text-center big-text mt-1 mb-3">12:30pm</h1>
-   <p class="text-center">ORDER NUMBER</p>
-   <h1 class="text-center big-text mt-1">123456</h1>
+   <div class="container-b mx-auto py-3 px-4 mb-4 d-flex flex-column" >
+        <h1 class="big-text text-center my-0">Order #123456</h1>
+        <p class="text-center mb-2"> Status: <strong class="green">READY</strong> </p>
 
-   <img class="image w-100 mx-auto d-block" src="<?php echo site_url(); ?>/dist/images/ProgressTracker.png">
-   <img class="image w-100 mx-auto d-block" src="<?php echo site_url(); ?>/dist/images/QR-code.png">
-   <p class="text-center mx-4 mb-2">Present the QR code at KAMI to recieve your food!</p>
+        <div class="heading-border d-flex justify-content-between mb-3"></div>
 
-    <h3 class="align-self-end">Jervo's Order</h3>
-    <hr class="heading-border mt-0 opacity-100">
-    <div class="d-flex justify-content-between">
-    <h2 class="">Total</h2>
-    <h2 class="">$14.16</h2>
+        <div class="d-flex flex-row justify-content-between align-items-center mb-2">
+            <p>PICKUP TIME</p>
+            <p>12:30pm</p>
+        </div>
+        <div class="d-flex flex-row justify-content-between align-items-center mb-2">
+            <p>Total</p>
+            <p>$14.16</p>
+        </div>
+
+        <div class="heading-border d-flex justify-content-between mb-3"></div>
+
+        <div class="d-flex flex-row justify-content-between align-items-center mb-2">
+            <p>1 Bibimbap</p>
+            <p>$10</p>
+        </div>
+        <div class="d-flex flex-row justify-content-between align-items-center mb-2">
+            <p>2 Kimchi</p>
+            <p>$2</p>
+        </div>
+        <button onclick="" type="button" class="btn btn-primary p-2">View QR Code</button>
+
     </div>
-   <div class="mb-3 d-flex flex-row justify-content-between align-items-start">
-      <div class=" d-flex flex-row justify-content-start align-items-start">
-         <img class="image-sm d-block me-3" src="<?php echo site_url(); ?>/dist/images/Bulgogi-numbered.png">
-         <div>
-            <h3 class="mt-2">Bibimbap</h3>
-            <p>Medium spice</p>
-         </div>
-      </div>  
-      <h3 class="mt-2">$10</h3> 
-   </div>
-   <div class="mb-3 pb-4 d-flex flex-row justify-content-between align-items-center">
-      <div class=" d-flex flex-row justify-content-start align-items-center">
-         <img class="image-sm d-block me-3" src="<?php echo site_url(); ?>/dist/images/Kimchi-numbered.png">
-         <div>
-            <h3 class="">Kimchi</h3>
-         </div>
-      </div>  
-      <h3 class="">$2</h3> 
-   </div>
+
+    <div class="container-b mx-auto py-3 px-4 mb-4 d-flex flex-column" >
+        <h1 class="big-text text-center my-0">Order #008392</h1>
+        <p class="text-center mb-2"> Status: <strong>COMPLETED</strong> </p>
+
+        <div class="heading-border d-flex justify-content-between mb-3"></div>
+
+        <div class="d-flex flex-row justify-content-between align-items-center mb-2">
+            <p>PICKUP TIME</p>
+            <p>1:06pm</p>
+        </div>
+        <div class="d-flex flex-row justify-content-between align-items-center mb-2">
+            <p>Total</p>
+            <p>$17</p>
+        </div>
+
+        <div class="heading-border d-flex justify-content-between mb-3"></div>
+
+        <div class="d-flex flex-row justify-content-between align-items-center mb-2">
+            <p>1 Kimchi Fried Rice</p>
+            <p>$10</p>
+        </div>
+        <div class="d-flex flex-row justify-content-between align-items-center mb-2">
+            <p>1 Fried Dumplings</p>
+            <p>$5</p>
+        </div>
+        <div class="d-flex flex-row justify-content-between align-items-center mb-2">
+            <p>1 Instant Hot Coffee</p>
+            <p>$3</p>
+        </div>
+        <button onclick="" type="button" class=" btn btn-outline-primary p-2">Order Again</button>
+
+    </div>
+
+    <div class="container-b mx-auto py-3 px-4 mb-4 d-flex flex-column" >
+        <h1 class="big-text text-center my-0">Order #000544</h1>
+        <p class="text-center mb-2"> Status: <strong>COMPLETED</strong> </p>
+
+        <div class="heading-border d-flex justify-content-between mb-3"></div>
+
+        <div class="d-flex flex-row justify-content-between align-items-center mb-2">
+            <p>PICKUP TIME</p>
+            <p>2:16pm</p>
+        </div>
+        <div class="d-flex flex-row justify-content-between align-items-center mb-2">
+            <p>Total</p>
+            <p>$8</p>
+        </div>
+
+        <div class="heading-border d-flex justify-content-between mb-3"></div>
+
+        <div class="d-flex flex-row justify-content-between align-items-center mb-2">
+            <p>1 Kimchi Fried Rice</p>
+            <p>$8</p>
+        </div>
+        
+        <button onclick="" type="button" class=" btn btn-outline-primary p-2">Order Again</button>
+
+    </div>
 </div>

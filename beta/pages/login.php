@@ -13,7 +13,7 @@ include_once __DIR__ . '/../dist/styles/login.css';
    <h1 class="logoFont text-center mb-3">KAMI</h1>
 </div>
 
-   <div class="d-flex justify-content-center">
+   <div class="d-flex justify-content-center mb-0">
         <form>
             <p>
             <label for="name" class="mb-1">Name</label></br>
@@ -26,7 +26,7 @@ include_once __DIR__ . '/../dist/styles/login.css';
 
             <p>
             <label for="password" class="mb-1">Password</label></br>
-            <input type="text" id="password" name="password" class="mb-2 p-2 input-login"></p>
+            <input type="text" id="password" name="password" class="p-2 input-login"></p>
         </form>
     </div>
 
@@ -34,5 +34,5 @@ include_once __DIR__ . '/../dist/styles/login.css';
 
         <div class="d-grid gap-2 px-3">
             <button onclick="window.location.href = '<?php echo site_url(); ?>/pages/checkout.php';" type="button" class="btn btn-primary p-2">Create Account</button>
-            <button type="button" class="input-login btn btn-outline-primary p-2 mb-4">Sign In</button>
+            <button onclick="window.location.href = '<?php echo site_url(); ?>/pages/checkout.php';" type="button" class=" btn btn-outline-primary p-2 mb-4">Sign In</button>
         </div>
