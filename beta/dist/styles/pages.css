@@ -217,6 +217,11 @@
   width: 180px;
 }
 
+.ATCButtonText {
+  background-color: transparent;
+  border: none;
+}
+
 /* //////////////////////////////////////// */
 
 /* CART PAGE STYLING */

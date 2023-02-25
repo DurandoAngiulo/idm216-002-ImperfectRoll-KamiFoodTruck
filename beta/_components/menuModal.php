@@ -58,10 +58,10 @@
       </div>
       <div class="modal-footer justify-content-between flex-wrap">
         <div class="button bIncrement">
-            <p class="text-center align-self-center mt-1"><span class="me-4">-</span>1<span class="ms-4">+</span></p>
+            <p class="text-center align-self-center mt-1 "><span class="me-4">-</span>1<span class="ms-4">+</span></p>
         </div>
         <div class="button addToCart" type="submit">
-            <button  data-bs-dismiss="modal" class="text-center align-self-center mt-1 text-light">Add to Cart</button>
+            <button  data-bs-dismiss="modal" class=" ATCButtonText text-center align-self-center mt-1 text-light">Add to Cart</button>
         </div>
       </div>
     </form>
