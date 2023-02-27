@@ -3,7 +3,7 @@
  * This file is used store all the business
  * logic for the application.
  */
-
+session_start();
 // An array of values that will determine if you're working locally or on a production server.
 // @link https://stackoverflow.com/questions/2053245/how-can-i-detect-if-the-user-is-on-localhost-in-php
 $whitelist_host = ['127.0.0.1', '::1'];
@@ -28,12 +28,21 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist_host)) {
 // Include the database connection. Order matters and should always be first
 include_once __DIR__ . '/_includes/database.php';
 include_once __DIR__ . '/_includes/helper-functions.php';
+include_once __DIR__ . '/_includes/user-functions.php';
 include_once __DIR__ . '/_includes/users.php';
 
-$currentUser= '1';
-$currentUserOrder = getOrderByUserId($currentUser);
+if (strpos($_SERVER['REQUEST_URI'], '/pages') !== false) {
+    if (!is_user_logged_in()) {
+        redirect_to('/auth/login.php');
+    }}
+// print_r($_SESSION);
+// die;
+if (!is_user_logged_in()){
+    // redirect_to('/auth/login.php');
+}
+// TODO query databse and get user
+$currentUserOrder = getOrderByUserId($_SESSION['user']['id']);
 $order = [];
 while ($result = mysqli_fetch_array($currentUserOrder)) {
 $order = $result;
 }
-// var_dump($order);
