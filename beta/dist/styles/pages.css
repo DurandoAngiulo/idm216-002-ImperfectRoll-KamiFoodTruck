@@ -151,6 +151,10 @@
   width: 100%;
   align-self: flex-end;
 }
+
+.menu-item-container :hover {
+  cursor: pointer;
+}
 /* //////modal */
 
 .modal-header-details {
@@ -183,6 +187,7 @@
   background-color: var(--backgroundDarker);
   border-radius: 10px;
   height: 120px;
+  border: solid 1px transparent;
 }
 
 /* ///radio button stuff   */

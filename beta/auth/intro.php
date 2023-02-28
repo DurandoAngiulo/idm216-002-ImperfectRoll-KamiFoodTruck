@@ -25,7 +25,7 @@ const object = document.querySelector('.kami-spin');
 
 setTimeout(function(){
     console.log("function ran");
-    window.location = "<?php echo site_url(); ?>/pages/home.php"
+    window.location = "<?php echo site_url(); ?>/auth/login.php"
 }, 2000);
 
 </script>

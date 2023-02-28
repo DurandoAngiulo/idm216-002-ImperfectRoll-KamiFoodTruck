@@ -36,4 +36,20 @@ function sanitize_value($value)
     global $db_connection;
     return mysqli_real_escape_string($db_connection, $value);
 }
+
+function is_user_logged_in()
+{
+    
+    return isset($_SESSION['user']);
+}
+
+function getCartItems($orderId){
+    global $db_connection;
+    $query ="SELECT * FROM cart_item INNER JOIN menu ON cart_item.menu_id = menu.id 
+    WHERE cart_item.order_id = '{$orderId}'";
+    $result = mysqli_query($db_connection, $query);
+    return $result;
+
+
+}
 ?>
