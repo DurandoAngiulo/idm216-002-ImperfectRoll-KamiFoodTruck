@@ -29,10 +29,10 @@ include_once __DIR__ . '/../_components/header-kami.php';
             <label for="password" class="mb-1">Confirm Password</label></br>
             <input type="text" id="password2" name="password2" class="mb-2 p-2 input-login"></p>
             <button type="button" class="btn btn-link ms-2 pb-4" >Forgot Password?</button>
-        <div class="d-grid gap-2 px-3">
-            <button type="submit" class="btn btn-primary p-2">Create Account</button>
-            <button onclick="window.location.href = '<?php echo site_url(); ?>/auth/login.php';" type="button" class="input-login btn btn-outline-primary p-2 mb-4">Sign In</button>
-        </div>
+            <div class="w-100 d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary px-5">Create Account</button>
+            <!-- <button onclick="window.location.href = '<?php echo site_url(); ?>/auth/login.php';" type="button" class="input-login btn btn-outline-primary p-2 mb-4">Sign In</button> -->
+            </div>
         </form>
     </div>
 
