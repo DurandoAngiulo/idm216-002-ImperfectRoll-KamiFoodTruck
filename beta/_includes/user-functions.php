@@ -40,7 +40,7 @@ function add_user($first_name, $last_name, $email, $password)
 function get_user_by_id($id)
 {
     global $db_connection;
-    $query = "SELECT * FROM users WHERE id = $id";
+    $query = "SELECT * FROM users WHERE id = '$id'";
     $result = mysqli_query($db_connection, $query);
     if ($result->num_rows > 0) {
         $user = mysqli_fetch_assoc($result);
@@ -56,13 +56,13 @@ function get_user_by_id($id)
  * @param integer $id
  * @return object - mysqli_result
  */
-function delete_user_by_id($id)
-{
-    global $db_connection;
-    $query = "DELETE FROM users WHERE id = {$id}";
-    $result = mysqli_query($db_connection, $query);
-    return $result;
-}
+// function delete_user_by_id($id)
+// {
+//     global $db_connection;
+//     $query = "DELETE FROM users WHERE id = {$id}";
+//     $result = mysqli_query($db_connection, $query);
+//     return $result;
+// }
 
 /**
  * Edit existing user
@@ -73,15 +73,15 @@ function delete_user_by_id($id)
  * @param string $id_value - user ID
  * @return object - mysqli_result
  */
-function edit_user($first_name_value, $last_name_value, $email_value, $phone_value, $id_value)
-{
-    global $db_connection;
-    $query = 'UPDATE users';
-    $query .= " SET first_name = '{$first_name_value}', last_name = '{$last_name_value}', email = '{$email_value}', phone = '{$phone_value}'";
-    $query .= " WHERE id = {$id_value}";
-    $result = mysqli_query($db_connection, $query);
-    return   $result;
-}
+// function edit_user($first_name_value, $last_name_value, $email_value, $phone_value, $id_value)
+// {
+//     global $db_connection;
+//     $query = 'UPDATE users';
+//     $query .= " SET first_name = '{$first_name_value}', last_name = '{$last_name_value}', email = '{$email_value}', phone = '{$phone_value}'";
+//     $query .= " WHERE id = {$id_value}";
+//     $result = mysqli_query($db_connection, $query);
+//     return   $result;
+// }
 
 function verify_password($password)
 {

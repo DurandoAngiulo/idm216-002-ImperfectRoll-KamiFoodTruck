@@ -4,10 +4,6 @@ $page_title = 'Log In | KAMI Food Truck';
 include_once __DIR__ . '/../_components/header-kami.php';
 ?>
 <body class="backgroundColor">
-<!-- <style><?php 
-include_once __DIR__ . '/../dist/styles/login.css';
-?></style> -->
-
 <div class="mt-4">
    <img class="kami-duck-large mx-auto d-block" src="<?php echo site_url(); ?>/dist/images/kami-duck.png">
    <h1 class="logoFont text-center mb-3">KAMI</h1>
