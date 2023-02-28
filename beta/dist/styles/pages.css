@@ -151,6 +151,10 @@
   width: 100%;
   align-self: flex-end;
 }
+
+.menu-item-container :hover {
+  cursor: pointer;
+}
 /* //////modal */
 
 .modal-header-details {
