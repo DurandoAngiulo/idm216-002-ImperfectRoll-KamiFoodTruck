@@ -183,6 +183,7 @@
   background-color: var(--backgroundDarker);
   border-radius: 10px;
   height: 120px;
+  border: solid 1px transparent;
 }
 
 /* ///radio button stuff   */

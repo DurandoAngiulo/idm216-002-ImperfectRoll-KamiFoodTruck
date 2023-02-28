@@ -34,12 +34,20 @@ $isPageThatStartsWithPages = strpos($_SERVER['REQUEST_URI'], '/pages') !== false
 $isLoginPage= strpos($_SERVER['REQUEST_URI'], '/auth/login') !== false;
 $sessionUserId = $_SESSION['user']['id'] ?? null;
 $user = $sessionUserId ? get_user_by_id($sessionUserId) : null;
-if (!$user && !$isLoginPage) {
-    redirect_to('/auth/login.php');
-} else if ($isLoginPage && is_user_logged_in()) {
-    // If the user is logged in and the page is the login page, redirect to home page
-  redirect_to('/pages/home.php');
-}
+
+if($isPageThatStartsWithPages) {
+    if (!is_user_logged_in()) {
+       
+        redirect_to('/auth/login.php');
+    }
+}else if($isLoginPage){
+    if (is_user_logged_in()) {
+       
+        redirect_to('/pages/home.php');
+    }
+
+} 
+
 
 // TODO query databse and get user
 $userOrder = null;
@@ -52,21 +60,3 @@ $userOrder= mysqli_fetch_array($currentUserOrder);
 // $userOrder= mysqli_fetch_array($currentUserOrder);
 
 
-// if($isPageThatStartsWithPages) {
-//     echo 'tesbduebut';
-//     if (!is_user_logged_in()) {
-       
-//         redirect_to('/auth/login.php');
-//     }
-// }else if($isLoginPage){
-//     if (is_user_logged_in()) {
-       
-//         redirect_to('/pages/home.php');
-//     }
-
-// } else if(!isset($sessionUserId)){
-//     redirect_to('/auth/login.php');
-
-// } else if(!$user){
-//     redirect_to('/auth/login.php');
-// }

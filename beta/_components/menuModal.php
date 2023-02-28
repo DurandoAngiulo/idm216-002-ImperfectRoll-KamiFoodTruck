@@ -54,6 +54,7 @@
             <input name="menu_id" value="<?php echo $meal['id']; ?>" type="hidden"/>
             <input name="order_id" value="<?php echo $userOrder['id']; ?>" type="hidden"/>
             <input name="spice_level" value="mild" type="hidden"/>
+            <input name="quantity" value=1 type="hidden"/>
         </div>
       </div>
       <div class="modal-footer justify-content-between flex-wrap">
