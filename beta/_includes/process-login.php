@@ -9,8 +9,6 @@ if (!$_POST) {
 $email = sanitize_value($_POST['email']);
 $password = sanitize_value($_POST['password']);
 $user = get_user_by_email_and_password($email, $password);
-// var_dump($user);
-// die;
 
 // Check there are no errors with our SQL statement
 if ($user) {

@@ -6,10 +6,10 @@ include_once __DIR__ . '/../_components/header-kami.php';
 <body class="backgroundColor">
 <?php 
 include_once __DIR__ . '/../_components/navbar-mobile.php';
+$cart_items = getCartItems($userOrder['id']);
+
 ?>
-<!-- <style><?php 
-include_once __DIR__ . '/../dist/styles/cart.css';
-?></style> -->
+
 <h1 class="text-center mt-5 mb-3">Cart</h1>
 <div class=" box1 sb8 mb-2">
     <h3>The wait time is <span class="accent">13 Minutes</span></h3>
@@ -20,6 +20,29 @@ include_once __DIR__ . '/../dist/styles/cart.css';
         <h3 class="align-self-end">Your Order</h3>
         <img class="kami-duck" src="<?php echo site_url(); ?>/dist/images/kami-duck.png">
     </div>
+<?php
+    $site_url = site_url();
+while ($item = mysqli_fetch_array($cart_items)) {
+    
+    echo " 
+
+<div class='menu-item-container mb-3 d-flex'>
+        <img class='menu-item-image' src='{$item['imageUrl']}'>
+        <div class='menu-item-content-container pt-3 px-2 pb-2 d-flex flex-wrap justify-content-end'>
+            <div class='d-flex justify-content-between mb-2 w-100'>
+                <h3>{$item['name']}</h3>
+                <h3 class='w-50 text-end'>$ {$item['price']}</h3>
+            </div>
+            <p class='w-100'>{$item['description']}</p>
+            <div class='d-flex justify-content-end button-container'>
+                <div  data-bs-toggle='modal' data-bs-target='#selectionModal-{$item['id']}' class='addButton'>
+                    <p class='text-light display-6 align-self-center d-inline-block pt-1'>+</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+    ";
+}?>
         <div class="d-flex justify-content-between mb-4">
             <!-- cart item image and number -->
             <div class="image-and-text d-flex justify-content-between">

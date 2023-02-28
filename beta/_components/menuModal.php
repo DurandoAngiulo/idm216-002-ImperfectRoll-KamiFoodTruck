@@ -52,7 +52,7 @@
                 <textarea class="form-control modalBackground border-dark" placeholder="Add note..." type="text" name="note"></textarea>
             </div>
             <input name="menu_id" value="<?php echo $meal['id']; ?>" type="hidden"/>
-            <input name="order_id" value="1" type="hidden"/>
+            <input name="order_id" value="<?php echo $userOrder['id']; ?>" type="hidden"/>
             <input name="spice_level" value="mild" type="hidden"/>
         </div>
       </div>

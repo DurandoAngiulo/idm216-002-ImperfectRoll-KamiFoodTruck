@@ -30,19 +30,31 @@ include_once __DIR__ . '/_includes/database.php';
 include_once __DIR__ . '/_includes/helper-functions.php';
 include_once __DIR__ . '/_includes/user-functions.php';
 include_once __DIR__ . '/_includes/users.php';
-
-if (strpos($_SERVER['REQUEST_URI'], '/pages') !== false) {
+$isPageThatStartsWithPages = strpos($_SERVER['REQUEST_URI'], '/pages') !== false; 
+$isLoginPage= strpos($_SERVER['REQUEST_URI'], '/auth/login') !== false;
+$sessionUserId = $_SESSION['user']['id'];
+$user = get_user_by_id($sessionUserId);
+if($isPageThatStartsWithPages) {
+    echo 'tesbduebut';
     if (!is_user_logged_in()) {
+       
         redirect_to('/auth/login.php');
-    }}
-// print_r($_SESSION);
-// die;
-if (!is_user_logged_in()){
-    // redirect_to('/auth/login.php');
+    }
+}else if($isLoginPage){
+    if (is_user_logged_in()) {
+       
+        redirect_to('/pages/home.php');
+    }
+
+} else if(!isset($sessionUserId)){
+    redirect_to('/auth/login.php');
+
+} else if(!$user){
+    redirect_to('/auth/login.php');
 }
+
+
+
 // TODO query databse and get user
-$currentUserOrder = getOrderByUserId($_SESSION['user']['id']);
-$order = [];
-while ($result = mysqli_fetch_array($currentUserOrder)) {
-$order = $result;
-}
+$currentUserOrder = getOrderByUserId($user['id']);
+$userOrder= mysqli_fetch_array($currentUserOrder);
