@@ -42,8 +42,14 @@ if (!$user && !$isLoginPage) {
 }
 
 // TODO query databse and get user
+$userOrder = null;
+if ($user) {
+
 $currentUserOrder = getOrderByUserId($user['id']);
 $userOrder= mysqli_fetch_array($currentUserOrder);
+}
+// $currentUserOrder = getOrderByUserId($user['id']);
+// $userOrder= mysqli_fetch_array($currentUserOrder);
 
 
 // if($isPageThatStartsWithPages) {
