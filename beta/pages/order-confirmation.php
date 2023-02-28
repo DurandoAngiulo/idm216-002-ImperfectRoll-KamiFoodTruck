@@ -73,7 +73,7 @@ class="btn-close m-3 position-absolute top-0 end-0" aria-label="Close"></button>
             <p>1 Instant Hot Coffee</p>
             <p>$3</p>
         </div>
-        <button onclick="" type="button" class=" btn btn-outline-primary p-2">Order Again</button>
+        <button onclick="window.location.href = '<?php echo site_url(); ?>/pages/cart.php';" type="button" class=" btn btn-outline-primary p-2">Order Again</button>
 
     </div>
 
@@ -99,7 +99,7 @@ class="btn-close m-3 position-absolute top-0 end-0" aria-label="Close"></button>
             <p>$8</p>
         </div>
         
-        <button onclick="" type="button" class=" btn btn-outline-primary p-2">Order Again</button>
+        <button onclick="window.location.href = '<?php echo site_url(); ?>/pages/cart.php';" type="button" class=" btn btn-outline-primary p-2">Order Again</button>
 
     </div>
 </div>

@@ -46,8 +46,12 @@ include_once __DIR__ . '/../dist/styles/cart.css';
         </div>
         
         <div class="d-flex justify-content-between mb-4">
-            <p class="text-decoration-underline">Delete</p>
+            <a href="#">
+                <p class="text-decoration-underline">Delete</p>
+            </a>
+            <a href="#">
             <p class="text-decoration-underline">Edit Item</p>
+            </a>
         </div>
         <div class="heading-border d-flex justify-content-between mb-3"></div>
         <!-- next item -->
@@ -70,20 +74,30 @@ include_once __DIR__ . '/../dist/styles/cart.css';
         </div>
         
         <div class="d-flex justify-content-between mb-4">
-            <p class="text-decoration-underline">Delete</p>
-            <p class="text-decoration-underline">Edit Item</p>
+            <a href="#">
+                <p class="text-decoration-underline">Delete</p>
+            </a>
+            <a href="#">
+                <p class="text-decoration-underline">Edit Item</p>
+            </a>
         </div>
         <div class="heading-border d-flex justify-content-between mb-3"></div>
         <h3 class="mb-4 text-center">Want to Include any utensils?</h3>
             <div class="d-flex justify-content-between mb-4">
                 <div class="protein-container d-flex justify-content-center align-items-center">
+                    <a href="#">
                     <img class="" src="<?php echo site_url(); ?>/dist/images/chopsticks.png">
+                    </a>
                 </div>
                 <div class="protein-container d-flex justify-content-center align-items-center">
-                    <img class="" src="<?php echo site_url(); ?>/dist/images/fork.png">
+                    <a href="#">
+                        <img class="" src="<?php echo site_url(); ?>/dist/images/fork.png">
+                    </a>
                 </div>
                 <div class="protein-container d-flex justify-content-center align-items-center">
+                <a href="#">
                     <img class="" src="<?php echo site_url(); ?>/dist/images/napkin.png">
+                </a>
                 </div>
             </div>
             <div class="heading-border d-flex justify-content-between mb-4"></div>

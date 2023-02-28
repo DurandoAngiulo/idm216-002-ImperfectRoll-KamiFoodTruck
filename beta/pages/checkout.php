@@ -72,8 +72,10 @@ include_once __DIR__ . '/../dist/styles/checkout.css';
             <p class="text-center mb-2">Payment Information</p>
             <div class="d-flex justify-content-between mb-4">
                 <button type="button" class="btn btn-secondary btn-sm px-3">Card</button>
-                <button type="button" class="btn btn-secondary btn-sm px-3">Venmo</button>
-                <button type="button" class="btn btn-secondary btn-sm px-3">Apple</button>
+
+                <button onclick="window.location.href = '<?php echo site_url(); ?>/pages/confirm-animation.php';"type="button" class="btn btn-secondary btn-sm px-3">Venmo</button>
+                
+                <button onclick="window.location.href = '<?php echo site_url(); ?>/pages/confirm-animation.php';" type="button" class="btn btn-secondary btn-sm px-3">Apple</button>
             </div>
 
 
@@ -115,7 +117,7 @@ include_once __DIR__ . '/../dist/styles/checkout.css';
 <div class="container sticky fixed-bottom px-2 pt-4 pb-5">
     <div class=" row mx-auto justify-content-center align-items-center">
        
-        <button type="button" class="col btn btn-outline-primary p-2">Back</button>
+        <button type="button" onclick="window.location.href='<?php echo site_url(); ?>/pages/login.php';"class="col btn btn-outline-primary p-2">Back</button>
 
         <button onclick="window.location.href = '<?php echo site_url(); ?>/pages/confirm-animation.php';"type="button" class="btn btn-primary p-2 px-4 mx-1 col-8">
             
