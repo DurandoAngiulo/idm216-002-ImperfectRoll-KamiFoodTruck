@@ -84,7 +84,7 @@
         <div class="button bIncrement">
             <p class="text-center align-self-center mt-1 "><span class="me-4">-</span>1<span class="ms-4">+</span></p>
         </div>
-        <button  data-bs-dismiss="modal" class="button addToCart text-center align-self-center mt-1 text-light" type="submit" ><p class="mt-1">Add to Cart</p></button>
+        <button  data-bs-dismiss="modal" class="button addToCart text-center align-self-center mt-1 " type="submit" ><p class="mt-1 text-light">Add to Cart</p></button>
       </div>
     </form>
   </div>

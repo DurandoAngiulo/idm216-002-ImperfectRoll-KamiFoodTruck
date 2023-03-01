@@ -58,8 +58,9 @@
   width: fit-content;
 }
 
-.todays-pick p, .tp-name p{
-  font-family: "Poppins-semi", 'Helvetica', sans-serif;
+.todays-pick p,
+.tp-name p {
+  font-family: "Poppins-semi", "Helvetica", sans-serif;
 }
 
 .menu-header-image {
@@ -196,6 +197,10 @@
   border: solid 1px transparent;
 }
 
+.protein-container :hover {
+  cursor: pointer;
+}
+
 /* ///radio button stuff   */
 [type="radio"]:checked + label > div {
   border: 1px solid var(--textColor);
@@ -229,7 +234,7 @@
   border: none;
 }
 
-.addToCart p{
+.addToCart p {
   color: var(--backgroundColor);
 }
 
@@ -512,7 +517,7 @@
   font-size: 2.3rem;
 }
 
-.green{
+.green {
   color: var(--accentGreen);
 }
 

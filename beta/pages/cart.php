@@ -28,25 +28,29 @@ $cart_items = getCartItems($userOrder['id']);
 
         <?php include __DIR__ . '/../_components/cartItem.php';?>
     
-        <div class="heading-border d-flex justify-content-between mb-3"></div>
+        <!-- <div class="heading-border d-flex justify-content-between mb-3"></div> -->
         <h3 class="mb-4 text-center">Want to Include any utensils?</h3>
-            <div class="d-flex justify-content-between mb-4">
-            <div class="protein-container d-flex justify-content-center align-items-center">
-                    <a href="#">
-                    <img class="" src="<?php echo site_url(); ?>/dist/images/chopsticks.png">
-                    </a>
-                </div>
-                <div class="protein-container d-flex justify-content-center align-items-center">
-                <a href="#">
+        <form class="d-flex justify-content-between mb-4">
+                <!-- utensil inputs -->
+                <input  id="chicken" value="chicken" type="radio" name="protein" class=" input-hidden">
+                <label  class="" for="chicken">
+                    <div class="protein-container d-flex justify-content-center align-items-center">
+                        <img class="" src="<?php echo site_url(); ?>/dist/images/chopsticks.png">
+                    </div>
+                </label>
+                <input  id="beef" type="radio" value="beef" name="protein" class=" input-hidden">
+                <label  class="" for="beef">
+                    <div class="protein-container d-flex justify-content-center align-items-center">
                         <img class="" src="<?php echo site_url(); ?>/dist/images/fork.png">
-                    </a>
-                </div>
-                <div class="protein-container d-flex justify-content-center align-items-center">
-                <a href="#">
-                    <img class="" src="<?php echo site_url(); ?>/dist/images/napkin.png">
-                </a>
-                </div>
-            </div>
+                    </div>
+                </label>
+                <input  id="tofu" type="radio"  value="tofu" name="protein" class=" input-hidden">
+                <label  class="" for="tofu">
+                    <div class="protein-container d-flex justify-content-center align-items-center">
+                        <img class="" src="<?php echo site_url(); ?>/dist/images/napkin.png">
+                    </div>
+                </label> 
+            </form>
             <div class="heading-border d-flex justify-content-between mb-4"></div>
             <a  href="<?php echo site_url(); ?>/pages/checkout.php" class="checkoutBtn  px-3 mb-5">
             <p  class=" mt-1 text-light">Checkout</p>
