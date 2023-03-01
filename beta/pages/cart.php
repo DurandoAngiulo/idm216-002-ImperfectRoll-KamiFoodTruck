@@ -20,19 +20,31 @@ $cart_items = getCartItems($userOrder['id']);
             <h3 class="align-self-end">Your Order</h3>
             <img class="kami-duck" src="<?php echo site_url(); ?>/dist/images/kami-duck.png">
         </div>
+
+        <div class="d-flex justify-content-between mb-3">
+            <h2>Total</h2>
+            <h2>$12</h2>
+        </div>
+
         <?php include __DIR__ . '/../_components/cartItem.php';?>
     
         <div class="heading-border d-flex justify-content-between mb-3"></div>
         <h3 class="mb-4 text-center">Want to Include any utensils?</h3>
             <div class="d-flex justify-content-between mb-4">
-                <div class="protein-container d-flex justify-content-center align-items-center">
+            <div class="protein-container d-flex justify-content-center align-items-center">
+                    <a href="#">
                     <img class="" src="<?php echo site_url(); ?>/dist/images/chopsticks.png">
+                    </a>
                 </div>
                 <div class="protein-container d-flex justify-content-center align-items-center">
-                    <img class="" src="<?php echo site_url(); ?>/dist/images/fork.png">
+                <a href="#">
+                        <img class="" src="<?php echo site_url(); ?>/dist/images/fork.png">
+                    </a>
                 </div>
                 <div class="protein-container d-flex justify-content-center align-items-center">
+                <a href="#">
                     <img class="" src="<?php echo site_url(); ?>/dist/images/napkin.png">
+                </a>
                 </div>
             </div>
             <div class="heading-border d-flex justify-content-between mb-4"></div>

@@ -110,5 +110,7 @@ $result = mysqli_query($db_connection, $query);
   </div>
 </div> -->
 
+<div class="py-3"></div>
+
     <?php include_once __DIR__ . '/../_components/footer.php';
 ?>

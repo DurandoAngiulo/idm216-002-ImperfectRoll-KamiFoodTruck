@@ -15,15 +15,38 @@
         <div class="p-3">
             <div class="d-flex justify-content-between">
                 <h2><?php echo $meal['name']; ?></h2>
-                <h2><?php echo $meal['price']; ?></h2>
+                <h2>$ <?php echo $meal['price']; ?></h2>
             </div>
             <p class="mb-4"><?php echo $meal['description']; ?></p>
             <h3 class="">Ingredients</h3>
             <p class="mb-4"><?php echo $meal['ingredients']; ?></p>
-            <h3 class="">Customize spice level</h3>
-            <div class="d-flex justify-content-center mb-4">
-                <img src="<?php echo site_url(); ?>/dist/images/thermo.png">
+
+            <h3 class="mb-4">Customize spice level</h3>
+            <div class="d-flex justify-content-center">
+            <img class ="flame-img me-4" src="<?php echo site_url(); ?>/dist/images/flame.png">
+                <div class="d-flex flex-column justify-content-center mb-4">
+
+                        <div class="form-check flex-column">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Mild
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Medium
+                            </label>
+                        </div>
+                        <div class="form-check flex-column">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Hot
+                            </label>
+                        </div>
+                </div>
             </div>
+
             <h3 class="mb-4">Add Protein (+ 1$)</h3>
             <div class="d-flex justify-content-between mb-4">
                 <!-- protein inputs -->
@@ -61,9 +84,7 @@
         <div class="button bIncrement">
             <p class="text-center align-self-center mt-1 "><span class="me-4">-</span>1<span class="ms-4">+</span></p>
         </div>
-        <div class="button addToCart" type="submit">
-            <button  data-bs-dismiss="modal" class=" ATCButtonText text-center align-self-center mt-1 text-light">Add to Cart</button>
-        </div>
+        <button  data-bs-dismiss="modal" class="button addToCart text-center align-self-center mt-1 text-light" type="submit" ><p class="mt-1">Add to Cart</p></button>
       </div>
     </form>
   </div>
