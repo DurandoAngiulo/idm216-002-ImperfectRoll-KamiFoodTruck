@@ -91,6 +91,9 @@ a {
 strong {
   font-family: "Poppins-bold", Helvetica, sans-serif;
 }
+.logoImage {
+  width: 50%;
+}
 
 .logoFont {
   font-family: "Moneygame", "Times New Roman", Times, serif;
@@ -141,7 +144,7 @@ strong {
   height: 60px;
 }
 
-.flame-img{
+.flame-img {
   height: 80px;
 }
 
