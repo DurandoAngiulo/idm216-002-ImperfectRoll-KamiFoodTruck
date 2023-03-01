@@ -18,16 +18,16 @@ while ($item = mysqli_fetch_array($cart_items)) {
             <p>{$item['spice_level']}</p>
         </div>
     </div>
-    <h3 class='pt-2'>{$item['price']}</h3>
+    <h3 class='pt-2'>$ {$item['price']}</h3>
 </div>   
-    <h3 class='mb-4'>Add a Note</h3>
-    <div class='input-group mb-3'>
-        <textarea class='form-control modalBackground border-dark' placeholder='Add note...'>
-        {$item['note']}
-        </textarea>
-    </div>
+    
     <div class='d-flex justify-content-between mb-4'>
-        <p class='text-decoration-underline'>Delete</p>
+    <a href='#'>
+    <p class='text-decoration-underline'>Delete</p>
+    </a>
+    <a href='#'>
+    <p class='text-decoration-underline'>Edit Item</p>
+    </a>
     </div>
     <div class='heading-border d-flex justify-content-between mb-3'></div>
         ";

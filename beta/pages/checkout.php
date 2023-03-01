@@ -25,9 +25,17 @@ include_once __DIR__ . '/../dist/styles/checkout.css';
         </div>
     </div>
 
-    <div class="container-b mx-auto py-3 px-4 mb-4 d-flex flex-row justify-content-between align-items-center" >
-        <h3>Jervo's Order</h3>
-        <p>1 Bibimbap + 2 Kimchi </p>
+    <div class="container-b mx-auto py-3 px-4 mb-4 d-flex flex-column" >
+        <h3 class="mb-3">Jervo's Order</h3>
+
+        <div class="d-flex flex-row justify-content-between align-items-center mb-2">
+            <p>1 Bibimbap</p>
+            <p>$10</p>
+        </div>
+        <div class="d-flex flex-row justify-content-between align-items-center">
+            <p>2 Kimchi</p>
+            <p>$2</p>
+        </div>
     </div>
 
     <div class="container-b mx-auto py-3 px-4 mb-4 d-flex flex-column" >
@@ -63,8 +71,10 @@ include_once __DIR__ . '/../dist/styles/checkout.css';
             <p class="text-center mb-2">Payment Information</p>
             <div class="d-flex justify-content-between mb-4">
                 <button type="button" class="btn btn-secondary btn-sm px-3">Card</button>
-                <button type="button" class="btn btn-secondary btn-sm px-3">Venmo</button>
-                <button type="button" class="btn btn-secondary btn-sm px-3">Apple</button>
+                
+                <button onclick="window.location.href = '<?php echo site_url(); ?>/pages/confirm-animation.php';"type="button" class="btn btn-secondary btn-sm px-3">Venmo</button>
+
+                <button onclick="window.location.href = '<?php echo site_url(); ?>/pages/confirm-animation.php';" type="button" class="btn btn-secondary btn-sm px-3">Apple</button>
             </div>
 
 
@@ -106,7 +116,7 @@ include_once __DIR__ . '/../dist/styles/checkout.css';
 <div class="container sticky fixed-bottom px-2 pt-4 pb-5">
     <div class=" row mx-auto justify-content-center align-items-center">
        
-        <button type="button" class="col btn btn-outline-primary p-2">Back</button>
+    <button type="button" onclick="window.location.href='<?php echo site_url(); ?>/pages/cart.php';"class="col btn btn-outline-primary p-2">Back</button>
 
         <button onclick="window.location.href = '<?php echo site_url(); ?>/pages/confirm-animation.php';"type="button" class="btn btn-primary p-2 px-4 mx-1 col-8">
             
