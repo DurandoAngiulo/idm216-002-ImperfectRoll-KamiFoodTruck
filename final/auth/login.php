@@ -22,7 +22,7 @@ include_once __DIR__ . '/../_components/header-kami.php';
 
             <p>
             <label for="password" class="mb-1">Password</label></br>
-            <input type="text" id="password" name="password" class="mb-2 p-2 input-login"></p>
+            <input type="password" id="password" name="password" class="mb-2 p-2 input-login form-control"></p>
             <button type="button" class="btn btn-link ms-2 pb-4" >Forgot Password?</button>
 
         <div class="d-grid gap-2 px-3">

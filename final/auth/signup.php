@@ -20,14 +20,14 @@ include_once __DIR__ . '/../_components/header-kami.php';
             <input type="text" id="name"  class="mb-2 p-2 input-login" name="last_name"></p>
             <p>
             <label for="email" class="mb-1">Email</label></br>
-            <input type="text" id="email" name="email" class="mb-2 p-2 input-login"></p>
+            <input type="email" id="email" name="email" class="mb-2 p-2 input-login form-control"></p>
 
             <p>
             <label for="password" class="mb-1">Password</label></br>
-            <input type="text" id="password" name="password" class="mb-2 p-2 input-login"></p>
+            <input type="password" id="password" name="password" class="mb-2 p-2 input-login"></p>
             <p>
             <label for="password" class="mb-1">Confirm Password</label></br>
-            <input type="text" id="password2" name="password2" class="mb-2 p-2 input-login"></p>
+            <input type="password" id="password2" name="password2" class="mb-2 p-2 input-login"></p>
             <button type="button" class="btn btn-link ms-2 pb-4" >Forgot Password?</button>
             <div class="w-100 d-flex justify-content-center">
             <button type="submit" class="btn btn-primary px-5">Create Account</button>
