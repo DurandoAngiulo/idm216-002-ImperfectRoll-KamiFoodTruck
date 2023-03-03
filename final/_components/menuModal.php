@@ -1,6 +1,6 @@
 <div class="modal fade" id="selectionModal-<?php echo $meal['id']; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable mx-0 mt-5 ">
-    <form class="modal-content modalBackground">
+    <form class="modal-content modalBackground" action="<?php echo site_url();?>/_includes/addToOrder.php" method="POST">
       <div class="modal-body p-0">
         <div class=" modal-header-details border-bottom-0 modalAccent p-0">
             <div class="w-100 d-flex justify-content-end pe-2 pt-2">
