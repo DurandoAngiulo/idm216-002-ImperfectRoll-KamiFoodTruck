@@ -8,7 +8,7 @@ if (!isset($result)) {
 //created array of items to target in modal
 $site_url = site_url();
 while ($meal = mysqli_fetch_array($result)) {
-    if($meal['category'] === "meal"){
+    // if($meal['category'] === "meal"){
     echo " 
 
 <div  data-bs-toggle='modal' data-bs-target='#selectionModal-{$meal['id']}' class='menu-item-container mb-3 d-flex'>
@@ -28,5 +28,5 @@ while ($meal = mysqli_fetch_array($result)) {
     </div>
     ";
     include __DIR__ . '/menuModal.php';
-}}
+}
 ?>

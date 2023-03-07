@@ -49,7 +49,11 @@ function getCartItems($orderId){
     WHERE cart_item.order_id = '{$orderId}'";
     $result = mysqli_query($db_connection, $query);
     return $result;
+}
 
-
+function calculateTip($tipPortion,$subtotal){
+$tipAmount= $tipPortion * $subtotal;
+$total = $tipAmount + $subtotal;
+return $total;
 }
 ?>

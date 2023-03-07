@@ -8,16 +8,22 @@ if (!$_POST) {
 // Store $_POST data to variables for readability
 $email = sanitize_value($_POST['email']);
 $password = sanitize_value($_POST['password']);
-$user = get_user_by_email_and_password($email, $password);
+$newUser = get_user_by_email_and_password($email, $password);
+
 
 // Check there are no errors with our SQL statement
-if ($user) {
-    // Create a user array in the SESSION variable and assign values to it
+if ($newUser) {
+    
+    TODO:
+    //update current user order, replace id with newuser id 
+    $query = "UPDATE orders SET user_id = {$newUser['id']} WHERE id = {$userOrder['id']}";
+    $result = mysqli_query($db_connection, $query);
+
     $_SESSION['user'] = [
-        'id' => $user['id'],
+        'id' => $newUser['id'],
     ];
-    redirect_to('/pages/home.php');
+    redirect_to('/checkout.php');
 } else {
-    $error_message = 'User was not updated: ' . mysqli_error($db_connection);
+    $error_message = 'User was not logged in: ' . mysqli_error($db_connection);
     redirect_to('/auth/login?error=' . $error_message);
 }

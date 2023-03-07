@@ -1,12 +1,12 @@
 <?php
-include_once __DIR__ . '/../app.php';
+include_once __DIR__ . '/app.php';
 $page_title = 'Checkout | KAMI Food Truck';
-include_once __DIR__ . '/../_components/header-kami.php';
+include_once __DIR__ . '/_components/header-kami.php';
+$cart_items = getCartItems($userOrder['id']);
+$final_total;
 ?>
 <body class="backgroundColor">
-<!-- <style><?php 
-include_once __DIR__ . '/../dist/styles/checkout.css';
-?></style> -->
+
 
 <h2 class="logoFontSm text-center mt-5">KAMI</h2>
 <div class="page mx-3">
@@ -27,15 +27,7 @@ include_once __DIR__ . '/../dist/styles/checkout.css';
 
     <div class="container-b mx-auto py-3 px-4 mb-4 d-flex flex-column" >
         <h3 class="mb-3">Jervo's Order</h3>
-
-        <div class="d-flex flex-row justify-content-between align-items-center mb-2">
-            <p>1 Bibimbap</p>
-            <p>$10</p>
-        </div>
-        <div class="d-flex flex-row justify-content-between align-items-center">
-            <p>2 Kimchi</p>
-            <p>$2</p>
-        </div>
+        <?php include __DIR__ . '/_components/checkoutItem.php';?>
     </div>
 
     <div class="container-b mx-auto py-3 px-4 mb-4 d-flex flex-column" >
@@ -72,9 +64,9 @@ include_once __DIR__ . '/../dist/styles/checkout.css';
             <div class="d-flex justify-content-between mb-4">
                 <button type="button" class="btn btn-secondary btn-sm px-3">Card</button>
                 
-                <button onclick="window.location.href = '<?php echo site_url(); ?>/pages/confirm-animation.php';"type="button" class="btn btn-secondary btn-sm px-3">Venmo</button>
+                <button onclick="window.location.href = '<?php echo site_url(); ?>/confirm-animation.php';"type="button" class="btn btn-secondary btn-sm px-3">Venmo</button>
 
-                <button onclick="window.location.href = '<?php echo site_url(); ?>/pages/confirm-animation.php';" type="button" class="btn btn-secondary btn-sm px-3">Apple</button>
+                <button onclick="window.location.href = '<?php echo site_url(); ?>/confirm-animation.php';" type="button" class="btn btn-secondary btn-sm px-3">Apple</button>
             </div>
 
 
@@ -116,9 +108,9 @@ include_once __DIR__ . '/../dist/styles/checkout.css';
 <div class="container sticky fixed-bottom px-2 pt-4 pb-5">
     <div class=" row mx-auto justify-content-center align-items-center">
        
-    <button type="button" onclick="window.location.href='<?php echo site_url(); ?>/pages/cart.php';"class="col btn btn-outline-primary p-2">Back</button>
+    <button type="button" onclick="window.location.href='<?php echo site_url(); ?>/cart.php';"class="col btn btn-outline-primary p-2">Back</button>
 
-        <button onclick="window.location.href = '<?php echo site_url(); ?>/pages/confirm-animation.php';"type="button" class="btn btn-primary p-2 px-4 mx-1 col-8">
+        <button onclick="window.location.href = '<?php echo site_url(); ?>/confirm-animation.php';"type="button" class="btn btn-primary p-2 px-4 mx-1 col-8">
             
                 <div class="d-flex justify-content-between">
                     <p class="text-light"> Checkout</p>

@@ -11,7 +11,7 @@ include_once __DIR__ . '/../_components/header-kami.php';
 </div>
 
    <div class="d-flex justify-content-center">
-        <form  class="d-flex justify-content-center flex-wrap">
+        <div  class="d-flex justify-content-center flex-wrap">
             <p>
             <label for="name" class="mb-1">First Name</label></br>
             <input type="text" id="name"  class="mb-2 p-2 input-login" name="first_name"></p>
@@ -30,7 +30,7 @@ include_once __DIR__ . '/../_components/header-kami.php';
             <input type="password" id="password2" name="password2" class="mb-2 p-2 input-login"></p>
             <button type="button" class="btn btn-link ms-2 pb-4" >Forgot Password?</button>
             <div class="w-100 d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary px-5" onclick="window.location.href='<?php echo site_url(); ?>/pages/checkout.php'">Create Account</button>
+            <button class="btn btn-primary px-5" onclick="window.location.href='<?php echo site_url(); ?>/pages/checkout.php'">Create Account</button>
             <!-- <button onclick="window.location.href = '<?php echo site_url(); ?>/auth/login.php';" type="button" class="input-login btn btn-outline-primary p-2 mb-4">Sign In</button> -->
             </div>
         </form>

@@ -1,17 +1,17 @@
 <?php
-include_once __DIR__ . '/../app.php';
+include_once __DIR__ . '/app.php';
 $page_title = 'Home | KAMI Food Truck';
-include_once __DIR__ . '/../_components/header-kami.php';
+include_once __DIR__ . '/_components/header-kami.php';
 ?>
 <body class="backgroundColor">
 <?php 
-include_once __DIR__ . '/../_components/navbar-mobile.php';
+include_once __DIR__ . '/_components/navbar-mobile.php';
 ?>
 <!-- <style><?php 
 include_once __DIR__ . '/../dist/styles/home.css';
 ?></style> -->
 <?php 
-$query ='SELECT * FROM menu ORDER BY name';
+$query ='SELECT * FROM menu WHERE category = "side" ORDER BY name';
 $result = mysqli_query($db_connection, $query);
 
 
@@ -43,8 +43,8 @@ $result = mysqli_query($db_connection, $query);
     <div class="d-flex justify-content-center mb-3">
         <div class="foodType">
             <div class="foodCategories">
-            <a href="<?php echo site_url(); ?>/pages/home.php" class="foodTypeOption sides">Meals</a>
-                <p class="foodTypeOption sides">Sides</p>
+            <a href="<?php echo site_url(); ?>/index.php" class="foodTypeOption sides">Meals</a>
+            <a href="<?php echo site_url(); ?>/home-sides.php" class="foodTypeOption sides">Sides</a>
                 <p class="foodTypeOption drinks">Drinks</p>
             </div>
             <div class="foodTypeUnderbar">
@@ -53,7 +53,7 @@ $result = mysqli_query($db_connection, $query);
         </div>
     </div>
     <!-- menu items -->
-    <?php include __DIR__ . '/../_components/sideItem.php'; ?>
+    <?php include __DIR__ . '/_components/sideItem.php'; ?>
    </div>
 
    <!-- MODAL -->
@@ -112,5 +112,5 @@ $result = mysqli_query($db_connection, $query);
 
 <div class="py-3"></div>
 
-    <?php include_once __DIR__ . '/../_components/footer.php';
+    <?php include_once __DIR__ . '/_components/footer.php';
 ?>

@@ -1,11 +1,11 @@
 <?php
-include_once __DIR__ . '/../app.php';
+include_once __DIR__ . '/app.php';
 $page_title = 'Home | KAMI Food Truck';
-include_once __DIR__ . '/../_components/header-kami.php';
+include_once __DIR__ . '/_components/header-kami.php';
 ?>
 <body class="backgroundColor">
 <?php 
-include_once __DIR__ . '/../_components/navbar-mobile.php';
+include_once __DIR__ . '/_components/navbar-mobile.php';
 $cart_items = getCartItems($userOrder['id']);
 
 ?>
@@ -21,13 +21,11 @@ $cart_items = getCartItems($userOrder['id']);
             <img class="kami-duck" src="<?php echo site_url(); ?>/dist/images/kami-duck.png">
         </div>
 
+        <?php include __DIR__ . '/_components/cartItem.php';?>
         <div class="d-flex justify-content-between mb-3">
             <h2>Total</h2>
-            <h2>$12</h2>
+            <h2>$ <?php echo($total_price); ?></h2>
         </div>
-
-        <?php include __DIR__ . '/../_components/cartItem.php';?>
-    
         <!-- <div class="heading-border d-flex justify-content-between mb-3"></div> -->
         <h3 class="mb-4 text-center">Want to Include any utensils?</h3>
         <form class="d-flex justify-content-between mb-4">
@@ -52,12 +50,20 @@ $cart_items = getCartItems($userOrder['id']);
                 </label> 
             </form>
             <div class="heading-border d-flex justify-content-between mb-4"></div>
-            <a  href="<?php echo site_url(); ?>/pages/checkout.php" class="checkoutBtn  px-3 mb-5">
+            <a  href="<?php echo site_url(); ?>/auth/login.php" class="checkoutBtn  px-3 mb-5">
             <p  class=" mt-1 text-light">Checkout</p>
-            <p  class=" mt-1 text-light">$12</p>
+            <p  class=" mt-1 text-light">$<?php echo($total_price); ?></p>
         </a>
-        <a href="<?php echo site_url(); ?>/auth/logout.php" logout> logout</a>    
+        <a href="<?php echo site_url(); ?>/index.php" logout> logout</a>    
    </div>
 
-   <?php include_once __DIR__ . '/../_components/footer.php';
+   <?php include_once __DIR__ . '/_components/footer.php';
 ?>
+
+<!-- <?php echo site_url(); ?> 
+            <?php
+                if($user['isGuest']==0){
+                    echo('checkout.php'); 
+                }else{
+                    echo('/auth/login.php');
+                }?> -->
