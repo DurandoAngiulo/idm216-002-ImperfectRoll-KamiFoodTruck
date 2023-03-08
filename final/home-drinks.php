@@ -11,7 +11,7 @@ include_once __DIR__ . '/_components/navbar-mobile.php';
 include_once __DIR__ . '/../dist/styles/home.css';
 ?></style> -->
 <?php 
-$query ='SELECT * FROM menu WHERE category = "side" ORDER BY name';
+$query ='SELECT * FROM menu WHERE category = "drink" ORDER BY name';
 $result = mysqli_query($db_connection, $query);
 
 

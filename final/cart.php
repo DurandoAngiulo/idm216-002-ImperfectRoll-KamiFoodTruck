@@ -6,6 +6,7 @@ include_once __DIR__ . '/_components/header-kami.php';
 <body class="backgroundColor">
 <?php 
 include_once __DIR__ . '/_components/navbar-mobile.php';
+($user['isGuest']==0) ? "success": redirect_to('/auth/login.php') ;
 $cart_items = getCartItems($userOrder['id']);
 
 ?>
@@ -24,7 +25,7 @@ $cart_items = getCartItems($userOrder['id']);
         <?php include __DIR__ . '/_components/cartItem.php';?>
         <div class="d-flex justify-content-between mb-3">
             <h2>Total</h2>
-            <h2>$ <?php echo($total_price); ?></h2>
+            <h2>$ <?php echo(number_format((float)$total_price, 2, '.', '')); ?></h2>
         </div>
         <!-- <div class="heading-border d-flex justify-content-between mb-3"></div> -->
         <h3 class="mb-4 text-center">Want to Include any utensils?</h3>
@@ -50,20 +51,13 @@ $cart_items = getCartItems($userOrder['id']);
                 </label> 
             </form>
             <div class="heading-border d-flex justify-content-between mb-4"></div>
-            <a  href="<?php echo site_url(); ?>/auth/login.php" class="checkoutBtn  px-3 mb-5">
+            <a  href="<?php echo site_url(); ?>/checkout.php" class="checkoutBtn  px-3 mb-5">
             <p  class=" mt-1 text-light">Checkout</p>
-            <p  class=" mt-1 text-light">$<?php echo($total_price); ?></p>
+            <p  class=" mt-1 text-light">$<?php echo(number_format((float)$total_price, 2, '.', '')); ?></p>
         </a>
-        <a href="<?php echo site_url(); ?>/index.php" logout> logout</a>    
+        <a href="<?php echo site_url(); ?>/auth/logout.php"> logout</a>    
    </div>
 
    <?php include_once __DIR__ . '/_components/footer.php';
 ?>
 
-<!-- <?php echo site_url(); ?> 
-            <?php
-                if($user['isGuest']==0){
-                    echo('checkout.php'); 
-                }else{
-                    echo('/auth/login.php');
-                }?> -->

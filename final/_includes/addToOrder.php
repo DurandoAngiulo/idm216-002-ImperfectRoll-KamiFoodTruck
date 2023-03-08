@@ -1,7 +1,6 @@
 <?php
 include __DIR__ . '/../app.php';
 if (!$_POST) {
-    var_dump($_POST);
     die('Unauthorized');
 }
 // Store $_POST data to variables for readability
@@ -15,7 +14,6 @@ $menu_id_value = sanitize_value($_POST['menu_id']);
 $query = "INSERT INTO cart_item";
 $query .=" (note, spice_level, protein, order_id, menu_id)";
 $query .= " VALUES('{$note_value}', '{$spice_level_value}', '{$protein_value}', '{$order_id_value}', '{$menu_id_value}')";
-var_dump($query);
 // Run the SQL statement
 $result = mysqli_query($db_connection, $query);
 // var_dump($result);

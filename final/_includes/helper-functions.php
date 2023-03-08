@@ -51,9 +51,5 @@ function getCartItems($orderId){
     return $result;
 }
 
-function calculateTip($tipPortion,$subtotal){
-$tipAmount= $tipPortion * $subtotal;
-$total = $tipAmount + $subtotal;
-return $total;
-}
+
 ?>

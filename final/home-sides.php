@@ -45,7 +45,7 @@ $result = mysqli_query($db_connection, $query);
             <div class="foodCategories">
             <a href="<?php echo site_url(); ?>/index.php" class="foodTypeOption sides">Meals</a>
                 <p class="foodTypeOption sides">Sides</p>
-                <p class="foodTypeOption drinks">Drinks</p>
+                <a class="foodTypeOption drinks" href="<?php echo site_url(); ?>/home-drinks.php">Drinks</a>
             </div>
             <div class="foodTypeUnderbar">
             <div class="foodTypeSlider"></div>

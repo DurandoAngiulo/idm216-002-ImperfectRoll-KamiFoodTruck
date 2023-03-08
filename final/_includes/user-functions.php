@@ -90,14 +90,23 @@ function get_user_by_email_and_password($email, $password)
  * @param integer $id
  * @return object - mysqli_result
  */
-// function delete_user_by_id($id)
-// {
-//     global $db_connection;
-//     $query = "DELETE FROM users WHERE id = {$id}";
-//     $result = mysqli_query($db_connection, $query);
-//     return $result;
-// }
+function delete_user_by_id($id)
+{
+    global $db_connection;
+    $query = "DELETE FROM users WHERE id = {$id}";
+    $result = mysqli_query($db_connection, $query);
+    return $result;
+}
 
+function delete_cart_item_by_id($id)
+{
+    global $db_connection;
+    $query = "DELETE FROM cart_item WHERE id = {$id}";
+    var_dump($query);
+    die;
+    $result = mysqli_query($db_connection, $query);
+    return $result;
+}
 /**
  * Edit existing user
  * @param  string $first_name - first name of the user

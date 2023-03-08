@@ -22,7 +22,7 @@ while ($item = mysqli_fetch_array($cart_items)) {
 </div>   
     
     <div class='d-flex justify-content-between mb-4'>
-    <a href='#'>
+    <a href='' onclick=delete_cart_item_by_id({$item['id']})'>
     <p class='text-decoration-underline'>Delete</p>
     </a>
     <a href='#'>

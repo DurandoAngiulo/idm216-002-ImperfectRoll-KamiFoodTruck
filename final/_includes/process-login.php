@@ -18,12 +18,13 @@ if ($newUser) {
     //update current user order, replace id with newuser id 
     $query = "UPDATE orders SET user_id = {$newUser['id']} WHERE id = {$userOrder['id']}";
     $result = mysqli_query($db_connection, $query);
-
+    delete_user_by_id($user['id']);
     $_SESSION['user'] = [
         'id' => $newUser['id'],
     ];
-    redirect_to('/checkout.php');
+   
+    redirect_to('/checkout.php');   
 } else {
     $error_message = 'User was not logged in: ' . mysqli_error($db_connection);
-    redirect_to('/auth/login?error=' . $error_message);
+    redirect_to('/auth/login.php?error=' . $error_message);
 }

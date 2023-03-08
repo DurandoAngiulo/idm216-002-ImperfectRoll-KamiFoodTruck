@@ -1,6 +1,6 @@
 <?php
     $site_url = site_url();
-    $total_price=0;
+    $total_price=0.00;
 while ($item = mysqli_fetch_array($cart_items)) {
     echo " 
     <div class='d-flex flex-row justify-content-between align-items-center mb-2'>
@@ -9,4 +9,6 @@ while ($item = mysqli_fetch_array($cart_items)) {
     </div>
         ";
         $total_price += $item['price'];
+        
+       
     }?>
