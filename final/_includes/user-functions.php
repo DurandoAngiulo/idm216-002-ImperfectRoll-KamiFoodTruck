@@ -11,14 +11,6 @@ function get_users()
     return $result;
 }
 
-/**
- * Insert a user into the database
- * @param  string $first_name - first name of the user
- * @param  string $last_name - last name of the user
- * @param  string $email - email of the user
- * @param  string $phone - phone number of the user
- * @return object - mysqli_result
- */
 function add_user($first_name, $last_name, $email, $password)
 {
     
@@ -32,56 +24,36 @@ function add_user($first_name, $last_name, $email, $password)
     return $result;
 }
 
-/**
- * Get user by id
- * @param integer $id
- * @return Array or false
- */
+function create_guest_user(){
+    global $db_connection;
+    $query = 'INSERT INTO users';
+        $query .= ' (isGuest)';
+        $query .= " VALUES ('1')";
+        $result = mysqli_query($db_connection, $query);
+        if ($result) {
+           $recentId = $db_connection->insert_id;
+           get_user_by_id($recentId);
+            // Create a user array in the SESSION variable and assign values to it
+        }
+         
+    }
+
 function get_user_by_id($id)
 {
     global $db_connection;
+    
     $query = "SELECT * FROM users WHERE id = '$id'";
+    
     $result = mysqli_query($db_connection, $query);
     if ($result->num_rows > 0) {
         $user = mysqli_fetch_assoc($result);
+        $_SESSION['user'] = [
+            'id' => $user['id'],
+        ];
         return $user;
-    } else {
-        return false;
     }
+    create_guest_user();
 }
-
-/**
- * Delete user by the user id
- *
- * @param integer $id
- * @return object - mysqli_result
- */
-// function delete_user_by_id($id)
-// {
-//     global $db_connection;
-//     $query = "DELETE FROM users WHERE id = {$id}";
-//     $result = mysqli_query($db_connection, $query);
-//     return $result;
-// }
-
-/**
- * Edit existing user
- * @param  string $first_name - first name of the user
- * @param  string $last_name - last name of the user
- * @param  string $email - email of the user
- * @param  string $phone - phone number of the user
- * @param string $id_value - user ID
- * @return object - mysqli_result
- */
-// function edit_user($first_name_value, $last_name_value, $email_value, $phone_value, $id_value)
-// {
-//     global $db_connection;
-//     $query = 'UPDATE users';
-//     $query .= " SET first_name = '{$first_name_value}', last_name = '{$last_name_value}', email = '{$email_value}', phone = '{$phone_value}'";
-//     $query .= " WHERE id = {$id_value}";
-//     $result = mysqli_query($db_connection, $query);
-//     return   $result;
-// }
 
 function verify_password($password)
 {
@@ -111,3 +83,46 @@ function get_user_by_email_and_password($email, $password)
         return false;
     }
 }
+
+/**
+ * Delete user by the user id
+ *
+ * @param integer $id
+ * @return object - mysqli_result
+ */
+function delete_user_by_id($id)
+{
+    global $db_connection;
+    $query = "DELETE FROM users WHERE id = {$id}";
+    $result = mysqli_query($db_connection, $query);
+    return $result;
+}
+
+function delete_cart_item_by_id($id)
+{
+    global $db_connection;
+    $query = "DELETE FROM cart_item WHERE id = {$id}";
+    var_dump($query);
+    die;
+    $result = mysqli_query($db_connection, $query);
+    return $result;
+}
+/**
+ * Edit existing user
+ * @param  string $first_name - first name of the user
+ * @param  string $last_name - last name of the user
+ * @param  string $email - email of the user
+ * @param  string $phone - phone number of the user
+ * @param string $id_value - user ID
+ * @return object - mysqli_result
+ */
+// function edit_user($first_name_value, $last_name_value, $email_value, $phone_value, $id_value)
+// {
+//     global $db_connection;
+//     $query = 'UPDATE users';
+//     $query .= " SET first_name = '{$first_name_value}', last_name = '{$last_name_value}', email = '{$email_value}', phone = '{$phone_value}'";
+//     $query .= " WHERE id = {$id_value}";
+//     $result = mysqli_query($db_connection, $query);
+//     return   $result;
+// }
+

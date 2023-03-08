@@ -10,7 +10,7 @@ include_once __DIR__ . '/../_components/header-kami.php';
 </div>
 
    <div class="d-flex justify-content-center">
-        <form  class="d-flex justify-content-center flex-wrap" action="" method="POST">
+        <div class="d-flex justify-content-center flex-wrap" action="" method="POST">
             <!-- <p>
             <label for="name" class="mb-1">Name</label></br>
             
@@ -27,9 +27,9 @@ include_once __DIR__ . '/../_components/header-kami.php';
 
         <div class="d-grid gap-2 px-3">
             <button onclick="window.location.href = '<?php echo site_url(); ?>/pages/signup.php';" type="button" class="btn btn-primary p-2">Create Account</button>
-            <button type="submit" class="input-login btn btn-outline-primary p-2 mb-4">Sign In</button>
+            <button onclick="window.location.href = '<?php echo site_url(); ?>/pages/checkout.php';" type="button" type="submit" class="input-login btn btn-outline-primary p-2 mb-4">Sign In</button>
         </div>
-        </form>
+</div>
     </div>
 
     

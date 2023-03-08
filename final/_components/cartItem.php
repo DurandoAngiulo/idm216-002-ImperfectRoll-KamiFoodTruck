@@ -1,7 +1,7 @@
 <?php
     $site_url = site_url();
+    $total_price=0;
 while ($item = mysqli_fetch_array($cart_items)) {
-    
     echo " 
 <div class='d-flex justify-content-between mb-4'>    
     <div class='image-and-text d-flex justify-content-between'>
@@ -22,7 +22,7 @@ while ($item = mysqli_fetch_array($cart_items)) {
 </div>   
     
     <div class='d-flex justify-content-between mb-4'>
-    <a href='#'>
+    <a href='' onclick=delete_cart_item_by_id({$item['id']})'>
     <p class='text-decoration-underline'>Delete</p>
     </a>
     <a href='#'>
@@ -31,5 +31,6 @@ while ($item = mysqli_fetch_array($cart_items)) {
     </div>
     <div class='heading-border d-flex justify-content-between mb-3'></div>
         ";
+        $total_price += $item['price'];
     }?>
     

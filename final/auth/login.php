@@ -2,6 +2,9 @@
 include_once __DIR__ . '/../app.php';
 $page_title = 'Log In | KAMI Food Truck';
 include_once __DIR__ . '/../_components/header-kami.php';
+$errorMessage = isset($_GET['error']) ? $_GET['error'] : false;
+if ($errorMessage){
+    echo $errorMessage;}
 ?>
 <body class="backgroundColor">
 <div class="mt-4">

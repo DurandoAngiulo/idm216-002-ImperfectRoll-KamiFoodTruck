@@ -25,6 +25,7 @@ function createNewOrderByUserId($userId){
 
 function getOrderByUserId($userId){
     global $db_connection;
+   
     $query= "SELECT * FROM orders WHERE user_id = {$userId} AND status = 'active' LIMIT 1";
     $result = mysqli_query($db_connection, $query);
     // var_dump($result);

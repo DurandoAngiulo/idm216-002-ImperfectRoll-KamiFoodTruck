@@ -30,23 +30,22 @@ include_once __DIR__ . '/_includes/database.php';
 include_once __DIR__ . '/_includes/helper-functions.php';
 include_once __DIR__ . '/_includes/user-functions.php';
 include_once __DIR__ . '/_includes/users.php';
-$isPageThatStartsWithPages = strpos($_SERVER['REQUEST_URI'], '/pages') !== false; 
 $isLoginPage= strpos($_SERVER['REQUEST_URI'], '/auth/login') !== false;
 $sessionUserId = $_SESSION['user']['id'] ?? null;
-$user = $sessionUserId ? get_user_by_id($sessionUserId) : null;
+$user = $sessionUserId ? get_user_by_id($sessionUserId) : create_guest_user();
 
-if($isPageThatStartsWithPages) {
-    if (!is_user_logged_in()) {
+// if($isPageThatStartsWithPages) {
+//     if (!is_user_logged_in()) {
        
-        redirect_to('/auth/login.php');
-    }
-}else if($isLoginPage){
-    if (is_user_logged_in()) {
+//         redirect_to('/auth/login.php');
+//     }
+// }else if($isLoginPage){
+//     if (is_user_logged_in()) {
        
-        redirect_to('/pages/home.php');
-    }
+//         redirect_to('/pages/home.php');
+//     }
 
-} 
+// } 
 
 
 // TODO query databse and get user
