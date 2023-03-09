@@ -1,7 +1,6 @@
 
 
 <?php 
-//TODO:create a function called getUser() (make dynamic)
 function getUser() {
     $user = [
         'id'=> '1'
@@ -9,7 +8,7 @@ function getUser() {
     return $user;
 }
 
-//TODO:
+
 //return order array from database. only active orders(status active)
 function createNewOrderByUserId($userId){
     global $db_connection;
@@ -25,10 +24,8 @@ function createNewOrderByUserId($userId){
 
 function getOrderByUserId($userId){
     global $db_connection;
-   
     $query= "SELECT * FROM orders WHERE user_id = {$userId} AND status = 'active' LIMIT 1";
     $result = mysqli_query($db_connection, $query);
-    // var_dump($result);
     if($result->num_rows === 1){
     return $result;
     } else{ 
@@ -36,17 +33,6 @@ function getOrderByUserId($userId){
         $query= "SELECT * FROM orders WHERE user_id = {$userId} AND status = 'active' LIMIT 1";
         $result = mysqli_query($db_connection, $query);
         return $result;
-        
-
     }
-//first check if current user. has an order. if yes,then return that order. other
-//if not create a new order. pass in user id. return order
 }
 
-//TODO:get cart by order id. 
-
-
-
-
-
-//TODO: get cart count
