@@ -41,9 +41,7 @@ function create_guest_user(){
 function get_user_by_id($id)
 {
     global $db_connection;
-    
     $query = "SELECT * FROM users WHERE id = '$id'";
-    
     $result = mysqli_query($db_connection, $query);
     if ($result->num_rows > 0) {
         $user = mysqli_fetch_assoc($result);
@@ -69,7 +67,6 @@ function get_user_by_email_and_password($email, $password)
     global $db_connection;
     $query = "SELECT * FROM users WHERE email = '$email'";
     $result = mysqli_query($db_connection, $query);
-
     if ($result->num_rows > 0) {
         $user = mysqli_fetch_assoc($result);
         $existing_hashed_password = $user['password'];
