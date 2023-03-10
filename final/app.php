@@ -34,28 +34,11 @@ $isLoginPage= strpos($_SERVER['REQUEST_URI'], '/auth/login') !== false;
 $sessionUserId = $_SESSION['user']['id'] ?? null;
 $user = $sessionUserId ? get_user_by_id($sessionUserId) : create_guest_user();
 
-// if($isPageThatStartsWithPages) {
-//     if (!is_user_logged_in()) {
-       
-//         redirect_to('/auth/login.php');
-//     }
-// }else if($isLoginPage){
-//     if (is_user_logged_in()) {
-       
-//         redirect_to('/pages/home.php');
-//     }
 
-// } 
-
-
-// TODO query databse and get user
 $userOrder = null;
 if ($user) {
 
 $currentUserOrder = getOrderByUserId($user['id']);
 $userOrder= mysqli_fetch_array($currentUserOrder);
 }
-// $currentUserOrder = getOrderByUserId($user['id']);
-// $userOrder= mysqli_fetch_array($currentUserOrder);
-
 

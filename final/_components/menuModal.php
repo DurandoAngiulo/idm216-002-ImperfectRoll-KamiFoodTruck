@@ -52,20 +52,23 @@
                 <!-- protein inputs -->
                 <input  id="chicken<?php echo $meal['id']; ?>" value="chicken" type="radio" name="protein" class=" input-hidden">
                 <label  class="" for="chicken<?php echo $meal['id']; ?>">
-                    <div class="protein-container d-flex justify-content-center align-items-center">
+                    <div class="protein-container d-flex flex-wrap justify-content-center ">
                         <img class="" src="<?php echo site_url(); ?>/dist/images/chicken.png">
+                        <p class="text-center fst-italic">Chicken</p>
                     </div>
                 </label>
                 <input  id="beef<?php echo $meal['id']; ?>" type="radio" value="beef" name="protein" class=" input-hidden">
                 <label  class="" for="beef<?php echo $meal['id']; ?>">
-                    <div class="protein-container d-flex justify-content-center align-items-center">
+                    <div class="protein-container d-flex flex-wrap justify-content-center ">
                         <img class="" src="<?php echo site_url(); ?>/dist/images/beef.png">
+                        <p class="text-center fst-italic">Beef</p>
                     </div>
                 </label>
                 <input  id="tofu<?php echo $meal['id']; ?>" type="radio"  value="tofu" name="protein" class=" input-hidden">
                 <label  class="" for="tofu<?php echo $meal['id']; ?>">
-                    <div class="protein-container d-flex justify-content-center align-items-center">
+                    <div class="protein-container d-flex  flex-wrap justify-content-center ">
                         <img class="" src="<?php echo site_url(); ?>/dist/images/tofu.png">
+                        <p class="text-center fst-italic">Tofu</p>
                     </div>
                 </label> 
             </div>
