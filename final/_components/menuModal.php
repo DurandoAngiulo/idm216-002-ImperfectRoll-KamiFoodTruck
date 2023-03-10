@@ -1,5 +1,5 @@
 <div class="modal fade" id="selectionModal-<?php echo $meal['id']; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable mx-0 mt-5 ">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <form class="modal-content modalBackground" action="<?php echo site_url();?>/_includes/addToOrder.php" method="POST">
       <div class="modal-body p-0">
         <div class=" modal-header-details border-bottom-0 modalAccent p-0">
@@ -48,7 +48,7 @@
             </div>
 
             <h3 class="mb-4">Add Protein (+ 1$)</h3>
-            <div class="d-flex justify-content-between mb-4">
+            <div class="d-flex justify-content-evenly mb-4 px-5">
                 <!-- protein inputs -->
                 <input  id="chicken<?php echo $meal['id']; ?>" value="chicken" type="radio" name="protein" class=" input-hidden">
                 <label  class="" for="chicken<?php echo $meal['id']; ?>">

@@ -10,7 +10,7 @@ include_once __DIR__ . '/_components/navbar-mobile.php';
 $cart_items = getCartItems($userOrder['id']);
 
 ?>
-
+<div class="container">
 <h1 class="text-center mt-5 mb-3">Cart</h1>
 <div class=" box1 sb8 mb-2">
     <h3>The wait time is <span class="accent">13 Minutes</span></h3>
@@ -58,6 +58,6 @@ $cart_items = getCartItems($userOrder['id']);
         <a href="<?php echo site_url(); ?>/auth/logout.php"> logout</a>    
    </div>
 
-   <?php include_once __DIR__ . '/_components/footer.php';
-?>
+   <?php include_once __DIR__ . '/_components/footer.php'; ?>
+   </div>
 

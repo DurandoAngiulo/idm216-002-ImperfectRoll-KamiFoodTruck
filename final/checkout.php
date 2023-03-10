@@ -8,7 +8,7 @@ $cart_items = getCartItems($userOrder['id']);
 ?>
 <body class="backgroundColor">
 
-
+<div class="container">
 <h2 class="logoFontSm text-center mt-5">KAMI</h2>
 <div class="page mx-3">
    <h1 class="text-center mt-3 mb-3">Checkout</h1>
@@ -22,12 +22,12 @@ $cart_items = getCartItems($userOrder['id']);
 
         <div class="d-grid gap-2">
             <button type="button" class="btn btn-secondary p-2">12:30pm (ASAP)</button>
-            <button type="button" class="btn btn-outline-secondary p-2">See other times</button>
+            <button type="button" class="btn btn-outline-secondary p-2">Select Another Time</button>
         </div>
     </div>
 
     <div class="container-b mx-auto py-3 px-4 mb-4 d-flex flex-column" >
-        <h3 class="mb-3">Jervo's Order</h3>
+        <h3 class="mb-3">Your Order</h3>
         <?php include __DIR__ . '/_components/checkoutItem.php';?>
     </div>
 
@@ -120,5 +120,5 @@ $cart_items = getCartItems($userOrder['id']);
         </button>
     </form>
 </div>
-<?php include_once __DIR__ . '/_components/footer.php';
-?>
+<?php include_once __DIR__ . '/_components/footer.php';?>
+</div>
