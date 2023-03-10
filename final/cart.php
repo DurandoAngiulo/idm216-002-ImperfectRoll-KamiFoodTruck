@@ -6,7 +6,7 @@ include_once __DIR__ . '/_components/header-kami.php';
 <body class="backgroundColor">
 <?php 
 include_once __DIR__ . '/_components/navbar-mobile.php';
-($user['isGuest']==0) ? "success": redirect_to('/auth/login.php') ;
+// ($user['isGuest']==0) ? "success": redirect_to('/auth/login.php') ;
 $cart_items = getCartItems($userOrder['id']);
 
 ?>
