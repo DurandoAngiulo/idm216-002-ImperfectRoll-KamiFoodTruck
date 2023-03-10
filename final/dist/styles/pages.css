@@ -26,7 +26,11 @@
 
 /* ///////////////////speech bubble */
 
-.container{
+:root {
+  --menu-header-image: 150px;
+}
+
+.container {
   max-width: 768px;
 }
 
@@ -70,7 +74,7 @@
 .menu-header-image {
   /* width: 100%; */
   position: relative;
-  height: 150px;
+  height: var(--menu-header-image);
   background-image: url(https://res.cloudinary.com/dsysuymw2/image/upload/v1677358239/idm216/optimized%20images/tteok_xtfyzl.jpg);
   background-size: cover;
   background-position: center center;
@@ -198,6 +202,7 @@
   background-color: var(--backgroundDarker);
   border-radius: 10px;
   height: 120px;
+  width: 80px;
   border: solid 1px transparent;
 }
 
@@ -247,23 +252,19 @@
   border: none;
 }
 
+@media screen and (min-width: 550px) {
+  :root {
+    --menu-header-image: 250px;
+  }
+}
+@media screen and (min-width: 1300px) {
+}
+
 /* //////////////////////////////////////// */
 
 /* CART PAGE STYLING */
 
 /* //////////////////////////////////////// */
-
-.box1 {
-  width: 250px;
-  margin: 0 auto;
-  border: 1px solid var(--textColor);
-  border-radius: 5px;
-  padding: 12px;
-  text-align: center;
-  font-weight: 900;
-  font-family: arial;
-  position: relative;
-}
 
 .cart-item-container {
   width: 70px;
@@ -304,14 +305,6 @@
   border-radius: 50%;
   padding: 0;
 }
-
-/* .kami-duck {
-    width: 60px;
-  } DUPLIC*/
-
-/* .heading-border {
-    border-bottom: 1px solid var(--textColor);
-  } DUPLI*/
 
 .order-amount-number {
   align-self: center;
@@ -392,37 +385,6 @@
   z-index: 14;
 }
 
-/* .btn{
-    font-family: "Poppins-reg", Helvetica, sans-serif;
-    border-radius: 20rem;
-}
-
-.btn-primary{
-    --bs-btn-bg: var(--textColor);
-    --bs-btn-active-bg: #2d2b2b;
-    --bs-btn-hover-bg: #2d2b2b;
-    --bs-btn-color: #FFFFFF;
-    border-style: none;
-}
-
-.btn-outline-primary{
-
-    --bs-btn-border-color: var(--textColor);
-    --bs-btn-hover-color: var(--textColor);
-    --bs-btn-color: var(--textColor);
-    --bs-btn-hover-border-color: #2d2b2b;
-    --bs-btn-active-border-color: #2d2b2b;
-    --bs-btn-active-color: #2d2b2b;
-    --bs-btn-active-bg: var(--backgroundColor);
-    --bs-btn-hover-bg:var(--backgroundColor);
-}
-
-.btn-link{
-    color: var(--accentGreen);
-    --bs-btn-hover-color: #24775e;
-    --bs-btn-active-color: #24775e;
-} */
-
 .btn-secondary {
   --bs-btn-bg: var(--accentGreen);
   --bs-btn-active-bg: #24775e;
@@ -448,14 +410,15 @@
   --bs-btn-hover-border-color: var(--textColor);
   --bs-btn-active-border-color: var(--textColor);
   --bs-btn-active-color: var(--textColor);
-  --bs-btn-active-bg:var(--textColor);
+  --bs-btn-active-bg: var(--textColor);
   --bs-btn-hover-bg: var(--textColor);
 }
 
-.btn-outline-secondary:hover, .btn-outline-secondary:focus {
- color: var(--backgroundColor);
- background-color: var(--accentGreen);
- border-color: var(--accentGreen);
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus {
+  color: var(--backgroundColor);
+  background-color: var(--accentGreen);
+  border-color: var(--accentGreen);
 }
 
 .input {
