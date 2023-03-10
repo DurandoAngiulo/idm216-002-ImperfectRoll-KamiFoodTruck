@@ -135,6 +135,7 @@ strong {
   background-color: var(--backgroundColor);
   bottom: 0;
   border-top: 1px solid var(--mobileNavBorderColor);
+  justify-content: space-between;
 }
 .mobile-nav-image {
   width: 40px;
@@ -151,6 +152,12 @@ strong {
 @media screen and (min-width: 768px) {
   :root {
     --test: 1;
+  }
+
+  .mobile-navbar{
+    justify-content: center;
+    gap: 14rem;
+    padding: 0.5rem 0;
   }
 }
 
