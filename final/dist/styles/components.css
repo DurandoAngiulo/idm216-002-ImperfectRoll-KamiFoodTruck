@@ -1,0 +1,351 @@
+.addButton{
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: black;
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 44px;
+    width: 44px;
+    transition: all .2s ease-out;
+  }
+  .addPlus{
+      pointer-events: none;
+    position: relative;
+    top: -2px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  .clicked{
+    filter: opacity(.5);
+    transform: scale(.9);
+    transition: all .2s ease-out;
+  }
+
+
+
+
+
+
+  @keyframes cart-wiggle{
+    0%{
+      transform: rotate(0deg);
+    }25%{
+      transform: rotate(-10deg);
+    }50%{
+      transform: rotate(10deg);
+    }75%{
+      transform: rotate(-10deg);
+    }100%{
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes cart-add-anim{
+    0%{
+      transform: scale(.01);
+    }100%{
+      transform: scale(1);
+    }
+  }
+  
+  .cart-amount{
+    border-radius: 1rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cart-wiggle{
+    animation: cart-wiggle .6s ease-in-out;
+    transition: all .4s ease-in-out
+  }
+  
+  .cart-amount{
+    z-index: 10;
+    position: relative;
+    right: -2rem;
+    top: .8rem;
+    transform: scale(.01);
+  }
+  .cart-add-anim{
+    animation: cart-add-anim .4s ease-out forwards;
+  }
+
+
+
+
+
+
+     /*Food categories*/
+.foodType{
+    width: 15rem;
+  }
+  .foodCategories{
+    display: flex;
+    justify-content: space-between;
+  }
+  .foodTypeOption{
+    cursor: pointer;
+    text-align: center;
+    width: 15rem;
+  }
+  .foodTypeSlider{
+    position: relative;
+    left: 0rem;
+    background-color: black;
+    height: 2px;
+    width: 5rem;
+    animation: slide 1s ease-in-out infinite;
+  }
+  .foodTypeUnderbar{
+    display: flex;
+    background-color: rgb(167, 167, 167);
+    height: 2px;
+    transition: all .2s ease-out;
+  }
+  
+  .sliderPos1{
+    left: 0rem;
+    transition: all .2s ease-out;
+  }
+  .sliderPos2{
+    left: 5rem;
+    transition: all .2s ease-out;
+  }
+  .sliderPos3{
+    left: 10rem;
+    transition: all .2s ease-out;
+  }
+  .bolded{
+    /* increase font weight */
+    font-weight: 900;
+    /* Slide to the left */
+    transition: all .5s ease-out;
+  }
+
+
+
+
+  @keyframes prevSlideIn{
+    from{
+      opacity: 0;
+      left: -1;
+    }to{
+      opacity: 1;
+      left: .6rem;
+    }
+  }
+  @keyframes newSlideIn{
+      from{
+      opacity: 0;
+      left: 1;
+    }to{
+      opacity: 1;
+      left: -.6rem;
+    }
+  }
+  @keyframes currentSlideRight{
+      from{
+      opacity: 1;
+      left: 0;
+    }to{
+      opacity: 0;
+      left: 1rem;
+    }
+  }
+  @keyframes currentSlideLeft{
+        from{
+      opacity: 1;
+      left: 0;
+    }to{
+      opacity: 0;
+      left: -1rem;
+    }
+  }
+  .number-box{
+    display: flex;
+    justify-content: space-between;
+    width: 6rem;
+    height: 3rem;
+    border: solid 2px black;
+    border-radius: 5rem;
+    padding: 0 1.5rem;
+    align-items: center;
+  }
+  .number-reel-container{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  .number-touch-area{
+      cursor: pointer;
+    position: relative;
+    display: flex;
+    height: 3rem;
+    width: 8rem;
+  }
+  .number-left-touch-area{
+    left: -1rem;
+    justify-content: center;
+  }
+  .number-right-touch-area{
+    left: 1rem;
+    justify-content: center;
+  }
+  .item-amount{
+    position: relative;
+  }
+  .last-number{
+    opacity: 0;
+    left: -1rem; 
+  }
+  .new-number{
+    opacity: 0;
+    left: 1rem;
+  }
+  
+  .prevSlideIn{
+    animation: prevSlideIn .25s ease-in-out;
+  }
+  .newSlideIn{
+    animation: newSlideIn .25s ease-in-out;
+  }
+  .currentSlideLeft{
+    animation: currentSlideLeft .25s ease-in-out;
+  }
+  .currentSlideRight{
+    animation: currentSlideRight .25s ease-in-out;
+  }
+
+
+
+
+  /*Spice Meter*/
+.spiceBox{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  p{
+    font-family: Poppins;
+  }
+  
+  :root{
+    --spiceColor: rgb(35,128,7);
+    --spiceAccent: rgb(118, 196, 160);
+  }
+  
+  .spiceMeter{
+    position: relative;
+    left: -13.2rem;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 20rem;
+    height: 15rem;
+    width: 3rem;
+    background-color: rgb(255,255,255);
+    overflow: hidden;
+  }
+  .spiceBar{
+    display: flex;
+    align-items: flex-start;
+    width: 3rem;
+    height: 1.5rem;
+    background-color: rgb(255,255,255);
+    transition: all .4s cubic-bezier(.38,.77,.1,.96);
+  }
+  .spiceBarCircle{
+    position: relative;
+    top: -1.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 20rem;
+    background-color: var(--spiceColor);
+    transition: all .4s cubic-bezier(.38,.77,.1,.96);
+  }
+  .spiceLevels{
+    height: 15rem;
+    width: 10rem;
+    display: flex;
+  }
+  .spiceText{
+    width: 6rem;
+    padding: 0 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+  .flameCircle{
+    width: 80%;
+    height: 80%;
+    padding: .25rem;
+    filter: brightness(100);
+    z-index: 100;
+  }
+  input[type="radio"] {
+      -webkit-appearance: none;
+    appearance: none;
+  }
+  .spiceRadioInsert{
+    border: solid 1px black;
+    height: 2.9rem;
+    width: 2.9rem;
+    border-radius: 20rem;
+    position: relative;
+    left: -3px;
+    z-index: 500;
+  }
+  .spiceRing{
+    border: solid 5px var(--spiceColor);
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem;
+    border-radius: 20rem;
+    background-color: rgb(249,236,200);
+    transition: all .4s cubic-bezier(.38,.77,.1,.96);
+  }
+  .largerFlame{
+    width: 90%;
+    height: 90%;
+  }
+  .spiceTouchAreas{
+    position: relative;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .spiceTouchArea{
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    position: relative;
+    height: 3rem;
+    width: 3rem;
+    z-index: 100;
+  }
+  
+  .spicePos3{
+    height: 13.5rem;
+  }
+  .spicePos2{
+    height: 7.5rem;
+  }
+  .spicePos1{
+    height: 1.5rem;
+  }
