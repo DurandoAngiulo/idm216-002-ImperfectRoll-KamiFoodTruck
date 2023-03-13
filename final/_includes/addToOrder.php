@@ -7,13 +7,14 @@ if (!$_POST) {
 $note_value = sanitize_value($_POST['note']);
 $spice_level_value = sanitize_value($_POST['spice_level']);
 $protein_value = sanitize_value($_POST['protein']);
+$quantity_value =sanitize_value($_POST['quantity']);
 $order_id_value = sanitize_value($_POST['order_id']);
 $menu_id_value = sanitize_value($_POST['menu_id']);
 // TODO: validate form request
 // Create a SQL statement to insert the data into the database
 $query = "INSERT INTO cart_item";
-$query .=" (note, spice_level, protein, order_id, menu_id)";
-$query .= " VALUES('{$note_value}', '{$spice_level_value}', '{$protein_value}', '{$order_id_value}', '{$menu_id_value}')";
+$query .=" (note, spice_level, protein, quantity, order_id, menu_id)";
+$query .= " VALUES('{$note_value}', '{$spice_level_value}', '{$protein_value}', '{$quantity_value}', '{$order_id_value}', '{$menu_id_value}')";
 // Run the SQL statement
 $result = mysqli_query($db_connection, $query);
 // var_dump($result);
@@ -25,7 +26,7 @@ if ($result) {
 } 
 
 else {
-    $error_message = 'Sorry there was an error creating the user: ' . mysqli_error($db_connection);
+    $error_message = 'Sorry there was an error in adding this item to cart: ' . mysqli_error($db_connection);
     
 // die;
     redirect_to('/index/services?error=' . $error_message);

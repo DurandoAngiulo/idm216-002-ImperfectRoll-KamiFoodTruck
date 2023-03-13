@@ -47,7 +47,7 @@ $cart_items = getCartItems($userOrder['id']);
                 <button type="button" class="btn btn-outline-secondary btn-sm"onclick= calculateTip(0.20,<?php echo($total_price)?>)>20%</button>
                 <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
             </div>
-            <p id="tipHook">$0.00</p>
+            <p id="tipHook">$ <?php echo(number_format((float)"0.00", 2, '.', ''))?></p>
         </div>
 
         <hr>

@@ -1,8 +1,8 @@
 function calculateTip(tipPortion, subtotal) {
   let tipAmount = tipPortion * subtotal;
-  tipAmount = Math.round((tipAmount + Number.EPSILON) * 100) / 100;
+  tipAmount = (Math.round(tipAmount * 100) / 100).toFixed(2);
   let totalPlusTip = tipAmount + subtotal;
-  totalPlusTip = totalPlusTip.toFixed(2);
+  totalPlusTip = (Math.round(totalPlusTip * 100) / 100).toFixed(2);
   document.getElementById("priceHook1").innerHTML = totalPlusTip;
   document.getElementById("tipHook").innerHTML = tipAmount;
   document.getElementById("priceHook2").innerHTML = totalPlusTip;
