@@ -2,6 +2,7 @@
     <div class="cart-amount"></div>
   <img class="cart-image" src="https://upload.wikimedia.org/wikipedia/commons/6/67/Ic_shopping_cart_48px.svg" alt="cart">
   </div>
+  <!--  Added to dist/styles/components.css 
 <style>
     @keyframes cart-wiggle{
   0%{
@@ -51,6 +52,8 @@
   animation: cart-add-anim .4s ease-out forwards;
 }
 </style>
+
+-->
 <script>
     const cart = document.querySelector('.cart-container');
 const cartImg = document.querySelector('.cart-image')

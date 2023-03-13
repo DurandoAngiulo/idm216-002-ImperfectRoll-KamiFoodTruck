@@ -2,22 +2,30 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+<div>
 <div class="spiceBox">
-   <div class="spiceRing"><img class="largerFlame" src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Flame.svg" alt="flame">
-     
+   <div class="spiceRing"><img class="largerFlame" src="<?php echo site_url(); ?>/dist/images/icons/mildFlame.png" alt="flameIcon">
    </div>
-  <div class="spiceTouchAreas">
+   <div class="spicePairing">
+   <div class="spiceMeter">
+
+      <div class="spiceTouchAreas">
         <div class="spiceRadioInsert">
-    <input class="spiceTouchArea selectionHot" type="radio" id="Hot" name="spiceLevel" value="Hot">
-    </div>
-    <div class="spiceRadioInsert">
-    <input class="spiceTouchArea selectionMedium" type="radio" id="Medium" name="spiceLevel" value="Medium">
+          <input class="spiceTouchArea selectionHot js-selectionHot" type="radio" id="Hot" name="spiceLevel" value="Hot">
+        </div>
+        <div class="spiceRadioInsert">
+          <input class="spiceTouchArea selectionMedium" type="radio" id="Medium" name="spiceLevel" value="Medium">
+        </div>
+        <div class="spiceRadioInsert">
+          <input class="spiceTouchArea selectionMild" type="radio" id="Mild" name="spiceLevel" value="Mild">
+        </div>
       </div>
-        <div class="spiceRadioInsert">
-    <input class="spiceTouchArea selectionMild" type="radio" id="Mild" name="spiceLevel" value="Mild">
-    </div>
-  </div>
+      <div class="spiceBar">
+          <div class="spiceBarCircle">
+            <img class="flameCircle"src="<?php echo site_url(); ?>/dist/images/icons/flame.png" alt="flameIcon">
+          </div>
+      </div>
+</div>
   <div class="spiceLevels">
     <div class="spiceText">
       <p>Hot</p>
@@ -25,15 +33,10 @@
       <p>Mild</p>
     </div>
   </div>
-  <div class="spiceMeter">
-    <div class="spiceBar">
-          <div class="spiceBarCircle">
-            <object class="flameCircle" data="../dist/images/icons/flame.svg" type="image/svg+xml">
-          </div>
-    </div>
 </div>  
  </div>
-
+</div>
+<!--  Added to dist/styles/components.css 
 <style>/*Spice Meter*/
 .spiceBox{
   width: 100%;
@@ -160,16 +163,9 @@ input[type="radio"] {
 .spicePos1{
   height: 1.5rem;
 }
-</style>
-
+</style>-->
+<!--  
 <script>
-    //Spice meter variables
-    const spiceTouchHot = document.querySelector('.selectionHot');
-const spiceTouchMedium = document.querySelector('.selectionMedium')
-;const spiceTouchMild = document.querySelector('.selectionMild');
-const spiceBar = document.querySelector('.spiceBar');
-const spiceCircle = document.querySelector('.spiceBarCircle');
-
 spiceTouchHot.addEventListener('click', function(){
   document.documentElement.style.setProperty('--spiceColor', "rgb(235,78,55)");
       document.documentElement.style.setProperty('--spiceAccent', 'rgb(247,145,129)');
@@ -198,3 +194,4 @@ spiceTouchMild.addEventListener('click', function(){
 });
   
 </script>
+-->
