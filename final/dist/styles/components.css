@@ -1,3 +1,5 @@
+/* Add item */
+
 .addButton {
   cursor: pointer;
   border-radius: 8px;
@@ -12,6 +14,7 @@
   transition: all 0.2s ease-out;
 }
 .addPlus {
+  color: white;
   pointer-events: none;
   position: relative;
   top: -2px;
@@ -24,6 +27,8 @@
   transform: scale(0.9);
   transition: all 0.2s ease-out;
 }
+
+/* Cart animation */
 
 @keyframes cart-wiggle {
   0% {
@@ -125,6 +130,8 @@
   transition: all 0.5s ease-out;
 }
 
+/* Quantity update */
+
 @keyframes prevSlideIn {
   from {
     opacity: 0;
@@ -168,7 +175,8 @@
 .number-box {
   display: flex;
   justify-content: space-between;
-  width: 6rem;
+  align-items: center;
+  width: 9rem;
   height: 3rem;
   border: solid 2px black;
   border-radius: 5rem;
@@ -185,6 +193,7 @@
   cursor: pointer;
   position: relative;
   display: flex;
+  align-items: center;
   height: 3rem;
   width: 8rem;
 }
@@ -327,7 +336,7 @@ input[type="radio"] {
 }
 .mediumFilter {
   width: 60%;
-  filter: hue-rotate(-80deg) brightness(150%);
+  filter: hue-rotate(-90deg) brightness(150%);
   transition: all 0.4s cubic-bezier(0.38, 0.77, 0.1, 0.96);
 }
 .hotFilter {

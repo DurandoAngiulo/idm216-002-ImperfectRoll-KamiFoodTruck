@@ -83,13 +83,11 @@
             <input name="menu_id" value="<?php echo $meal['id']; ?>" type="hidden"/>
             <input name="order_id" value="<?php echo $userOrder['id']; ?>" type="hidden"/>
             <!-- <input name="spice_level" value="mild" type="hidden"/> -->
-            <input name="quantity" value=1 type="hidden"/>
+            <input id="quantity-input<?php echo $meal['id']; ?>"name="quantity" value="1" type="hidden"/>
         </div>
       </div>
       <div class="modal-footer justify-content-between flex-wrap">
-        <div class="button bIncrement">
-            <p class="text-center align-self-center mt-1 "><span class="me-4">-</span>1<span class="ms-4">+</span></p>
-        </div>
+      <?php include __DIR__ . '/quanity.php'; ?>
         <button  data-bs-dismiss="modal" class="button addToCart text-center align-self-center mt-1 " type="submit" ><p class="mt-1 text-light">Add to Cart</p></button>
       </div>
     </form>
