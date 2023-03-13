@@ -31,7 +31,8 @@
 }
 </style>
 -->
-<script>
+
+<!-- <script>
     const oneTap = document.querySelector('.addButton');
     oneTap.setAttribute('draggable', false);
     //Add item button functions
@@ -42,4 +43,4 @@ oneTap.addEventListener('mousedown', function(){
 oneTap.addEventListener('mouseup', function(){
     oneTap.classList.remove('clicked');
 });
-</script>
+</script> -->

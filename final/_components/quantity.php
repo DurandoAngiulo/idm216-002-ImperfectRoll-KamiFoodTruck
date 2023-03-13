@@ -105,7 +105,7 @@
 }
   </style>
 -->
-  <script>
+  <!-- <script>
     //Number of items
 let defaultNumber = 1;
 const minus = document.querySelector('.number-left-touch-area');
@@ -150,4 +150,4 @@ currentNumb.classList.remove('currentSlideLeft');
     }, 250); 
   };
 });
-  </script>
+  </script> -->

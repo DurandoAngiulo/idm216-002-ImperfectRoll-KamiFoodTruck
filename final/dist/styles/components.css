@@ -1,3 +1,5 @@
+/* Add item */
+
 .addButton{
     cursor: pointer;
     border-radius: 8px;
@@ -12,7 +14,8 @@
     transition: all .2s ease-out;
   }
   .addPlus{
-      pointer-events: none;
+    color: white;
+    pointer-events: none;
     position: relative;
     top: -2px;
     display: flex;
@@ -27,7 +30,7 @@
 
 
 
-
+/* Cart animation */
 
 
   @keyframes cart-wiggle{
@@ -131,7 +134,7 @@
   }
 
 
-
+/* Quantity update */
 
   @keyframes prevSlideIn{
     from{
@@ -172,7 +175,8 @@
   .number-box{
     display: flex;
     justify-content: space-between;
-    width: 6rem;
+    align-items: center;
+    width: 9rem;
     height: 3rem;
     border: solid 2px black;
     border-radius: 5rem;
@@ -189,6 +193,7 @@
       cursor: pointer;
     position: relative;
     display: flex;
+    align-items: center;
     height: 3rem;
     width: 8rem;
   }
@@ -336,7 +341,7 @@
   }
   .mediumFilter{
     width: 60%;
-    filter: hue-rotate(-80deg) brightness(150%);
+    filter: hue-rotate(-90deg) brightness(150%);
     transition: all .4s cubic-bezier(.38,.77,.1,.96);
   }
   .hotFilter{

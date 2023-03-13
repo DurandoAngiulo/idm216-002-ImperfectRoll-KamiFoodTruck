@@ -42,3 +42,62 @@ spiceTouchHot.addEventListener('click', function(){
     spiceBar.classList.add('spicePos1');
   });
     
+    //Quantity 
+
+  let defaultNumber = 1;
+const minus = document.querySelector('.number-left-touch-area');
+const plus = document.querySelector('.number-right-touch-area');
+const prevNumb = document.querySelector('.last-number');
+const newNumb = document.querySelector('.new-number');
+const currentNumb = document.querySelector('.current-number');
+const amountNumbs = document.querySelector('.item-amount');
+let numberDeb = false
+
+minus.addEventListener('click', function(){
+  if ((defaultNumber >= 2) && (numberDeb == false)){
+    numberDeb = true;
+  prevNumb.classList.add('prevSlideIn');
+  currentNumb.classList.add('currentSlideRight');
+    setTimeout(function(){
+      defaultNumber --;
+      currentNumb.innerHTML = defaultNumber;
+      prevNumb.innerHTML = defaultNumber - 1;
+      newNumb.innerHTML = defaultNumber + 1;
+      prevNumb.classList.remove('prevSlideIn');
+currentNumb.classList.remove('currentSlideRight');
+      numberDeb = false;
+    }, 250);
+  };
+});
+
+plus.addEventListener('click', function(){
+  if ((defaultNumber <= 8) && (numberDeb == false)){
+    numberDeb = true;
+    newNumb.classList.add('newSlideIn');
+    currentNumb.classList.add('currentSlideLeft');
+    setTimeout(function(){
+      defaultNumber ++;
+      amountNumbs.style.transition = 'all 0s linear';
+      currentNumb.innerHTML = defaultNumber;
+      prevNumb.innerHTML = defaultNumber - 1;
+      newNumb.innerHTML = defaultNumber + 1;
+       newNumb.classList.remove('newSlideIn');
+      currentNumb.classList.remove('currentSlideLeft');
+      numberDeb = false;
+    }, 250); 
+  };
+});
+
+
+// Add food item 
+
+const oneTap = document.querySelector('.addButton');
+oneTap.setAttribute('draggable', false);
+//Add item button functions
+oneTap.addEventListener('mousedown', function(){
+//alert("reading");
+oneTap.classList.add('clicked');
+});
+oneTap.addEventListener('mouseup', function(){
+oneTap.classList.remove('clicked');
+});

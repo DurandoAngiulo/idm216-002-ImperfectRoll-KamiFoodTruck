@@ -212,11 +212,13 @@
 
 /* ///radio button stuff   */
 [type="radio"]:checked + label > div {
+  transition: all .15s ease-out;
   border: 1px solid var(--textColor);
   box-shadow: 0 0 2px 2px var(--textColor);
 }
 
 .input-hidden {
+  transition: all .15s ease-out;
   position: absolute;
   left: -9999px;
 }

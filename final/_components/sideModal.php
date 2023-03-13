@@ -27,9 +27,10 @@
         </div>
       </div>
       <div class="modal-footer justify-content-between flex-wrap">
-        <div class="button bIncrement">
-            <p class="text-center align-self-center mt-1"><span class="me-4">-</span>1<span class="ms-4">+</span></p>
-        </div>
+        <!-- <div class="button bIncrement"> -->
+            <!-- <p class="text-center align-self-center mt-1"><span class="me-4">-</span>1<span class="ms-4">+</span></p> -->
+        <!-- </div> -->
+        <?php include __DIR__ . '/quantity.php'; ?>
         <div class="button addToCart">
             <p  data-bs-dismiss="modal" class="text-center align-self-center mt-1 text-light">Add to Cart</p>
         </div>

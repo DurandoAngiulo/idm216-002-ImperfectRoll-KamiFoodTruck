@@ -21,7 +21,7 @@ while ($meal = mysqli_fetch_array($result)) {
             <p class='w-100'>{$meal['description']}</p>
             <div class='d-flex justify-content-end button-container'>
                 <div  data-bs-toggle='modal' data-bs-target='#sideDishModal-{$meal['id']}' class='addButton'>
-                    <p class='text-light display-6 align-self-center d-inline-block pt-2'>+</p>
+                    <p class='text-light display-6 align-self-center d-inline-block pt-2 addPlus'>+</p>
                 </div>
             </div> 
         </div>
