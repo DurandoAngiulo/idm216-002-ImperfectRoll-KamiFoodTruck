@@ -1,6 +1,7 @@
 <div class="addButton">
     <p class="addPlus">+</p>
   </div>
+<!--  Added to dist/styles/components.css
 <style>
     .addButton{
   cursor: pointer;
@@ -29,6 +30,7 @@
   transition: all .2s ease-out;
 }
 </style>
+-->
 <script>
     const oneTap = document.querySelector('.addButton');
     oneTap.setAttribute('draggable', false);

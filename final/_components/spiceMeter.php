@@ -1,57 +1,83 @@
-<div class="spiceMeterBox">
-<div class="spiceRing"></div>
-  <div class="spiceTouchAreas">
-    <div class="spiceTouchArea selectionHot"></div>
-    <div class="spiceTouchArea selectionMedium"></div>
-    <div class="spiceTouchArea selectionMild"></div>
-  </div>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<div>
+<div class="spiceBox">
+   <div class="spiceRing"><img class="largerFlame" src="<?php echo site_url(); ?>/dist/images/icons/mildFlame.png" alt="flameIcon">
+   </div>
+   <div class="spicePairing">
+   <div class="spiceMeter">
+
+      <div class="spiceTouchAreas">
+        <div class="spiceRadioInsert">
+          <input class="spiceTouchArea selectionHot js-selectionHot" type="radio" id="Hot" name="spiceLevel" value="Hot">
+        </div>
+        <div class="spiceRadioInsert">
+          <input class="spiceTouchArea selectionMedium" type="radio" id="Medium" name="spiceLevel" value="Medium">
+        </div>
+        <div class="spiceRadioInsert">
+          <input class="spiceTouchArea selectionMild" type="radio" id="Mild" name="spiceLevel" value="Mild">
+        </div>
+      </div>
+      <div class="spiceBar">
+          <div class="spiceBarCircle">
+            <img class="flameCircle"src="<?php echo site_url(); ?>/dist/images/icons/flame.png" alt="flameIcon">
+          </div>
+      </div>
+</div>
   <div class="spiceLevels">
     <div class="spiceText">
       <p>Hot</p>
       <p>Medium</p>
       <p>Mild</p>
     </div>
-    <div class="spiceRules">
-      <div class="spiceDash"></div>
-      <div class="spiceDash"></div>
-      <div class="spiceDash"></div>
-    </div>
   </div>
-  <div class="spiceMeter">
-    <div class="spiceBar">
-          <div class="spiceBarCircle"></div>
-    </div>
 </div>  
+ </div>
 </div>
+<!--  Added to dist/styles/components.css 
+<style>/*Spice Meter*/
+.spiceBox{
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+p{
+  font-family: Poppins;
+}
 
-<style>:root{
+:root{
   --spiceColor: rgb(35,128,7);
   --spiceAccent: rgb(118, 196, 160);
 }
-/*This is the whole bar */
-.spiceMeterBox{
-  display: flex;
-}
+
 .spiceMeter{
+  position: relative;
+  left: -13.2rem;
   display: flex;
   align-items: flex-end;
   border-radius: 20rem;
-  height: 20rem;
+  height: 15rem;
   width: 3rem;
-  background-color: rgb(249,236,200);
+  background-color: rgb(255,255,255);
   overflow: hidden;
 }
-/*This is the colored bar inside the meter */
 .spiceBar{
   display: flex;
   align-items: flex-start;
   width: 3rem;
   height: 1.5rem;
-  background-color: var(--spiceAccent);
+  background-color: rgb(255,255,255);
   transition: all .4s cubic-bezier(.38,.77,.1,.96);
 }
 .spiceBarCircle{
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: -1.5rem;
   width: 3rem;
   height: 3rem;
@@ -60,34 +86,46 @@
   transition: all .4s cubic-bezier(.38,.77,.1,.96);
 }
 .spiceLevels{
-  height: 20rem;
+  height: 15.5rem;
   width: 10rem;
+  align-items: space-between;
   display: flex;
 }
 .spiceText{
-  width: 5rem;
-  text-align: right;
+  width: 6rem;
+  padding: 0 1rem;
+  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 }
-.spiceRules{
-  padding: 1.5rem 0;
-  width: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+.flameCircle{
+  width: 70%;
+  height: 70%;
+  padding: .25rem;
+  filter: brightness(100);
+  z-index: 100;
 }
-.spiceDash{
-  height: 2px;
-  width: 2rem;
-  background-color: gray;
+input[type="radio"] {
+    -webkit-appearance: none;
+  appearance: none;
+}
+.spiceRadioInsert{
+  border: solid 1px black;
+  height: 2.9rem;
+  width: 2.9rem;
+  border-radius: 20rem;
+  position: relative;
+  left: -3px;
+  z-index: 500;
 }
 .spiceRing{
   border: solid 5px var(--spiceColor);
   display: flex;
   align-self: center;
+  align-items: center;
+  justify-content: center;
   width: 5rem;
   height: 5rem;
   margin: 2rem;
@@ -95,45 +133,39 @@
   background-color: rgb(249,236,200);
   transition: all .4s cubic-bezier(.38,.77,.1,.96);
 }
-/*This is where the user will tap to change the level, covers a larger area than just the bar. */
+.largerFlame{
+  width: 90%;
+  height: 90%;
+}
 .spiceTouchAreas{
-  position: absolute;
-  height: 20rem;
+  position: relative;
+  height: 15rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .spiceTouchArea{
+  background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
   position: relative;
-  left: 10rem;
-  height: 60px;
-  width: 13rem;
+  height: 3rem;
+  width: 3rem;
   z-index: 100;
 }
 
 .spicePos3{
-  height: 18.5rem;
+  height: 13.5rem;
 }
 .spicePos2{
-  height: 10rem;
+  height: 7.5rem;
 }
 .spicePos1{
   height: 1.5rem;
 }
-</style>
-
+</style>-->
+<!--  
 <script>
-    //Spice meter variables
-const spiceTouchHot = document.querySelector('.selectionHot');
-const spiceTouchMedium = document.querySelector('.selectionMedium');
-const spiceTouchMild = document.querySelector('.selectionMild');
-const spiceBar = document.querySelector('.spiceBar');
-const spiceCircle = document.querySelector('.spiceBarCircle');
-let spiceValueForDatabase = 1;
-
-//spice meter function
 spiceTouchHot.addEventListener('click', function(){
   document.documentElement.style.setProperty('--spiceColor', "rgb(235,78,55)");
       document.documentElement.style.setProperty('--spiceAccent', 'rgb(247,145,129)');
@@ -141,7 +173,6 @@ spiceTouchHot.addEventListener('click', function(){
   spiceBar.classList.add('spicePos3');
   spiceBar.classList.remove('spicePos2');
   spiceBar.classList.remove('spicePos1');
-  spiceValueForDatabase = 3;
 });
 
 spiceTouchMedium.addEventListener('click', function(){
@@ -151,7 +182,6 @@ spiceTouchMedium.addEventListener('click', function(){
   spiceBar.classList.remove('spicePos3');
   spiceBar.classList.add('spicePos2');
   spiceBar.classList.remove('spicePos1');
-  spiceValueForDatabase = 2;
 });
 
 spiceTouchMild.addEventListener('click', function(){
@@ -161,6 +191,7 @@ spiceTouchMild.addEventListener('click', function(){
   spiceBar.classList.remove('spicePos3');
   spiceBar.classList.remove('spicePos2');
   spiceBar.classList.add('spicePos1');
-  spiceValueForDatabase = 1;
 });
+  
 </script>
+-->

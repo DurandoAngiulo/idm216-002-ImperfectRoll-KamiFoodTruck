@@ -23,7 +23,8 @@
 
             <h3 class="mb-4">Customize spice level</h3>
             <div class="d-flex justify-content-center">
-            <img class ="flame-img me-4" src="<?php echo site_url(); ?>/dist/images/flame.png">
+            <!-- <img class ="flame-img me-4" src="<?php echo site_url(); ?>/dist/images/flame.png"> -->
+            <!-- 
                 <div class="d-flex flex-column justify-content-center mb-4">
 
                         <div class="form-check flex-column">
@@ -45,6 +46,8 @@
                             </label>
                         </div>
                 </div>
+                 -->
+                <?php include __DIR__ . '/spiceMeter.php'; ?>
             </div>
 
             <h3 class="mb-4">Add Protein (+ 1$)</h3>

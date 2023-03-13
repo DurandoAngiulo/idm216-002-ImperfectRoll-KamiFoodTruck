@@ -9,7 +9,7 @@
     </div>
     <div class="number-right-touch-area number-touch-area">    <p class="number-text">+</p></div>
   </div>
-
+<!--  Added to dist/styles/components.css 
   <style>
     /*Item Added*/
 @keyframes prevSlideIn{
@@ -104,6 +104,7 @@
   animation: currentSlideRight .25s ease-in-out;
 }
   </style>
+-->
   <script>
     //Number of items
 let defaultNumber = 1;

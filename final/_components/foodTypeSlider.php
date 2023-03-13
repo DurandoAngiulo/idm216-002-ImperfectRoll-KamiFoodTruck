@@ -9,6 +9,7 @@
           </div>
     </div>
   </div>
+<!--  Added to dist/styles/components.css 
 <style>
     /*Food categories*/
 .foodType{
@@ -57,7 +58,7 @@
   transition: all .5s ease-out;
 }
 </style>
-
+-->
 <script>
 
     //Food type slider variables
