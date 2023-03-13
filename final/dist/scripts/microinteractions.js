@@ -101,3 +101,31 @@ oneTap.classList.add('clicked');
 oneTap.addEventListener('mouseup', function(){
 oneTap.classList.remove('clicked');
 });
+
+
+const cart = document.querySelector('.cart-container');
+const cartImg = document.querySelector('.cart-image')
+const notif = document.querySelector('.cart-amount');
+const addItem = document.querySelector('.addToCart');
+const alertBar = document.querySelector('.alertContainer');
+let deb = false;
+
+addItem.addEventListener('click', function(){
+  if (deb == false){
+  setTimeout(function(){
+   
+      deb = true
+    notif.classList.remove('cart-add-anim');
+    cartImg.classList.add('cart-wiggle');
+    alertBar.classList.add('alert-animation');
+    setTimeout(function(){
+      notif.classList.add('cart-add-anim');
+    }, 600);
+      setTimeout(function(){
+      cartImg.classList.remove('cart-wiggle');
+      alertBar.classList.remove('alert-animation');
+         deb = false;
+      }, 1000);
+    }, 1000);
+    };
+});

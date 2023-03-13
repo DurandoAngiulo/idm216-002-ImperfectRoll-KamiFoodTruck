@@ -81,6 +81,50 @@
     animation: cart-add-anim .4s ease-out forwards;
   }
 
+  @keyframes item-alert{
+    0%{
+      opacity: 0;
+    }5%{
+      opacity: 1;
+    }95%{
+      opacity: 1;
+    }100%{
+      opacity: 0;
+    }
+  }
+  .alert-container{
+    display: none;
+    opacity: 0;
+
+  }
+  .item-added-alert{
+    position: fixed;
+    bottom: 6rem;
+    text-align: center;
+    background-color: rgb(33, 33, 33);
+    color: white; 
+    border-radius: .75rem;
+    z-index: 10000;
+  }
+  .item-added-text{
+    color: white;
+    align-self: center;
+    margin: 0;
+    padding: 1rem 2rem;
+  }
+  .alert-animation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: item-alert 5s linear forwards;
+  }
+
+@media screen and (max-width: 400px){
+  .item-added-alert{
+    margin: 0;
+    width: 90%;
+  }
+}
 
 
 

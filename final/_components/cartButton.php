@@ -54,7 +54,7 @@
 </style>
 
 -->
-<script>
+<!-- <script>
     const cart = document.querySelector('.cart-container');
 const cartImg = document.querySelector('.cart-image')
 const notif = document.querySelector('.cart-amount');
@@ -74,4 +74,4 @@ cart.addEventListener('click', function(){
   }, 1000);
   };
 });
-</script>
+</script> -->
