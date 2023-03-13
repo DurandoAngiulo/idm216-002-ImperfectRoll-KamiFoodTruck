@@ -11,13 +11,13 @@
 
       <div class="spiceTouchAreas">
         <div class="spiceRadioInsert">
-          <input class="spiceTouchArea selectionHot js-selectionHot" type="radio" id="Hot" name="spiceLevel" value="Hot">
+          <input class="spiceTouchArea selectionHot js-selectionHot" type="radio" id="hot<?php echo $meal['id']; ?>" name="spiceLevel" value="hot">
         </div>
         <div class="spiceRadioInsert">
-          <input class="spiceTouchArea selectionMedium" type="radio" id="Medium" name="spiceLevel" value="Medium">
+          <input class="spiceTouchArea selectionMedium" type="radio" id="medium<?php echo $meal['id']; ?>" name="spiceLevel" value="medium">
         </div>
         <div class="spiceRadioInsert">
-          <input class="spiceTouchArea selectionMild" type="radio" id="Mild" name="spiceLevel" value="Mild">
+          <input class="spiceTouchArea selectionMild" type="radio" id="mild<?php echo $meal['id']; ?>" name="spiceLevel" value="mild">
         </div>
       </div>
       <div class="spiceBar">
@@ -36,135 +36,7 @@
 </div>  
  </div>
 </div>
-<!--  Added to dist/styles/components.css 
-<style>/*Spice Meter*/
-.spiceBox{
-  width: 100%;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-p{
-  font-family: Poppins;
-}
 
-:root{
-  --spiceColor: rgb(35,128,7);
-  --spiceAccent: rgb(118, 196, 160);
-}
-
-.spiceMeter{
-  position: relative;
-  left: -13.2rem;
-  display: flex;
-  align-items: flex-end;
-  border-radius: 20rem;
-  height: 15rem;
-  width: 3rem;
-  background-color: rgb(255,255,255);
-  overflow: hidden;
-}
-.spiceBar{
-  display: flex;
-  align-items: flex-start;
-  width: 3rem;
-  height: 1.5rem;
-  background-color: rgb(255,255,255);
-  transition: all .4s cubic-bezier(.38,.77,.1,.96);
-}
-.spiceBarCircle{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: -1.5rem;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 20rem;
-  background-color: var(--spiceColor);
-  transition: all .4s cubic-bezier(.38,.77,.1,.96);
-}
-.spiceLevels{
-  height: 15.5rem;
-  width: 10rem;
-  align-items: space-between;
-  display: flex;
-}
-.spiceText{
-  width: 6rem;
-  padding: 0 1rem;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
-}
-.flameCircle{
-  width: 70%;
-  height: 70%;
-  padding: .25rem;
-  filter: brightness(100);
-  z-index: 100;
-}
-input[type="radio"] {
-    -webkit-appearance: none;
-  appearance: none;
-}
-.spiceRadioInsert{
-  border: solid 1px black;
-  height: 2.9rem;
-  width: 2.9rem;
-  border-radius: 20rem;
-  position: relative;
-  left: -3px;
-  z-index: 500;
-}
-.spiceRing{
-  border: solid 5px var(--spiceColor);
-  display: flex;
-  align-self: center;
-  align-items: center;
-  justify-content: center;
-  width: 5rem;
-  height: 5rem;
-  margin: 2rem;
-  border-radius: 20rem;
-  background-color: rgb(249,236,200);
-  transition: all .4s cubic-bezier(.38,.77,.1,.96);
-}
-.largerFlame{
-  width: 90%;
-  height: 90%;
-}
-.spiceTouchAreas{
-  position: relative;
-  height: 15rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.spiceTouchArea{
-  background-color: rgba(0, 0, 0, 0);
-  cursor: pointer;
-  position: relative;
-  height: 3rem;
-  width: 3rem;
-  z-index: 100;
-}
-
-.spicePos3{
-  height: 13.5rem;
-}
-.spicePos2{
-  height: 7.5rem;
-}
-.spicePos1{
-  height: 1.5rem;
-}
-</style>-->
-<!--  
 <script>
 spiceTouchHot.addEventListener('click', function(){
   document.documentElement.style.setProperty('--spiceColor', "rgb(235,78,55)");
@@ -194,4 +66,3 @@ spiceTouchMild.addEventListener('click', function(){
 });
   
 </script>
--->
