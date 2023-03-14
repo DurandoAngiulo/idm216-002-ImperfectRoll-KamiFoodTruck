@@ -23,30 +23,6 @@
 
             <h3 class="mb-4">Customize spice level</h3>
             <div class="d-flex justify-content-center">
-            <!-- <img class ="flame-img me-4" src="<?php echo site_url(); ?>/dist/images/flame.png"> -->
-            <!-- 
-                <div class="d-flex flex-column justify-content-center mb-4">
-
-                        <div class="form-check flex-column">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                            <label class="form-check-label" for="flexRadioDefault1">
-                                Mild
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                            <label class="form-check-label" for="flexRadioDefault2">
-                                Medium
-                            </label>
-                        </div>
-                        <div class="form-check flex-column">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                                Hot
-                            </label>
-                        </div>
-                </div>
-                 -->
                 <?php include __DIR__ . '/spiceMeter.php'; ?>
             </div>
 

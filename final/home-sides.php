@@ -44,7 +44,7 @@ $result = mysqli_query($db_connection, $query);
                 <p class="foodTypeOption sides">Sides</p>
                 <a class="foodTypeOption drinks" href="<?php echo site_url(); ?>/home-drinks.php">Drinks</a>
             </div>
-            <div class="foodTypeUnderbar">
+            <div class="foodTypeUnderbar justify-content-center">
             <div class="foodTypeSlider"></div>
             </div>
         </div>

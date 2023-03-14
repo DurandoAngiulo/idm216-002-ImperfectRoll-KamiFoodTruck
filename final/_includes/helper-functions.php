@@ -51,5 +51,21 @@ function getCartItems($orderId){
     return $result;
 }
 
+function getOrderItems($userId){
+    global $db_connection;
+    $query ="SELECT 
+    orders.id, 
+    orders.user_id, 
+    MAX(orders.status) AS status, 
+    orders.final_total, 
+    GROUP_CONCAT(DISTINCT CONCAT(menu.name, ' (', cart_item.quantity, ')', ' - $', menu.price)) AS items_ordered
+    FROM orders 
+    LEFT JOIN cart_item ON orders.id = cart_item.order_id 
+    LEFT JOIN menu ON cart_item.menu_id = menu.id
+    WHERE orders.user_id = '{$userId}' AND orders.status = 'completed'
+    GROUP BY orders.id;";
+    $result = mysqli_query($db_connection, $query);
+    return $result;
+}
 
 ?>

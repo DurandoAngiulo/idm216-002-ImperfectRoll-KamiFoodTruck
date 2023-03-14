@@ -5,15 +5,13 @@ if (!$_POST) {
 }
 // Store $_POST data to variables for readability
 $note_value = sanitize_value($_POST['note']);
-$spice_level_value = sanitize_value($_POST['spice_level']);
-$protein_value = sanitize_value($_POST['protein']);
 $quantity_value =sanitize_value($_POST['quantity']);
 $order_id_value = sanitize_value($_POST['order_id']);
 $menu_id_value = sanitize_value($_POST['menu_id']);
 
 $query = "INSERT INTO cart_item";
-$query .=" (note, spice_level, protein, quantity, order_id, menu_id)";
-$query .= " VALUES('{$note_value}', '{$spice_level_value}', '{$protein_value}', '{$quantity_value}', '{$order_id_value}', '{$menu_id_value}')";
+$query .=" (note, quantity, order_id, menu_id)";
+$query .= " VALUES('{$note_value}', '{$quantity_value}', '{$order_id_value}', '{$menu_id_value}')";
 
 $result = mysqli_query($db_connection, $query);
 

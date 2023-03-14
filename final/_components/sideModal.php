@@ -1,6 +1,6 @@
 <div class="modal fade" id="sideDishModal-<?php echo $meal['id']; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-    <form class="modal-content modalBackground">
+    <form class="modal-content modalBackground" action="<?php echo site_url();?>/_includes/addSideToOrder.php" method="POST">
       <div class="modal-body p-0">
         <div class=" modal-header-details border-bottom-0 modalAccent p-0">
             <div class="w-100 d-flex justify-content-end pe-2 pt-2">
@@ -26,7 +26,7 @@
             </div>
             <input name="menu_id" value="<?php echo $meal['id']; ?>" type="hidden"/>
             <input name="order_id" value="<?php echo $userOrder['id']; ?>" type="hidden"/>
-            <input id="quantity-input<?php echo $meal['id']; ?>"name="quantity" value="" type="hidden"/>
+            <input id="quantity-input<?php echo $meal['id']; ?>"name="quantity" value="1" type="hidden"/>
         </div>
       </div>
       <div class="modal-footer justify-content-between flex-wrap">
