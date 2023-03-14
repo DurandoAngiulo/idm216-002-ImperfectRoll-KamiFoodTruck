@@ -333,13 +333,17 @@
 /* //////////////////////////////////////// */
 
 .input-login {
-  width: 90vw;
+  width: 100%;
 
   background-color: var(--backgroundColor);
   border-radius: 6px;
   border-style: solid;
   border-color: #171616;
   border-width: 1px;
+}
+
+.input-container{
+  width: 100%;
 }
 
 .btn {
@@ -513,6 +517,13 @@
 
 .btn-close {
   --bs-btn-close-opacity: 1;
+  right: 0;
+}
+
+@media (min-width:1200px){
+  .btn-close{
+    right: 300px;
+  }
 }
 
 /* //////////////////////////////////////// */
