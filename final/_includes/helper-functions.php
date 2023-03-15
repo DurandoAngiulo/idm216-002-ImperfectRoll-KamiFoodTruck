@@ -45,8 +45,22 @@ function is_user_logged_in()
 
 function getCartItems($orderId){
     global $db_connection;
-    $query ="SELECT * FROM cart_item INNER JOIN menu ON cart_item.menu_id = menu.id 
-    WHERE cart_item.order_id = '{$orderId}'";
+    $query ="SELECT 
+    cart_item.id AS cart_item_id, 
+    menu.id AS menu_item_id, 
+    cart_item.quantity, 
+    menu.name, 
+    menu.price,
+    menu.imageUrl,
+    cart_item.spice_level
+FROM 
+    cart_item 
+INNER JOIN 
+    menu ON cart_item.menu_id = menu.id 
+WHERE 
+    cart_item.order_id = '{$orderId}'";
+    // var_dump($query);
+    // die;
     $result = mysqli_query($db_connection, $query);
     return $result;
 }
