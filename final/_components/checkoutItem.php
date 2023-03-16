@@ -12,6 +12,5 @@ while ($item = mysqli_fetch_array($cart_items)) {
         ";
         $total_price += $item_plus_quanity;
         $item_plus_quanity= 0;
-        
        
     }?>

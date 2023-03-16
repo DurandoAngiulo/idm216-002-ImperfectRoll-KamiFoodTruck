@@ -7,9 +7,6 @@ include_once __DIR__ . '/_components/header-kami.php';
 <?php 
 include_once __DIR__ . '/_components/navbar-mobile.php';
 ?>
-<!-- <style><?php 
-include_once __DIR__ . '/../dist/styles/home.css';
-?></style> -->
 <?php 
 $query ='SELECT * FROM menu WHERE category = "drink" ORDER BY name';
 $result = mysqli_query($db_connection, $query);
@@ -47,7 +44,7 @@ $result = mysqli_query($db_connection, $query);
             <a href="<?php echo site_url(); ?>/home-sides.php" class="foodTypeOption sides">Sides</a>
                 <p class="foodTypeOption drinks">Drinks</p>
             </div>
-            <div class="foodTypeUnderbar">
+            <div class="foodTypeUnderbar justify-content-end">
             <div class="foodTypeSlider"></div>
             </div>
         </div>

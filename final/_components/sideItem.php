@@ -11,7 +11,7 @@ while ($meal = mysqli_fetch_array($result)) {
     // if($meal['category'] === "side"){
     echo " 
 
-<div class='menu-item-container mb-3 d-flex'>
+<div class='menu-item-container mb-3 d-flex'  data-bs-toggle='modal' data-bs-target='#sideDishModal-{$meal['id']}'>
         <img class='menu-item-image' src='{$meal['imageUrl']}'>
         <div class='menu-item-content-container pt-3 px-2 pb-2 d-flex flex-wrap justify-content-end'>
             <div class='d-flex justify-content-between mb-2 w-100'>
@@ -20,7 +20,7 @@ while ($meal = mysqli_fetch_array($result)) {
             </div>
             <p class='w-100'>{$meal['description']}</p>
             <div class='d-flex justify-content-end button-container'>
-                <div  data-bs-toggle='modal' data-bs-target='#sideDishModal-{$meal['id']}' class='addButton'>
+                <div class='addButton'>
                     <p class='text-light display-6 align-self-center d-inline-block pt-2'>+</p>
                 </div>
             </div> 

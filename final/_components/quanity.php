@@ -61,17 +61,4 @@ plus<?php echo $meal['id']; ?>.addEventListener('click', function(){
 });
 
 
-// // Add food item 
-
-// const oneTap = document.querySelector('.addButton');
-// oneTap.setAttribute('draggable', false);
-// //Add item button functions
-// oneTap.addEventListener('mousedown', function(){
-// //alert("reading");
-// oneTap.classList.add('clicked');
-// });
-// oneTap.addEventListener('mouseup', function(){
-// oneTap.classList.remove('clicked');
-// });
-
 </script>

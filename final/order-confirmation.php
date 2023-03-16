@@ -2,6 +2,7 @@
 include_once __DIR__ . '/app.php';
 $page_title = 'Order Confirmation | KAMI Food Truck';
 include_once __DIR__ . '/_components/header-kami.php';
+$order_items = getOrderItems($user['id']);
 ?>
 <body class="backgroundColor">
 
@@ -12,8 +13,8 @@ class="btn-close m-3 position-absolute top-0 end-0" aria-label="Close"></button>
 <h2 class="logoFontSm text-center mt-3">KAMI</h2>
 <div class="page mx-3">
    <h2 class="text-center mt-3 mb-3">Thank you!</h2>
-   
-   <div class="container-b mx-auto py-3 px-4 mb-4 d-flex flex-column" >
+   <?php include __DIR__ . '/_components/archivedOrders.php'; ?>
+   <!-- <div class="container-b mx-auto py-3 px-4 mb-4 d-flex flex-column" >
         <h1 class="big-text text-center my-0">Order #123456</h1>
         <p class="text-center mb-2"> Status: <strong class="green">READY</strong> </p>
 
@@ -40,9 +41,9 @@ class="btn-close m-3 position-absolute top-0 end-0" aria-label="Close"></button>
         </div>
         <button onclick="" type="button" class="btn btn-primary p-2">View QR Code</button>
 
-    </div>
+    </div> -->
 
-    <div class="container-b mx-auto py-3 px-4 mb-4 d-flex flex-column" >
+    <!-- <div class="container-b mx-auto py-3 px-4 mb-4 d-flex flex-column" >
         <h1 class="big-text text-center my-0">Order #008392</h1>
         <p class="text-center mb-2"> Status: <strong>COMPLETED</strong> </p>
 
@@ -58,7 +59,6 @@ class="btn-close m-3 position-absolute top-0 end-0" aria-label="Close"></button>
         </div>
 
         <div class="heading-border d-flex justify-content-between mb-3"></div>
-
         <div class="d-flex flex-row justify-content-between align-items-center mb-2">
             <p>1 Kimchi Fried Rice</p>
             <p>$10</p>
@@ -98,6 +98,6 @@ class="btn-close m-3 position-absolute top-0 end-0" aria-label="Close"></button>
         </div>
 
         <button onclick="window.location.href = '<?php echo site_url(); ?>/pages/cart.php';" type="button" class=" btn btn-outline-primary p-2">Order Again</button>
-      </div>
+      </div> --> 
 </div>
 </div>

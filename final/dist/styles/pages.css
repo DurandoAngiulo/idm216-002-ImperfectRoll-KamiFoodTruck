@@ -325,6 +325,11 @@
   color: var(--backgroundColor);
   background-color: var(--textColor);
 }
+.delete-button {
+  background: none;
+  border: none;
+  padding: 0;
+}
 
 /* //////////////////////////////////////// */
 
