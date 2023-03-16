@@ -41,3 +41,34 @@
 //     spiceBar.classList.remove('spicePos2');
 //     spiceBar.classList.add('spicePos1');
 //   });
+
+// const slider = document.querySelector('.foodTypeSlider');
+// const meals = document.querySelector('.meals-js');
+// const sides = document.querySelector('.sides-js');
+// const drinks = document.querySelector('.drinks-js');
+
+//     //Food type slider functions
+// meals.addEventListener('mouseup', function(){
+//   meals.classList.add('bolded');
+//   sides.classList.remove('bolded');
+//   drinks.classList.remove('bolded');
+//   slider.classList.add('sliderPos1');
+//   slider.classList.remove('sliderPos2');
+//   slider.classList.remove('sliderPos3');
+// });
+// sides.addEventListener('mouseup', function(){
+//   meals.classList.remove('bolded');
+//   sides.classList.add('bolded');
+//   drinks.classList.remove('bolded');
+//   slider.classList.add('sliderPos2');
+//   slider.classList.remove('sliderPos1');
+//   slider.classList.remove('sliderPos3');
+// });
+// drinks.addEventListener('mouseup', function(){
+//   meals.classList.remove('bolded');
+//   sides.classList.remove('bolded');
+//   drinks.classList.add('bolded');
+//   slider.classList.add('sliderPos3');
+//   slider.classList.remove('sliderPos2');
+//   slider.classList.remove('sliderPos1');
+// });

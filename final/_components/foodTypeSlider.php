@@ -59,13 +59,13 @@
 }
 </style>
 -->
-<script>
+<!-- <script>
 
     //Food type slider variables
 const slider = document.querySelector('.foodTypeSlider');
-const meals = document.querySelector('.meals');
-const sides = document.querySelector('.sides');
-const drinks = document.querySelector('.drinks');
+const meals = document.querySelector('.meals-js');
+const sides = document.querySelector('.sides-js');
+const drinks = document.querySelector('.drinks-js');
 
     //Food type slider functions
 meals.addEventListener('mouseup', function(){
@@ -92,4 +92,4 @@ drinks.addEventListener('mouseup', function(){
   slider.classList.remove('sliderPos2');
   slider.classList.remove('sliderPos1');
 });
-</script>
+</script> -->
