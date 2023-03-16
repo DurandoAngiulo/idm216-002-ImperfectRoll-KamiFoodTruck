@@ -13,9 +13,11 @@ include_once __DIR__ . '/_components/header-kami.php';
         <div>
             
     <div class="confirm-content w-50 m-auto d-flex flex-column align-items-center justify-content-center">
-    <img src="dist/images/noodle-bowl.png" alt="Ramen bowl">
+        <div class="noodle-animation">
+            <img class="noodle-pull" src="<?php echo site_url(); ?>/dist/images/noodle-pull.png" alt="Ramen chopsticks">
+            <img class="noodle-bowl" src="<?php echo site_url(); ?>/dist/images/ramen-bowl.png" alt="Ramen bowl">
+        </div>
     <p>Confirming...</p>
-    <h1 class="text-center m-3"><a class="start-link" href="<?php echo site_url(); ?>/order-confirmation.php">Advance to next screen</a></h1>
     </div>
         </div>
         <div class="left-squiggle align-self-end">

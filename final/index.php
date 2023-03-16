@@ -42,9 +42,9 @@ $result = mysqli_query($db_connection, $query);
     <div class="d-flex justify-content-center mb-3">
         <div class="foodType">
             <div class="foodCategories">
-                <p class="foodTypeOption meals">Meals</p>
-                <a href="<?php echo site_url(); ?>/home-sides.php" class="foodTypeOption sides">Sides</a>
-                <a class="foodTypeOption drinks" href="<?php echo site_url(); ?>/home-drinks.php">Drinks</a>
+                <p class="foodTypeOption meals meals-js">Meals</p>
+                <p class="foodTypeOption sides sides-js">Sides</p>
+                <p class="foodTypeOption drinks drinks-js">Drinks</p>
             </div>
             <div class="foodTypeUnderbar">
             <div class="foodTypeSlider"></div>
@@ -58,3 +58,30 @@ $result = mysqli_query($db_connection, $query);
 
     <?php include_once __DIR__ . '/_components/footer.php'; ?>
 </div>
+<script>
+
+const slider = document.querySelector('.foodTypeSlider');
+const meals = document.querySelector('.meals-js');
+const sides = document.querySelector('.sides-js');
+const drinks = document.querySelector('.drinks-js');
+
+    //Food type slider functions
+sides.addEventListener('mouseup', function(){
+    slider.classList.add('sliderPos2');
+
+  setTimeout(function(){
+    console.log("function ran");
+    window.location = "<?php echo site_url(); ?>/home-sides.php"
+    }, 250);
+
+});
+drinks.addEventListener('mouseup', function(){
+  slider.classList.add('sliderPos3');
+
+  setTimeout(function(){
+    console.log("function ran");
+    window.location = "<?php echo site_url(); ?>/home-drinks.php"
+    }, 250);
+
+});
+</script>
