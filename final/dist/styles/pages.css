@@ -479,14 +479,33 @@
 /* //////////////////////////////////////// */
 
 /* CONFIRM PAGE STYLING */
+
+@keyframes noodle-animation {
+  0% {
+    top: 6rem;
+  }
+  50% {
+    top: 2rem;
+  }
+  100% {
+    top: 6rem;
+  }
+}
 .confirm-content {
   height: 90vh;
   align-items: center;
 }
-/* .start-link{
-    color: black;
-} */
-
+.noodle-pull {
+  animation: noodle-animation 1.2s ease-in-out infinite;
+  position: relative;
+  top: 6rem;
+  left: 1.5rem;
+  z-index: 2;
+}
+.noodle-bowl {
+  position: relative;
+  z-index: 3;
+}
 /* //////////////////////////////////////// */
 
 /* //////////////////////////////////////// */
