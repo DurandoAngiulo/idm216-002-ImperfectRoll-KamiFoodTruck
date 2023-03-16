@@ -1,6 +1,7 @@
 <?php
 $str = $item['items_ordered'];
-
+if ($str != null)
+{
 $meals = array();
 $quantities = array();
 $prices = array();
@@ -27,6 +28,6 @@ while($i < count($meals)) {
     ";
     $i++;
 }
-
+}
 
     ?>

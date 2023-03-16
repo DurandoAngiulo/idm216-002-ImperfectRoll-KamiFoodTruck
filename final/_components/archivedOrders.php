@@ -6,6 +6,7 @@ while ($item = mysqli_fetch_array($order_items)) {
     // $item_plus_quanity =number_format((float)$item_plus_quanity, 2, '.', '');
 //     var_dump($item);
 // die;
+if($item['items_ordered']!= null){
     echo " 
 <div class='container-b mx-auto py-3 px-4 mb-4 d-flex flex-column' >
         <h1 class='big-text text-center my-0'>Order #123456</h1>
@@ -26,4 +27,4 @@ while ($item = mysqli_fetch_array($order_items)) {
         <button onclick='' type='button' class='btn btn-primary p-2'>View QR Code</button>
     </div>
     ";
-}?>
+}}?>
