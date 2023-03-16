@@ -40,9 +40,9 @@ $result = mysqli_query($db_connection, $query);
     <div class="d-flex justify-content-center mb-3">
         <div class="foodType">
             <div class="foodCategories">
-            <a href="<?php echo site_url(); ?>/index.php" class="foodTypeOption sides">Meals</a>
-            <a href="<?php echo site_url(); ?>/home-sides.php" class="foodTypeOption sides">Sides</a>
-                <p class="foodTypeOption drinks">Drinks</p>
+                <p class="foodTypeOption meals meals-js">Meals</p>
+                <p class="foodTypeOption sides sides-js">Sides</p>
+                <p class="foodTypeOption drinks drinks-js">Drinks</p>
             </div>
             <div class="foodTypeUnderbar justify-content-end">
             <div class="foodTypeSlider"></div>
@@ -53,59 +53,34 @@ $result = mysqli_query($db_connection, $query);
     <?php include __DIR__ . '/_components/sideItem.php'; ?>
    </div>
 
-   <!-- MODAL -->
+   <script>
+
+const slider = document.querySelector('.foodTypeSlider');
+const meals = document.querySelector('.meals-js');
+const sides = document.querySelector('.sides-js');
+const drinks = document.querySelector('.drinks-js');
+
+    //Food type slider functions
+meals.addEventListener('mouseup', function(){
+    slider.classList.add('sliderPos5');
+
+    setTimeout(function(){
+    console.log("function ran");
+    window.location = "<?php echo site_url(); ?>/index.php"
+    }, 250);
 
 
-    <!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button> -->
+});
+sides.addEventListener('mouseup', function(){
+    slider.classList.add('sliderPos4');
 
-<!-- Modal meal -->
-<!-- <div class="modal fade" id="sideDishModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable mx-0 mt-5 ">
-    <div class="modal-content modalBackground">
-      <div class="modal-body p-0">
-        <div class=" modal-header-details border-bottom-0 modalAccent p-0">
-            <div class="w-100 d-flex justify-content-end pe-2 pt-2">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="d-flex justify-content-center">
-                <div class="image-cropper-container ">
-                    <img class="cropped-image" src="https://res.cloudinary.com/dsysuymw2/image/upload/v1676320861/idm216/kimchi_n1vhcy.jpg">  
-                </div>
-            </div>
-        </div>
-        <div class="p-3">
-            <div class="d-flex justify-content-between">
-                <h2> Kimchi</h2>
-                <h2> 1$</h2>
-            </div>
-            <p class="mb-4">Fermented cabbage with ginger and garlic.</p>
-            <h3 class="">Ingredients</h3>
-            <p class="mb-4">
-                Napa Cabbage, Natural rock salt, Gochugaru 
-                (Korean chili flakes), Daikon radish, Korean 
-                fish sauce, Carrots, Ginger, Garlic, Sugar, 
-                Onion
-            </p>
-            <h3 class="mb-4">Add a Note</h3>
-            <div class="input-group">
-                <textarea class="form-control modalBackground border-dark" placeholder="Add note..."></textarea>
-            </div>
-        </div>
-      </div>
-      <div class="modal-footer justify-content-between flex-wrap">
-        <div class="button bIncrement">
-            <p class="text-center align-self-center mt-1"><span class="me-4">-</span>1<span class="ms-4">+</span></p>
-        </div>
-        <div class="button addToCart">
-            <p  data-bs-dismiss="modal" class="text-center align-self-center mt-1 text-light">Add to Cart</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
+  setTimeout(function(){
+    console.log("function ran");
+    window.location = "<?php echo site_url(); ?>/home-sides.php"
+    }, 250);
+
+});
+</script>
 
 <div class="py-3"></div>
 

@@ -124,11 +124,13 @@
   left: 10rem;
   transition: all 0.2s ease-out;
 }
-.bolded {
-  /* increase font weight */
-  font-weight: 900;
-  /* Slide to the left */
-  transition: all 0.5s ease-out;
+.sliderPos4 {
+  left: -5rem;
+  transition: all 0.2s ease-out;
+}
+.sliderPos5 {
+  left: -10rem;
+  transition: all 0.2s ease-out;
 }
 
 /* Quantity update */
