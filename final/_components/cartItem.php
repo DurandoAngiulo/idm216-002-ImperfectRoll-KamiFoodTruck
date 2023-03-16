@@ -29,7 +29,7 @@ while ($item = mysqli_fetch_array($cart_items)) {
     <div class='d-flex justify-content-between mb-4'>
     <form action='{$site_url}/_includes/deleteCartItem.php' method='POST''>
     <input name='cart_item' value='{$item['cart_item_id']}' type='hidden'/>
-    <button type='submit'>
+    <button  class='delete-button'type='submit'>
     <p class='text-decoration-underline'>Delete</p>
     </button>
     </form>

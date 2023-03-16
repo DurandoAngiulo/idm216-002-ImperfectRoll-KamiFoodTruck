@@ -16,7 +16,7 @@
         <div class="cart-amount"></div>
             <img class="mobile-nav-image cart-image" src="<?php echo site_url(); ?>/dist/images/icons/Cart.png">
         </div>
-        <p class="text-center">Cart</p>
+        <p class="text-center ms-3">Cart</p>
     </a>
 </div>
 <?php 
