@@ -13,10 +13,7 @@ $cart_items = getCartItems($userOrder['id']);
 <div class="page mx-3">
    <h1 class="text-center mt-3 mb-3">Checkout</h1>
 
-   <!-- <div class="abs-position">
-        <img class="kami-duck mx-auto d-block" src="<?php echo site_url(); ?>/dist/images/kami-duck.png">
-    </div> -->
-
+   
    <div class="container-b mx-auto py-3 px-4 mb-4 d-flex flex-column" >
         <h3 class="mb-3">Pickup Time</h3>
 
