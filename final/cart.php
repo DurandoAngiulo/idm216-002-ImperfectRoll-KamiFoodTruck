@@ -29,7 +29,7 @@ $cart_items = getCartItems($userOrder['id']);
         </div>
         <!-- <div class="heading-border d-flex justify-content-between mb-3"></div> -->
         <h3 class="mb-4 text-center">Want to Include any utensils?</h3>
-        <form class="d-flex justify-content-between mb-4">
+        <form class="d-flex justify-content-evenly mb-4 px-5">
                 <!-- utensil inputs -->
                 <input  id="chicken" value="chicken" type="radio" name="protein" class=" input-hidden">
                 <label  class="" for="chicken">
