@@ -6,20 +6,15 @@ $errorMessage = isset($_GET['error']) ? $_GET['error'] : false;
 if ($errorMessage){
     echo $errorMessage;}
 ?>
-<div class="container-2">
+<div class="container">
     <body class="backgroundColor">
         <div class="mt-4">
         <img class="kami-duck-large mx-auto d-block" src="<?php echo site_url(); ?>/dist/images/kami-duck.png">
         <h1 class="logoFont text-center mb-3">KAMI</h1>
         </div>
 
-    <div class="d-flex justify-content-center">
-            <form  class="d-flex justify-content-center flex-wrap" action="<?php echo site_url();?>/_includes/process-login.php" method="POST">
-                <!-- <p>
-                <label for="name" class="mb-1">Name</label></br>
-                
-                <input type="text" id="name"  class="mb-2 p-2 input-login" name="name"></p>
-                -->
+    <div class="input-container justify-content-center">
+            <form  class="d-flex flex-column justify-content-center flex-wrap" action="<?php echo site_url();?>/_includes/process-login.php" method="POST">
                 <p>
                 <label for="email" class="mb-1">Email</label></br>
                 <input type="text" id="email" name="email" class="mb-2 p-2 input-login"></p>

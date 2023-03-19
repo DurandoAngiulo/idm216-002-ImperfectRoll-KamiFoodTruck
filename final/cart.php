@@ -29,21 +29,21 @@ $cart_items = getCartItems($userOrder['id']);
         </div>
         <!-- <div class="heading-border d-flex justify-content-between mb-3"></div> -->
         <h3 class="mb-4 text-center">Want to Include any utensils?</h3>
-        <form class="d-flex justify-content-between mb-4">
+        <form class="d-flex justify-content-evenly mb-4 px-5">
                 <!-- utensil inputs -->
-                <input  id="chicken" value="chicken" type="radio" name="protein" class=" input-hidden">
+                <input  id="chicken" type="radio" class=" input-hidden">
                 <label  class="" for="chicken">
                     <div class="protein-container d-flex justify-content-center align-items-center">
                         <img class="" src="<?php echo site_url(); ?>/dist/images/chopsticks.png">
                     </div>
                 </label>
-                <input  id="beef" type="radio" value="beef" name="protein" class=" input-hidden">
+                <input  id="beef" type="radio" class=" input-hidden">
                 <label  class="" for="beef">
                     <div class="protein-container d-flex justify-content-center align-items-center">
                         <img class="" src="<?php echo site_url(); ?>/dist/images/fork.png">
                     </div>
                 </label>
-                <input  id="tofu" type="radio"  value="tofu" name="protein" class=" input-hidden">
+                <input  id="tofu" type="radio" class=" input-hidden">
                 <label  class="" for="tofu">
                     <div class="protein-container d-flex justify-content-center align-items-center">
                         <img class="" src="<?php echo site_url(); ?>/dist/images/napkin.png">
@@ -55,7 +55,7 @@ $cart_items = getCartItems($userOrder['id']);
             <p  class=" mt-1 text-light">Checkout</p>
             <p  class=" mt-1 text-light">$<?php echo(number_format((float)$total_price, 2, '.', '')); ?></p>
         </a>
-        <a href="<?php echo site_url(); ?>/auth/logout.php"> logout</a>    
+        <!-- <a href="<?php echo site_url(); ?>/auth/logout.php"> logout</a>     -->
    </div>
 
    <?php include_once __DIR__ . '/_components/footer.php'; ?>

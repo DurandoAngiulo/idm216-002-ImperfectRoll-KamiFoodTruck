@@ -20,6 +20,7 @@
     </a>
 </div>
 <?php 
+if($userOrder['id']){
 $cart_items = getCartItems($userOrder['id']);
 if ($cart_items->num_rows > 0){
     echo"
@@ -29,6 +30,7 @@ if ($cart_items->num_rows > 0){
       }, 600);
     </script>
     ";
+}
 }
 ?>
 
