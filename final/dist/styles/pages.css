@@ -338,13 +338,17 @@
 /* //////////////////////////////////////// */
 
 .input-login {
-  width: 90vw;
+  width: 100%;
 
   background-color: var(--backgroundColor);
   border-radius: 6px;
   border-style: solid;
   border-color: #171616;
   border-width: 1px;
+}
+
+.input-container {
+  width: 100%;
 }
 
 .btn {
@@ -479,12 +483,14 @@
 /* //////////////////////////////////////// */
 
 /* CONFIRM PAGE STYLING */
-@keyframes noodle-animation{
-  0%{
+@keyframes noodle-animation {
+  0% {
     top: 6rem;
-  }50%{
+  }
+  50% {
     top: 2rem;
-  }100%{
+  }
+  100% {
     top: 6rem;
   }
 }
@@ -492,14 +498,14 @@
   height: 90vh;
   align-items: center;
 }
-.noodle-pull{
+.noodle-pull {
   animation: noodle-animation 1.2s ease-in-out infinite;
   position: relative;
   top: 6rem;
   left: 1.5rem;
   z-index: 2;
 }
-.noodle-bowl{
+.noodle-bowl {
   position: relative;
   z-index: 3;
 }
@@ -538,6 +544,12 @@
 
 .btn-close {
   --bs-btn-close-opacity: 1;
+  right: 0;
 }
 
+@media (min-width: 1200px) {
+  .btn-close {
+    right: 300px;
+  }
+}
 /* //////////////////////////////////////// */
