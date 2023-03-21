@@ -26,5 +26,5 @@ if ($result) {
     redirect_to('/auth/login.php');
 } else {
     $error_message = 'Sorry there was an error creating the user ' . mysqli_error($db_connection);
-    redirect_to('/auth/login?error=' . $error_message);
+    redirect_to('/auth/login.php?error=' . $error_message);
 }

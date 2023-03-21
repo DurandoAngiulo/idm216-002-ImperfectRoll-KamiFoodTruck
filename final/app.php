@@ -32,8 +32,12 @@ include_once __DIR__ . '/_includes/user-functions.php';
 include_once __DIR__ . '/_includes/users.php';
 $isLoginPage= strpos($_SERVER['REQUEST_URI'], '/auth/login') !== false;
 $sessionUserId = $_SESSION['user']['id'] ?? null;
-$user = $sessionUserId ? get_user_by_id($sessionUserId) : create_guest_user();
 
+
+
+// var_dump($sessionUserId, "session id");
+$user = $sessionUserId ? get_user_by_id($sessionUserId) : create_guest_user();
+// var_dump($user, "user");
 
 $userOrder = null;
 if ($user) {

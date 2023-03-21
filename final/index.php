@@ -5,7 +5,7 @@ include_once __DIR__ . '/_components/header-kami.php';
 ?>
 <body class="backgroundColor">
 <?php 
-$cart_items = getCartItems($userOrder['id']);
+// $cart_items = getCartItems($userOrder['id']);
 include_once __DIR__ . '/_components/navbar-mobile.php';
 ?>
 

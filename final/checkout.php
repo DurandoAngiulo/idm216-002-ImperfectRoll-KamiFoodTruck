@@ -62,9 +62,9 @@ $cart_items = getCartItems($userOrder['id']);
             <div class="d-flex justify-content-between mb-4">
                 <button type="button" class="btn btn-secondary btn-sm px-3">Card</button>
                 
-                <button onclick="window.location.href = '<?php echo site_url(); ?>/confirm-animation.php';"type="button" class="btn btn-secondary btn-sm px-3">Venmo</button>
+                <button type="button" class="btn btn-secondary btn-sm px-3">Venmo</button>
 
-                <button onclick="window.location.href = '<?php echo site_url(); ?>/confirm-animation.php';" type="button" class="btn btn-secondary btn-sm px-3">Apple</button>
+                <button type="button" class="btn btn-secondary btn-sm px-3">Apple</button>
             </div>
 
 

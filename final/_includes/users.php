@@ -14,8 +14,11 @@ function createNewOrderByUserId($userId){
     global $db_connection;
     $query = "INSERT INTO orders";
     $query .="(user_id)";
-    $query .= "VALUES('{$userId}')";
+    $query .= " VALUES('{$userId}')";
+    // var_dump($query);
+    // die;
     $result = mysqli_query($db_connection, $query);
+    // die;
     if(!$result){
         //TODO create error message
     }

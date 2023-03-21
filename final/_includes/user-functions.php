@@ -26,14 +26,16 @@ function add_user($first_name, $last_name, $email, $password)
 
 function create_guest_user(){
     global $db_connection;
+    global $_SESSION;
     $query = 'INSERT INTO users';
         $query .= ' (isGuest)';
         $query .= " VALUES ('1')";
         $result = mysqli_query($db_connection, $query);
         if ($result) {
+            $_SESSION = [];
            $recentId = $db_connection->insert_id;
-           get_user_by_id($recentId);
-            // Create a user array in the SESSION variable and assign values to it
+           return get_user_by_id($recentId);
+        
         }
          
     }
@@ -50,7 +52,7 @@ function get_user_by_id($id)
         ];
         return $user;
     }
-    create_guest_user();
+    return create_guest_user();
 }
 
 function verify_password($password)
