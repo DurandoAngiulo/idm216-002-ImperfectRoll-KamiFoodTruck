@@ -55,7 +55,7 @@ $cart_items = getCartItems($userOrder['id']);
             <p  class=" mt-1 text-light">Checkout</p>
             <p  class=" mt-1 text-light">$<?php echo(number_format((float)$total_price, 2, '.', '')); ?></p>
         </a>
-        <a href="<?php echo site_url(); ?>/auth/logout.php"> logout</a>    
+        <!-- <a href="<?php echo site_url(); ?>/auth/logout.php"> logout</a>     -->
    </div>
 
    <?php include_once __DIR__ . '/_components/footer.php'; ?>
